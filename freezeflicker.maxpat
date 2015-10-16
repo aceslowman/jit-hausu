@@ -43,7 +43,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 233.0, 240.5, 54.0, 22.0 ],
+					"patching_rect" : [ 185.166626, 182.332855, 54.0, 22.0 ],
 					"style" : "",
 					"text" : "togedge"
 				}
@@ -56,7 +56,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 268.0, 273.0, 29.5, 22.0 ],
+					"patching_rect" : [ 220.166626, 211.999664, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "1"
 				}
@@ -69,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 233.0, 273.0, 29.5, 22.0 ],
+					"patching_rect" : [ 185.166626, 211.999664, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "0"
 				}
@@ -197,9 +197,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 671.0, 197.500275, 71.0, 22.0 ],
+					"patching_rect" : [ 690.0, 197.500275, 71.0, 22.0 ],
 					"style" : "",
-					"text" : "r stopVideo"
+					"text" : "r videoStop"
 				}
 
 			}
@@ -210,7 +210,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 667.0, 272.666748, 83.0, 22.0 ],
+					"patching_rect" : [ 690.0, 272.666748, 83.0, 22.0 ],
 					"style" : "",
 					"text" : "r xfadeToggle"
 				}
@@ -223,7 +223,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 24.666626, 310.0, 57.0, 22.0 ],
+					"patching_rect" : [ 24.666626, 312.0, 57.0, 22.0 ],
 					"style" : "",
 					"text" : "xfade $1"
 				}
@@ -237,7 +237,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 24.666626, 273.0, 24.0, 24.0 ],
+					"patching_rect" : [ 24.666626, 275.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -248,7 +248,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.666626, 347.0, 85.0, 22.0 ],
+					"patching_rect" : [ 24.666626, 349.0, 85.0, 22.0 ],
 					"style" : "",
 					"text" : "s xfadeToggle"
 				}
@@ -262,7 +262,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 112.0, 211.999664, 24.0, 24.0 ],
+					"patching_rect" : [ 112.0, 182.332855, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -274,7 +274,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 112.0, 241.666473, 58.0, 22.0 ],
+					"patching_rect" : [ 112.0, 211.999664, 58.0, 22.0 ],
 					"style" : "",
 					"text" : "metro 50"
 				}
@@ -288,7 +288,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 141.666626, 92.666473, 73.0, 22.0 ],
 					"style" : "",
-					"text" : "s stopVideo"
+					"text" : "s videoStop"
 				}
 
 			}
@@ -450,13 +450,13 @@
 					"fontface" : 3,
 					"fontsize" : 14.0,
 					"id" : "obj-2",
-					"linecount" : 10,
+					"linecount" : 13,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 479.0, 9.0, 182.0, 163.0 ],
+					"patching_rect" : [ 479.0, 9.0, 182.0, 225.0 ],
 					"style" : "",
-					"text" : "FreezeFlicker\n\nReceives: \n    currentVideoInfo\n    \n    tempo\n\nSends: \n    currentVideoMess\n    videoOnOff"
+					"text" : "FreezeFlicker\n\nReceives: \n    currentVideoInfo\n    \n    tempo\n\nSends: \n    currentVideoMess\n    videoOnOff\n    videoSwitch\n    videoStop\n\n"
 				}
 
 			}
@@ -467,7 +467,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 479.0, 284.5, 182.0, 33.0 ],
+					"patching_rect" : [ 479.0, 521.5, 182.0, 33.0 ],
 					"style" : "",
 					"text" : "replace with random frame from second video"
 				}
@@ -480,7 +480,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 479.0, 183.999847, 182.0, 47.0 ],
+					"patching_rect" : [ 479.0, 420.999847, 182.0, 47.0 ],
 					"style" : "",
 					"text" : "instead of route read, maybe trigger getframecount for BOTH videos upon button click?"
 				}
@@ -493,7 +493,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 479.0, 241.666473, 182.0, 33.0 ],
+					"patching_rect" : [ 479.0, 478.666473, 182.0, 33.0 ],
 					"style" : "",
 					"text" : "GATE MESSAGES TO THE CURRENT VIDEO"
 				}
@@ -507,7 +507,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 24.666626, 211.999664, 24.0, 24.0 ],
+					"patching_rect" : [ 24.666626, 182.332855, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -519,7 +519,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 24.666626, 241.666473, 46.0, 22.0 ],
+					"patching_rect" : [ 24.666626, 211.999664, 46.0, 22.0 ],
 					"style" : "",
 					"text" : "gate"
 				}
@@ -549,7 +549,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 51.666626, 211.999664, 51.0, 22.0 ],
+					"patching_rect" : [ 51.666626, 182.332855, 51.0, 22.0 ],
 					"style" : "",
 					"text" : "r tempo"
 				}
@@ -596,7 +596,7 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.666626, 9.0, 463.0, 450.0 ],
+					"patching_rect" : [ 11.666626, 9.0, 463.0, 376.666748 ],
 					"proportion" : 0.18599,
 					"pt1" : [ 0.5, 0.05 ],
 					"pt2" : [ 0.5, 1.217391 ],
@@ -736,7 +736,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
+					"destination" : [ "obj-41", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-17", 0 ]
@@ -826,7 +826,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
+					"destination" : [ "obj-41", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-27", 0 ]
@@ -919,7 +919,7 @@
 					"destination" : [ "obj-209", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 676.5, 304.0, 785.0, 304.0, 785.0, 268.0, 803.5, 268.0 ],
+					"midpoints" : [ 699.5, 304.0, 785.0, 304.0, 785.0, 268.0, 803.5, 268.0 ],
 					"source" : [ "obj-42", 0 ]
 				}
 

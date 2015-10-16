@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-46",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 667.0, 490.916595, 150.0, 33.0 ],
+					"style" : "",
+					"text" : "get duration on video switching, initial load"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-179",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -56,7 +69,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 671.0, 412.000061, 150.0, 33.0 ],
+					"patching_rect" : [ 658.0, 305.416595, 150.0, 33.0 ],
 					"style" : "",
 					"text" : "I'll need to fix duration message in"
 				}
@@ -132,7 +145,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 2414.0, 146.0, 50.0, 22.0 ],
+					"patching_rect" : [ 2454.0, 109.166687, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2414.0, 146.0, 50.0, 22.0 ],
 					"style" : ""
@@ -215,9 +228,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2326.833252, 149.666626, 62.0, 22.0 ],
+					"patching_rect" : [ 2326.833252, 149.666626, 80.0, 22.0 ],
 					"style" : "",
-					"text" : "r vidMess"
+					"text" : "r curVidMess"
 				}
 
 			}
@@ -1042,7 +1055,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1163.500122, 379.0, 29.5, 22.0 ],
+					"patching_rect" : [ 1157.666748, 379.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "32"
 				}
@@ -1105,7 +1118,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1418.916748, 244.0, 64.916626, 22.0 ],
+					"patching_rect" : [ 1418.916748, 220.0, 64.916626, 22.0 ],
 					"style" : "",
 					"text" : "0."
 				}
@@ -1130,9 +1143,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1341.0, 244.0, 64.0, 22.0 ],
+					"patching_rect" : [ 1341.0, 185.333282, 82.0, 22.0 ],
 					"style" : "",
-					"text" : "s vidMess"
+					"text" : "s curVidMess"
 				}
 
 			}
@@ -1143,7 +1156,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1341.0, 154.0, 94.0, 22.0 ],
+					"patching_rect" : [ 1341.0, 152.0, 94.0, 22.0 ],
 					"style" : "",
 					"text" : "t getframecount"
 				}
@@ -1155,9 +1168,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2157.5, 502.0, 64.0, 22.0 ],
+					"patching_rect" : [ 2157.5, 502.0, 82.0, 22.0 ],
 					"style" : "",
-					"text" : "s vidMess"
+					"text" : "s curVidMess"
 				}
 
 			}
@@ -1277,9 +1290,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 416.166748, 563.416626, 64.0, 22.0 ],
+					"patching_rect" : [ 416.166748, 563.416626, 82.0, 22.0 ],
 					"style" : "",
-					"text" : "s vidMess"
+					"text" : "s curVidMess"
 				}
 
 			}
@@ -1289,9 +1302,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2472.833252, 182.0, 64.0, 22.0 ],
+					"patching_rect" : [ 2512.833252, 145.166687, 82.0, 22.0 ],
 					"style" : "",
-					"text" : "s vidMess"
+					"text" : "s curVidMess"
 				}
 
 			}
@@ -1474,9 +1487,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 535.0, 412.000061, 61.0, 22.0 ],
+					"patching_rect" : [ 535.0, 412.000061, 97.0, 22.0 ],
 					"style" : "",
-					"text" : "r duration"
+					"text" : "r curVidDuration"
 				}
 
 			}
@@ -1636,9 +1649,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1341.0, 82.833435, 55.0, 22.0 ],
+					"patching_rect" : [ 1341.0, 82.833435, 72.0, 22.0 ],
 					"style" : "",
-					"text" : "r m1Info"
+					"text" : "r curVidInfo"
 				}
 
 			}
@@ -2371,21 +2384,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"speed" : [ 1.0 ],
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"originaltempo" : [ 120.0 ],
 									"pitchcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"slurtime" : [ 0.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"formantcorrection" : [ 0 ],
 									"pitchshift" : [ 1.0 ],
-									"quality" : [ "basic" ],
+									"formant" : [ 1.0 ],
 									"originallengthms" : [ 0.0 ],
+									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"slurtime" : [ 0.0 ],
 									"followglobaltempo" : [ 0 ],
-									"basictuning" : [ 440 ]
+									"timestretch" : [ 0 ],
+									"mode" : [ "basic" ],
+									"originallength" : [ 0.0, "ticks" ],
+									"basictuning" : [ 440 ],
+									"speed" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
+									"formantcorrection" : [ 0 ]
 								}
 
 							}
@@ -2423,9 +2436,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2472.833252, 109.666626, 93.0, 22.0 ],
+					"patching_rect" : [ 2512.833252, 72.833313, 112.0, 22.0 ],
 					"style" : "",
-					"text" : "receive vidRate"
+					"text" : "receive curVidRate"
 				}
 
 			}
@@ -2435,9 +2448,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 212.400024, 1166.0, 81.0, 22.0 ],
+					"patching_rect" : [ 212.400024, 1166.0, 99.0, 22.0 ],
 					"style" : "",
-					"text" : "send vidRate"
+					"text" : "send curVidRate"
 				}
 
 			}
@@ -2657,7 +2670,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2472.833252, 146.0, 48.0, 22.0 ],
+					"patching_rect" : [ 2512.833252, 109.166687, 48.0, 22.0 ],
 					"style" : "",
 					"text" : "rate $1"
 				}
@@ -3036,7 +3049,7 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 900.666748, 29.0, 715.0, 456.0 ],
+					"patching_rect" : [ 900.000122, 29.0, 715.0, 456.0 ],
 					"proportion" : 0.18599,
 					"pt1" : [ 0.5, 0.05 ],
 					"pt2" : [ 0.5, 1.217391 ],

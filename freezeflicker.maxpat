@@ -312,7 +312,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1010.333252, 129.666534, 114.0, 22.0 ],
+					"patching_rect" : [ 949.0, 125.666534, 114.0, 22.0 ],
 					"style" : "",
 					"text" : "r currentVideoMess"
 				}
@@ -454,7 +454,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 479.0, 9.0, 182.0, 225.0 ],
+					"patching_rect" : [ 479.0, 9.0, 182.0, 210.0 ],
 					"style" : "",
 					"text" : "FreezeFlicker\n\nReceives: \n    currentVideoInfo\n    \n    tempo\n\nSends: \n    currentVideoMess\n    videoOnOff\n    videoSwitch\n    videoStop\n\n"
 				}

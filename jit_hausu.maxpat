@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 351.0, 79.0, 845.0, 683.0 ],
+		"rect" : [ 34.0, 79.0, 1212.0, 683.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"handoff" : "",
+					"id" : "obj-39",
+					"maxclass" : "ubutton",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "", "int" ],
+					"patching_rect" : [ 1157.0, 437.082825, 88.500183, 88.500183 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-68",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -57,7 +69,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1319.5, 736.916504, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "xfade 1"
+					"text" : "xfade 0"
 				}
 
 			}
@@ -169,9 +181,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1157.0, 736.916504, 85.0, 22.0 ],
+					"patching_rect" : [ 1157.0, 736.916504, 78.0, 22.0 ],
 					"style" : "",
-					"text" : "s xfadeToggle"
+					"text" : "s xfadeMess"
 				}
 
 			}
@@ -284,18 +296,6 @@
 			}
 , 			{
 				"box" : 				{
-					"handoff" : "",
-					"id" : "obj-39",
-					"maxclass" : "ubutton",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "", "int" ],
-					"patching_rect" : [ 1157.0, 429.249756, 88.500183, 88.500183 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-4",
 					"linecount" : 3,
@@ -327,7 +327,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1616.0, 785.916382, 150.0, 60.0 ],
+					"patching_rect" : [ 1616.0, 784.916382, 150.0, 60.0 ],
 					"style" : "",
 					"text" : "+ 2 or other arithmetic off of tempo object will give color distortions through xfade"
 				}
@@ -539,9 +539,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1638.0, 338.000061, 83.0, 22.0 ],
+					"patching_rect" : [ 1638.0, 338.000061, 76.0, 22.0 ],
 					"style" : "",
-					"text" : "r xfadeToggle"
+					"text" : "r xfadeMess"
 				}
 
 			}

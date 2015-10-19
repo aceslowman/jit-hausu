@@ -38,6 +38,32 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-71",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 2013.0, 65.999817, 65.0, 65.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-61",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 2013.0, 141.999817, 65.0, 22.0 ],
+					"style" : "",
+					"text" : "qmetro 20"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"handoff" : "",
 					"id" : "obj-39",
 					"maxclass" : "ubutton",
@@ -57,19 +83,6 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 1184.0, 593.24939, 24.0, 24.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1319.5, 736.916504, 50.0, 22.0 ],
-					"style" : "",
-					"text" : "xfade 0"
 				}
 
 			}
@@ -327,7 +340,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1616.0, 784.916382, 150.0, 60.0 ],
+					"patching_rect" : [ 1437.0, 674.916382, 150.0, 60.0 ],
 					"style" : "",
 					"text" : "+ 2 or other arithmetic off of tempo object will give color distortions through xfade"
 				}
@@ -1779,14 +1792,14 @@
 				"box" : 				{
 					"autopopulate" : 1,
 					"id" : "obj-210",
-					"items" : "crashtest.mov",
+					"items" : "sunflower.mp4",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1312.5, 217.333252, 100.0, 22.0 ],
-					"prefix" : "Macintosh HD:/Users/austinslominski/Documents/Max 7/Library/SNAPPER/video/horror/",
+					"prefix" : "Macintosh HD:/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/textural/",
 					"style" : ""
 				}
 
@@ -2214,14 +2227,14 @@
 				"box" : 				{
 					"autopopulate" : 1,
 					"id" : "obj-20",
-					"items" : "crashtest.mov",
+					"items" : "sunflower.mp4",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1182.5, 217.333252, 100.0, 22.0 ],
-					"prefix" : "Macintosh HD:/Users/austinslominski/Documents/Max 7/Library/SNAPPER/video/horror/",
+					"prefix" : "Macintosh HD:/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/textural/",
 					"style" : ""
 				}
 
@@ -2905,21 +2918,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"originallength" : [ 0.0, "ticks" ],
-									"formantcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
 									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
-									"originaltempo" : [ 120.0 ],
-									"quality" : [ "basic" ],
 									"slurtime" : [ 0.0 ],
 									"speed" : [ 1.0 ],
-									"timestretch" : [ 0 ],
+									"play" : [ 0 ],
 									"followglobaltempo" : [ 0 ],
-									"mode" : [ "basic" ],
-									"basictuning" : [ 440 ]
+									"originaltempo" : [ 120.0 ],
+									"timestretch" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"formantcorrection" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"basictuning" : [ 440 ],
+									"quality" : [ "basic" ],
+									"originallength" : [ 0.0, "ticks" ],
+									"mode" : [ "basic" ]
 								}
 
 							}
@@ -3332,7 +3345,7 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1616.0, 4.333252, 606.0, 772.249878 ],
+					"patching_rect" : [ 1620.5, 4.333252, 606.0, 772.249878 ],
 					"proportion" : 0.18599,
 					"pt1" : [ 0.5, 0.05 ],
 					"pt2" : [ 0.5, 1.217391 ],
@@ -4178,15 +4191,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-45", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4344,6 +4348,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-150", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-61", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-66", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4426,6 +4439,15 @@
 					"hidden" : 0,
 					"midpoints" : [ 950.5, 649.5, 920.0, 649.5 ],
 					"source" : [ "obj-70", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-61", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-71", 0 ]
 				}
 
 			}

@@ -1837,7 +1837,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1312.5, 217.333252, 100.0, 22.0 ],
-					"prefix" : "Macintosh HD:/Users/austinslominski/Documents/Max 7/Library/SNAPPER/video/horror/",
+					"prefix" : "Macintosh HD:/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/horror/",
 					"style" : ""
 				}
 
@@ -2272,7 +2272,7 @@
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1182.5, 217.333252, 100.0, 22.0 ],
-					"prefix" : "Macintosh HD:/Users/austinslominski/Documents/Max 7/Library/SNAPPER/video/horror/",
+					"prefix" : "Macintosh HD:/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/horror/",
 					"style" : ""
 				}
 
@@ -2956,20 +2956,20 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"speed" : [ 1.0 ],
-									"pitchcorrection" : [ 0 ],
-									"originaltempo" : [ 120.0 ],
 									"play" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
-									"timestretch" : [ 0 ],
+									"originaltempo" : [ 120.0 ],
 									"followglobaltempo" : [ 0 ],
+									"speed" : [ 1.0 ],
+									"formantcorrection" : [ 0 ],
 									"pitchshift" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
 									"basictuning" : [ 440 ],
+									"quality" : [ "basic" ],
+									"originallength" : [ 0.0, "ticks" ],
 									"formant" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"pitchcorrection" : [ 0 ],
+									"timestretch" : [ 0 ],
 									"originallengthms" : [ 0.0 ]
 								}
 
@@ -3491,7 +3491,7 @@
 					"destination" : [ "obj-34", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1189.666748, 533.916382, 1499.333374, 533.916382, 1499.333374, 477.916382, 1519.5, 477.916382 ],
+					"midpoints" : [ 1189.666748, 542.916382, 1499.333374, 542.916382, 1499.333374, 477.916382, 1519.5, 477.916382 ],
 					"source" : [ "obj-116", 1 ]
 				}
 

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1212.0, 683.0 ],
+		"rect" : [ 34.0, 79.0, 1008.0, 683.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,58 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-71",
+					"maxclass" : "jit.pwindow",
+					"name" : "preview",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1601.0, 534.749512, 358.0, 221.0 ],
+					"shared" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-80",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 1722.5, 497.08313, 247.0, 22.0 ],
+					"style" : "",
+					"text" : "jit.gl.videoplane preview @transform_reset 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-75",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 1592.0, 497.08313, 115.0, 22.0 ],
+					"style" : "",
+					"text" : "jit.gl.render preview"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "erase" ],
+					"patching_rect" : [ 1592.0, 463.833038, 57.0, 22.0 ],
+					"style" : "",
+					"text" : "t b erase"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-129",
 					"maxclass" : "newobj",
@@ -2939,21 +2991,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"pitchshift" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"formant" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
 									"formantcorrection" : [ 0 ],
-									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallengthms" : [ 0.0 ],
+									"originallength" : [ 0.0, "ticks" ],
 									"pitchcorrection" : [ 0 ],
+									"timestretch" : [ 0 ],
+									"play" : [ 0 ],
 									"quality" : [ "basic" ],
+									"speed" : [ 1.0 ],
+									"pitchshift" : [ 1.0 ],
+									"formant" : [ 1.0 ],
+									"basictuning" : [ 440 ],
 									"mode" : [ "basic" ],
-									"followglobaltempo" : [ 0 ],
-									"originaltempo" : [ 120.0 ]
+									"slurtime" : [ 0.0 ],
+									"originallengthms" : [ 0.0 ],
+									"followglobaltempo" : [ 0 ]
 								}
 
 							}
@@ -3330,7 +3382,7 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1523.5, -0.124939, 541.5, 776.708069 ],
+					"patching_rect" : [ 1523.25, -0.124939, 541.5, 776.708069 ],
 					"proportion" : 0.18599,
 					"pt1" : [ 0.5, 0.05 ],
 					"pt2" : [ 0.5, 1.217391 ],
@@ -4281,6 +4333,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-75", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-39", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-75", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-44", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4433,6 +4503,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-60", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-62", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-80", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-62", 0 ]
 				}
 
 			}

@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-22",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 103.0, 458.291351, 429.0, 47.0 ],
+					"style" : "",
+					"text" : "AFTER ANY TRANSITION, SEND A MESSAGE TO SHIFT THE PLAYLIST INDEX FORWARD ONE (UPON COMPLETION OF TRANSITION, LOAD THE OTHER VIDEO IN THE OTHER OUTLET)"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "button",
 					"numinlets" : 1,

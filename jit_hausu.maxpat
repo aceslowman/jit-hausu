@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1008.0, 683.0 ],
+		"rect" : [ 34.0, 79.0, 1212.0, 683.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,19 +37,6 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-71",
-					"maxclass" : "jit.pwindow",
-					"name" : "preview",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1601.0, 534.749512, 358.0, 221.0 ],
-					"shared" : 1
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-80",
 					"maxclass" : "newobj",
@@ -198,7 +185,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1855.0, 158.0, 71.0, 22.0 ],
+					"patching_rect" : [ 1951.0, 153.0, 71.0, 22.0 ],
 					"style" : "",
 					"text" : "getduration"
 				}
@@ -223,7 +210,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1773.0, 329.0, 46.0, 22.0 ],
+					"patching_rect" : [ 1873.0, 329.0, 46.0, 22.0 ],
 					"style" : "",
 					"text" : "s vInfo"
 				}
@@ -235,7 +222,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2001.0, 329.0, 46.0, 22.0 ],
+					"patching_rect" : [ 2198.0, 329.0, 46.0, 22.0 ],
 					"style" : "",
 					"text" : "s vInfo"
 				}
@@ -248,7 +235,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1850.0, 196.000061, 71.0, 22.0 ],
+					"patching_rect" : [ 1946.0, 196.000061, 71.0, 22.0 ],
 					"style" : "",
 					"text" : "r videoStop"
 				}
@@ -261,7 +248,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1819.0, 120.0, 114.0, 22.0 ],
+					"patching_rect" : [ 1918.0, 119.0, 114.0, 22.0 ],
 					"style" : "",
 					"text" : "r currentVideoMess"
 				}
@@ -351,7 +338,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1591.0, 196.000061, 247.0, 22.0 ],
+					"patching_rect" : [ 1591.0, 196.000061, 346.0, 22.0 ],
 					"style" : "",
 					"text" : "gate 2"
 				}
@@ -364,7 +351,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1855.0, 237.999756, 67.0, 22.0 ],
+					"patching_rect" : [ 1951.0, 237.999756, 67.0, 22.0 ],
 					"style" : "",
 					"text" : "r vid2Load"
 				}
@@ -377,7 +364,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1850.0, 267.333252, 51.0, 22.0 ],
+					"patching_rect" : [ 1946.0, 267.333252, 51.0, 22.0 ],
 					"style" : "",
 					"text" : "read $1"
 				}
@@ -416,7 +403,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1865.0, 385.166412, 76.0, 22.0 ],
+					"patching_rect" : [ 1952.5, 385.166412, 76.0, 22.0 ],
 					"style" : "",
 					"text" : "r xfadeMess"
 				}
@@ -442,7 +429,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 1591.0, 385.166412, 247.0, 22.0 ],
+					"patching_rect" : [ 1591.0, 385.166412, 346.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.gl.pix myworld @gen xfade"
 				}
@@ -455,9 +442,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 1819.0, 299.0, 201.0, 22.0 ],
+					"patching_rect" : [ 1918.0, 297.0, 299.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.movie @vol 0. @output_texture 1"
+					"text" : "jit.movie @vol 0. @output_texture 1 @colormode uyvy"
 				}
 
 			}
@@ -468,9 +455,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 1591.0, 299.0, 201.0, 22.0 ],
+					"patching_rect" : [ 1591.0, 297.0, 301.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.movie @vol 0. @output_texture 1"
+					"text" : "jit.movie @vol 0. @output_texture 1 @colormode uyvy"
 				}
 
 			}
@@ -2991,21 +2978,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"originaltempo" : [ 120.0 ],
-									"formantcorrection" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"pitchcorrection" : [ 0 ],
-									"timestretch" : [ 0 ],
-									"play" : [ 0 ],
-									"quality" : [ "basic" ],
-									"speed" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
-									"formant" : [ 1.0 ],
 									"basictuning" : [ 440 ],
-									"mode" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
 									"originallengthms" : [ 0.0 ],
-									"followglobaltempo" : [ 0 ]
+									"formant" : [ 1.0 ],
+									"timestretch" : [ 0 ],
+									"formantcorrection" : [ 0 ],
+									"quality" : [ "basic" ],
+									"slurtime" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
+									"followglobaltempo" : [ 0 ],
+									"pitchcorrection" : [ 0 ],
+									"play" : [ 0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"mode" : [ "basic" ],
+									"speed" : [ 1.0 ]
 								}
 
 							}
@@ -3382,7 +3369,7 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1523.25, -0.124939, 541.5, 776.708069 ],
+					"patching_rect" : [ 1520.75, -0.124939, 750.5, 768.541565 ],
 					"proportion" : 0.18599,
 					"pt1" : [ 0.5, 0.05 ],
 					"pt2" : [ 0.5, 1.217391 ],
@@ -3795,7 +3782,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1859.5, 225.0, 1832.0, 225.0, 1832.0, 225.0, 1802.0, 225.0, 1802.0, 225.0, 1588.0, 225.0, 1588.0, 295.0, 1600.5, 295.0 ],
+					"midpoints" : [ 1955.5, 225.0, 1832.0, 225.0, 1832.0, 225.0, 1802.0, 225.0, 1802.0, 225.0, 1588.0, 225.0, 1588.0, 295.0, 1600.5, 295.0 ],
 					"source" : [ "obj-133", 0 ]
 				}
 
@@ -4688,7 +4675,7 @@
 					"destination" : [ "obj-37", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1874.5, 410.166443, 1852.0, 410.166443, 1852.0, 371.166443, 1600.5, 371.166443 ],
+					"midpoints" : [ 1962.0, 410.166443, 1943.0, 410.166443, 1943.0, 371.166443, 1600.5, 371.166443 ],
 					"source" : [ "obj-86", 0 ]
 				}
 

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 790.0, 683.0 ],
+		"rect" : [ 34.0, 79.0, 1212.0, 683.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,31 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1016.0, 419.0, 73.0, 22.0 ],
+					"style" : "",
+					"text" : "s videoStop"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1047.0, 300.0, 33.0, 22.0 ],
+					"style" : "",
+					"text" : "stop"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-33",
 					"maxclass" : "button",
@@ -131,6 +156,27 @@
 			}
 , 			{
 				"box" : 				{
+					"coll_data" : 					{
+						"count" : 4,
+						"data" : [ 							{
+								"key" : 1,
+								"value" : [ "dotdtitle.mov" ]
+							}
+, 							{
+								"key" : 2,
+								"value" : [ "dotdcalendar.mov" ]
+							}
+, 							{
+								"key" : 3,
+								"value" : [ "dotdthedeadwalk.mov" ]
+							}
+, 							{
+								"key" : 4,
+								"value" : [ "dotdcrowdwalking.mov" ]
+							}
+ ]
+					}
+,
 					"id" : "obj-5",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -138,7 +184,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 82.5, 127.0, 125.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0
+						"embed" : 1
 					}
 ,
 					"style" : "",
@@ -832,7 +878,7 @@
 				"box" : 				{
 					"autopopulate" : 1,
 					"id" : "obj-20",
-					"items" : [ "test", ",", "test2" ],
+					"items" : [ "dotdtitle.mov", ",", "dotdcalendar.mov", ",", "dotdthedeadwalk.mov", ",", "dotdcrowdwalking.mov" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -917,6 +963,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-10", 0 ]
 				}
 
 			}

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 79.0, 640.0, 683.0 ],
+		"rect" : [ 15.0, 132.0, 940.0, 683.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -848,7 +848,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontface" : 1,
@@ -1520,7 +1519,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 314.0, 140.0, 524.0, 683.0 ],
+						"rect" : [ 330.0, 79.0, 524.0, 683.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1547,6 +1546,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-19",
@@ -1630,7 +1630,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 186.5, 715.0, 69.0, 22.0 ],
+									"patching_rect" : [ 260.0, 715.0, 69.0, 22.0 ],
 									"style" : "",
 									"text" : "s vid2Load"
 								}
@@ -1642,7 +1642,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 260.0, 715.0, 69.0, 22.0 ],
+									"patching_rect" : [ 186.5, 715.0, 69.0, 22.0 ],
 									"style" : "",
 									"text" : "s vid1Load"
 								}
@@ -1657,7 +1657,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 186.5, 652.0, 92.5, 22.0 ],
 									"style" : "",
-									"text" : "gate 2 1"
+									"text" : "gate 2 2"
 								}
 
 							}
@@ -1859,7 +1859,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 186.5, 515.0, 142.0, 22.0 ],
 									"style" : "",
-									"text" : "dotdthedeadwalk.mov"
+									"text" : "dotdcalendar.mov"
 								}
 
 							}
@@ -1872,7 +1872,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 17.5, 515.0, 142.0, 22.0 ],
 									"style" : "",
-									"text" : "dotdcalendar.mov"
+									"text" : "dotdtitle.mov"
 								}
 
 							}
@@ -2420,7 +2420,7 @@
 									"destination" : [ "obj-50", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-49", 0 ]
+									"source" : [ "obj-49", 1 ]
 								}
 
 							}
@@ -2429,7 +2429,7 @@
 									"destination" : [ "obj-51", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-49", 1 ]
+									"source" : [ "obj-49", 0 ]
 								}
 
 							}
@@ -2681,7 +2681,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 207.550049, 253.167725, 142.0, 22.0 ],
 					"style" : "",
-					"text" : "dotdthedeadwalk.mov"
+					"text" : "dotdcalendar.mov"
 				}
 
 			}
@@ -2694,7 +2694,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 27.549805, 253.167725, 142.0, 22.0 ],
 					"style" : "",
-					"text" : "dotdcalendar.mov"
+					"text" : "dotdtitle.mov"
 				}
 
 			}
@@ -3001,6 +3001,12 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "day_of_the_dead.txt",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "thru.maxpat",
 				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
 				"type" : "JSON",

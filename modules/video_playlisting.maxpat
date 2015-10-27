@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 15.0, 132.0, 940.0, 683.0 ],
+		"rect" : [ 173.0, 203.0, 940.0, 683.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -175,7 +175,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 389.0, 391.0, 556.0, 480.0 ],
+						"rect" : [ 263.0, 148.0, 556.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -202,19 +202,8 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
-								"box" : 								{
-									"id" : "obj-11",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 54.5, 306.0, 150.0, 20.0 ],
-									"style" : "",
-									"text" : "is this togedge respons?"
-								}
-
-							}
-, 							{
 								"box" : 								{
 									"comment" : "Bang on Completion",
 									"id" : "obj-10",
@@ -821,7 +810,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 564.0, 254.0, 682.0, 346.0 ],
+						"rect" : [ 383.0, 358.0, 682.0, 346.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1546,7 +1535,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-19",
@@ -1859,7 +1847,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 186.5, 515.0, 142.0, 22.0 ],
 									"style" : "",
-									"text" : "dotdcalendar.mov"
+									"text" : "dotdcrowdwalking.mov"
 								}
 
 							}
@@ -1872,7 +1860,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 17.5, 515.0, 142.0, 22.0 ],
 									"style" : "",
-									"text" : "dotdtitle.mov"
+									"text" : "dotdthedeadwalk.mov"
 								}
 
 							}
@@ -2681,7 +2669,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 207.550049, 253.167725, 142.0, 22.0 ],
 					"style" : "",
-					"text" : "dotdcalendar.mov"
+					"text" : "dotdcrowdwalking.mov"
 				}
 
 			}
@@ -2694,7 +2682,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 27.549805, 253.167725, 142.0, 22.0 ],
 					"style" : "",
-					"text" : "dotdtitle.mov"
+					"text" : "dotdthedeadwalk.mov"
 				}
 
 			}
@@ -3001,12 +2989,6 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "day_of_the_dead.txt",
-				"bootpath" : "~/Documents/Max 7/Library/jit-hausu",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "thru.maxpat",
 				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
 				"type" : "JSON",

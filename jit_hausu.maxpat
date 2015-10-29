@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 36.0, 79.0, 806.0, 683.0 ],
+		"rect" : [ 36.0, 452.0, 640.0, 310.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -47,7 +47,7 @@
 					"orientation" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1608.0, 147.0, 85.0, 19.0 ],
+					"patching_rect" : [ 1612.0, 147.0, 85.0, 19.0 ],
 					"size" : 100.0,
 					"style" : ""
 				}
@@ -111,7 +111,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 342.0, 268.0, 526.0, 337.0 ],
+						"rect" : [ 531.0, 197.0, 526.0, 337.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -138,7 +138,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -298,9 +297,9 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 25.0, 256.0, 196.0, 22.0 ],
+									"patching_rect" : [ 25.0, 256.0, 218.0, 22.0 ],
 									"style" : "",
-									"text" : "poly~ vps.texset 15 args mod bank"
+									"text" : "poly~ vps.texset 15 args myworld bank"
 								}
 
 							}
@@ -363,9 +362,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 25.0, 226.0, 305.0, 22.0 ],
+									"patching_rect" : [ 25.0, 226.0, 328.0, 22.0 ],
 									"style" : "",
-									"text" : "jit.gl.videoplane mod @transform_reset 2 @automatic 0"
+									"text" : "jit.gl.videoplane myworld @transform_reset 2 @automatic 0"
 								}
 
 							}
@@ -438,6 +437,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-27", 0 ]
 								}
 
 							}
@@ -584,7 +592,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1295.749878, 533.125305, 56.0, 26.0 ],
+					"patching_rect" : [ 1295.749878, 533.125305, 57.0, 26.0 ],
 					"style" : ""
 				}
 
@@ -856,7 +864,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 453.299316, 333.791321, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "0.5 43."
+									"text" : "0.5 0."
 								}
 
 							}
@@ -4817,7 +4825,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 0.565609, 81.0, 71.0, 22.0 ],
+									"patching_rect" : [ 0.945016, 81.0, 71.0, 22.0 ],
+									"presentation_rect" : [ 0.945016, 0.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "getduration"
 								}
@@ -9838,7 +9847,7 @@
 					"destination" : [ "obj-119", 6 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1152.549194, 569.916565, 1244.499878, 569.916565, 1244.499878, 569.916565, 1342.249878, 569.916565 ],
+					"midpoints" : [ 1152.549194, 569.916565, 1244.499878, 569.916565, 1244.499878, 569.916565, 1307.249878, 569.916565 ],
 					"source" : [ "obj-101", 0 ]
 				}
 
@@ -9902,7 +9911,7 @@
 					"destination" : [ "obj-119", 5 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1152.549194, 503.125305, 1147.749878, 503.125305, 1147.749878, 578.125305, 1301.416504, 578.125305 ],
+					"midpoints" : [ 1152.549194, 503.125305, 1147.749878, 503.125305, 1147.749878, 578.125305, 1272.249878, 578.125305 ],
 					"source" : [ "obj-113", 0 ]
 				}
 
@@ -9921,7 +9930,7 @@
 					"destination" : [ "obj-119", 4 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1152.549194, 446.125305, 1147.749878, 446.125305, 1147.749878, 575.125305, 1260.583252, 575.125305 ],
+					"midpoints" : [ 1152.549194, 446.125305, 1147.749878, 446.125305, 1147.749878, 575.125305, 1237.249878, 575.125305 ],
 					"source" : [ "obj-118", 0 ]
 				}
 
@@ -10116,7 +10125,7 @@
 					"destination" : [ "obj-119", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1097.249878, 363.916565, 1074.499878, 363.916565, 1074.499878, 571.916565, 1138.083252, 571.916565 ],
+					"midpoints" : [ 1097.249878, 363.916565, 1074.499878, 363.916565, 1074.499878, 571.916565, 1132.249878, 571.916565 ],
 					"source" : [ "obj-138", 0 ]
 				}
 
@@ -10667,13 +10676,13 @@
 			}
 , 			{
 				"name" : "vps.texlut.maxpat",
-				"bootpath" : "~/Downloads/VPS-3.patches",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vps.texset.maxpat",
-				"bootpath" : "~/Downloads/VPS-3.patches",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu",
 				"type" : "JSON",
 				"implicit" : 1
 			}

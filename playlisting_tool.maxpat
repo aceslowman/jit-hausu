@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 35.0, 79.0, 811.0, 683.0 ],
+		"rect" : [ 35.0, 79.0, 1211.0, 683.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -70,7 +70,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 489.399994, 21.000011, 63.599998, 27.0 ],
+					"patching_rect" : [ 489.399994, 21.000011, 64.0, 27.0 ],
 					"style" : "",
 					"text" : "export"
 				}
@@ -93,8 +93,7 @@
 					"id" : "obj-29",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 0,
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -105,7 +104,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 666.0, 79.0, 575.0, 683.0 ],
+						"rect" : [ 938.0, 79.0, 308.0, 683.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -135,28 +134,40 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-60",
+									"id" : "obj-10",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "clear" ],
-									"patching_rect" : [ 20.5, 583.0, 43.0, 22.0 ],
+									"outlettype" : [ "write" ],
+									"patching_rect" : [ 69.0, 581.0, 43.0, 22.0 ],
 									"style" : "",
-									"text" : "t clear"
+									"text" : "t write"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"color" : [ 1.0, 0.741176, 0.196078, 1.0 ],
-									"id" : "obj-59",
+									"id" : "obj-8",
 									"maxclass" : "newobj",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 20.5, 554.666626, 51.0, 22.0 ],
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "clear" ],
+									"patching_rect" : [ 85.5, 49.0, 59.666664, 22.0 ],
 									"style" : "",
-									"text" : "r export"
+									"text" : "t b clear"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 95.166664, 429.0, 91.0, 22.0 ],
+									"style" : "",
+									"text" : "regexp ([^//]+$)"
 								}
 
 							}
@@ -167,21 +178,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 126.5, 211.0, 29.5, 22.0 ],
+									"patching_rect" : [ 142.5, 188.0, 29.5, 22.0 ],
 									"style" : "",
 									"text" : "- 1"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-56",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 237.0, 591.0, 34.0, 22.0 ],
-									"style" : "",
-									"text" : "print"
 								}
 
 							}
@@ -192,7 +191,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 143.0, 494.0, 40.0, 22.0 ],
+									"patching_rect" : [ 176.166672, 507.0, 40.0, 22.0 ],
 									"style" : "",
 									"text" : "zl.reg"
 								}
@@ -205,7 +204,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 98.0, 454.0, 36.0, 22.0 ],
+									"patching_rect" : [ 131.166656, 467.0, 36.0, 22.0 ],
 									"style" : "",
 									"text" : "t b l"
 								}
@@ -218,21 +217,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 93.0, 533.0, 41.0, 22.0 ],
+									"patching_rect" : [ 126.166664, 546.0, 41.0, 22.0 ],
 									"style" : "",
 									"text" : "zl.join"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-47",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 168.5, 604.0, 34.0, 22.0 ],
-									"style" : "",
-									"text" : "print"
 								}
 
 							}
@@ -243,7 +230,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 93.0, 565.0, 73.0, 22.0 ],
+									"patching_rect" : [ 126.166664, 581.0, 73.0, 22.0 ],
 									"style" : "",
 									"text" : "insert $1 $2"
 								}
@@ -256,7 +243,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 26.0, 51.0, 29.5, 22.0 ],
+									"patching_rect" : [ 42.0, 49.0, 29.5, 22.0 ],
 									"style" : "",
 									"text" : "t l l"
 								}
@@ -264,12 +251,13 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.447059, 0.823529, 0.772549, 1.0 ],
 									"id" : "obj-4",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 93.0, 604.0, 69.0, 22.0 ],
+									"patching_rect" : [ 126.166664, 646.0, 69.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0
 									}
@@ -287,19 +275,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "dictionary" ],
-									"patching_rect" : [ 26.0, 11.0, 30.0, 30.0 ],
-									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"comment" : "",
-									"id" : "obj-2",
-									"maxclass" : "outlet",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 100.5, 634.0, 30.0, 30.0 ],
+									"patching_rect" : [ 42.0, 17.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -312,7 +288,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 69.5, 143.666656, 51.0, 22.0 ],
+									"patching_rect" : [ 85.5, 17.0, 51.0, 22.0 ],
 									"style" : "",
 									"text" : "r export"
 								}
@@ -325,7 +301,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 26.0, 317.333374, 40.0, 22.0 ],
+									"patching_rect" : [ 42.0, 278.333374, 40.0, 22.0 ],
 									"style" : "",
 									"text" : "zl.reg"
 								}
@@ -338,7 +314,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "bang", "int" ],
-									"patching_rect" : [ 69.5, 181.0, 76.0, 22.0 ],
+									"patching_rect" : [ 85.5, 158.0, 76.0, 22.0 ],
 									"style" : "",
 									"text" : "uzi"
 								}
@@ -351,7 +327,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 126.5, 143.666656, 39.0, 22.0 ],
+									"patching_rect" : [ 142.5, 120.666656, 39.0, 22.0 ],
 									"style" : "",
 									"text" : "zl.len"
 								}
@@ -364,7 +340,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 126.5, 113.666656, 102.0, 22.0 ],
+									"patching_rect" : [ 142.5, 90.666656, 102.0, 22.0 ],
 									"style" : "",
 									"text" : "dict.unpack clips:"
 								}
@@ -377,7 +353,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 85.0, 419.666687, 45.0, 22.0 ],
+									"patching_rect" : [ 82.166664, 381.666687, 45.0, 22.0 ],
 									"style" : "",
 									"text" : "unjoin"
 								}
@@ -390,7 +366,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 26.0, 349.0, 47.0, 22.0 ],
+									"patching_rect" : [ 42.0, 310.0, 47.0, 22.0 ],
 									"style" : "",
 									"text" : "get $1"
 								}
@@ -403,7 +379,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 26.0, 284.0, 40.0, 22.0 ],
+									"patching_rect" : [ 42.0, 245.0, 40.0, 22.0 ],
 									"style" : "",
 									"text" : "t b l"
 								}
@@ -416,7 +392,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 26.0, 257.0, 220.0, 22.0 ],
+									"patching_rect" : [ 42.0, 218.0, 220.0, 22.0 ],
 									"style" : "",
 									"text" : "combine clips[ 0 ]::filename @triggers 1"
 								}
@@ -429,7 +405,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 4,
 									"outlettype" : [ "dictionary", "", "", "" ],
-									"patching_rect" : [ 26.0, 389.666687, 196.0, 22.0 ],
+									"patching_rect" : [ 42.0, 350.666687, 139.5, 22.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0,
 										"parameter_enable" : 0
@@ -442,6 +418,15 @@
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-32", 0 ],
 									"disabled" : 0,
@@ -470,10 +455,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 123.5, 203.0, 27.0, 203.0, 27.0, 572.0, 78.5, 572.0 ],
+									"source" : [ "obj-18", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-52", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 136.0, 207.0, 258.0, 207.0, 258.0, 480.0, 173.5, 480.0 ],
+									"midpoints" : [ 152.0, 184.0, 274.0, 184.0, 274.0, 497.0, 206.666672, 497.0 ],
 									"source" : [ "obj-18", 2 ]
 								}
 
@@ -489,6 +484,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-51", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-2", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-30", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -498,7 +502,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-18", 0 ],
+									"destination" : [ "obj-8", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-24", 0 ]
@@ -552,7 +556,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-51", 0 ],
+									"destination" : [ "obj-2", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-32", 1 ]
@@ -570,28 +574,10 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-47", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-40", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-56", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-40", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 46.0, 153.5, 12.0, 153.5, 12.0, 221.0, 12.0, 221.0, 12.0, 378.0, 35.5, 378.0 ],
+									"midpoints" : [ 62.0, 210.5, 33.0, 210.5, 33.0, 227.0, 33.0, 227.0, 33.0, 341.0, 51.5, 341.0 ],
 									"source" : [ "obj-5", 1 ]
 								}
 
@@ -601,7 +587,7 @@
 									"destination" : [ "obj-15", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 35.5, 76.0, 136.0, 76.0 ],
+									"midpoints" : [ 51.5, 82.0, 152.0, 82.0 ],
 									"source" : [ "obj-5", 0 ]
 								}
 
@@ -655,10 +641,10 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-60", 0 ],
+									"destination" : [ "obj-18", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-59", 0 ]
+									"source" : [ "obj-8", 0 ]
 								}
 
 							}
@@ -667,7 +653,8 @@
 									"destination" : [ "obj-4", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-60", 0 ]
+									"midpoints" : [ 135.666656, 147.0, 22.0, 147.0, 22.0, 637.0, 135.666656, 637.0 ],
+									"source" : [ "obj-8", 1 ]
 								}
 
 							}
@@ -752,89 +739,774 @@
 			}
 , 			{
 				"box" : 				{
-					"clipheight" : 72.5,
+					"clipheight" : 80.0,
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "che_darkroom.mov",
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/turkey_gravy.mov",
 								"filekind" : "moviefile",
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u991001116" ],
+									"out_name" : [ "u972000385" ],
 									"dim" : [ 1, 1 ],
-									"drawto" : [ "" ],
-									"time" : [ 0 ],
 									"engine" : [ "avf" ],
-									"usedstrect" : [ 0 ],
-									"automatic" : [ 0 ],
-									"texture_name" : [ "u350001114" ],
-									"loopreport" : [ 0 ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"loopend" : [ 0 ],
-									"interp" : [ 0 ],
+									"time" : [ 0 ],
 									"adapt" : [ 1 ],
-									"rate" : [ 1.0 ],
 									"framereport" : [ 0 ],
-									"moviefile" : [ "" ],
-									"time_secs" : [ 0.0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
-									"vol" : [ 1.0 ],
-									"unique" : [ 0 ],
-									"output_texture" : [ 0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
 									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
 									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
 									"looppoints" : [ 0, 0 ],
-									"colormode" : [ "argb" ]
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
 								}
 
 							}
 , 							{
-								"filename" : "aer_grateleanin.mov",
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/turkey_attack.mov",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u972000385" ],
+									"dim" : [ 1, 1 ],
+									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
+									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/turkey_whitelady.mov",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u972000385" ],
+									"dim" : [ 1, 1 ],
+									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
+									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/chicken_staring8.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u991001116" ],
+									"out_name" : [ "u972000385" ],
 									"dim" : [ 1, 1 ],
-									"drawto" : [ "" ],
-									"time" : [ 0 ],
 									"engine" : [ "avf" ],
-									"usedstrect" : [ 0 ],
-									"automatic" : [ 0 ],
-									"texture_name" : [ "u350001114" ],
-									"loopreport" : [ 0 ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"loopend" : [ 0 ],
-									"interp" : [ 0 ],
+									"time" : [ 0 ],
 									"adapt" : [ 1 ],
-									"rate" : [ 1.0 ],
 									"framereport" : [ 0 ],
-									"moviefile" : [ "" ],
-									"time_secs" : [ 0.0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
-									"vol" : [ 1.0 ],
-									"unique" : [ 0 ],
-									"output_texture" : [ 0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
 									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
 									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
 									"looppoints" : [ 0, 0 ],
-									"colormode" : [ "argb" ]
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/turkey_mccormick.mov",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u972000385" ],
+									"dim" : [ 1, 1 ],
+									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
+									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/chicken_dance.mov",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u972000385" ],
+									"dim" : [ 1, 1 ],
+									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
+									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/turkey_somekid.mov",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u972000385" ],
+									"dim" : [ 1, 1 ],
+									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
+									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/chicken_run.mov",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u972000385" ],
+									"dim" : [ 1, 1 ],
+									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
+									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/chicken_foxroll.mov",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u972000385" ],
+									"dim" : [ 1, 1 ],
+									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
+									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/turkey_angry.mov",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u972000385" ],
+									"dim" : [ 1, 1 ],
+									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
+									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/chicken_staring7.mov",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u972000385" ],
+									"dim" : [ 1, 1 ],
+									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
+									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/chicken_staring6.mov",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u972000385" ],
+									"dim" : [ 1, 1 ],
+									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
+									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/chicken_staring5.mov",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u972000385" ],
+									"dim" : [ 1, 1 ],
+									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
+									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/chicken_staring4.mov",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u972000385" ],
+									"dim" : [ 1, 1 ],
+									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
+									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/chicken_eating.mov",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u972000385" ],
+									"dim" : [ 1, 1 ],
+									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
+									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/chicken_stare2.mov",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u972000385" ],
+									"dim" : [ 1, 1 ],
+									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
+									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/turkey_table.mov",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u972000385" ],
+									"dim" : [ 1, 1 ],
+									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
+									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/chicken_staring3.mov",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u972000385" ],
+									"dim" : [ 1, 1 ],
+									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
+									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/chicken_shake.mov",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u972000385" ],
+									"dim" : [ 1, 1 ],
+									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
+									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/chicken_stare.mov",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u972000385" ],
+									"dim" : [ 1, 1 ],
+									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
+									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austinslominski/Documents/Max 7/Library/jit-hausu/video/turkey_twitch.mov",
+								"filekind" : "moviefile",
+								"loop" : 1,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u972000385" ],
+									"dim" : [ 1, 1 ],
+									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"usedstrect" : [ 0 ],
+									"texture_name" : [ "u155000383" ],
+									"time_secs" : [ 0.0 ],
+									"loopstart" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"usesrcrect" : [ 0 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"interp" : [ 0 ],
+									"loopend" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"vol" : [ 1.0 ],
+									"colormode" : [ "argb" ],
+									"drawto" : [ "" ],
+									"unique" : [ 0 ],
+									"moviefile" : [ "" ],
+									"rate" : [ 1.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"position" : [ 0.0 ]
 								}
 
 							}
  ]
 					}
 ,
+					"expansion" : "static",
 					"id" : "obj-8",
 					"maxclass" : "jit.playlist",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "", "dictionary" ],
-					"patching_rect" : [ 3.0, 72.599991, 558.0, 147.0 ],
+					"patching_rect" : [ 3.0, 63.0, 624.0, 572.599976 ],
 					"style" : ""
 				}
 
@@ -847,11 +1519,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 18.000011, 221.0, 33.0 ],
+					"patching_rect" : [ 3.0, 10.0, 221.0, 33.0 ],
 					"style" : "",
 					"text" : "jit.hausu playlister",
-					"textjustification" : 1,
-					"underline" : 1
+					"textjustification" : 1
 				}
 
 			}
@@ -861,7 +1532,7 @@
 					"destination" : [ "obj-8", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 357.533356, 65.400002, 12.5, 65.400002 ],
+					"midpoints" : [ 357.533356, 59.400002, 12.5, 59.400002 ],
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -926,22 +1597,142 @@
 					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 551.5, 224.0, 625.0, 224.0, 625.0, 423.200012, 648.5, 423.200012 ],
+					"midpoints" : [ 617.5, 642.0, 632.0, 642.0, 632.0, 423.200012, 648.5, 423.200012 ],
 					"source" : [ "obj-8", 2 ]
 				}
 
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "che_darkroom.mov",
+				"name" : "turkey_gravy.mov",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "aer_grateleanin.mov",
+				"name" : "turkey_attack.mov",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
 				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "turkey_whitelady.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "chicken_staring8.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "turkey_mccormick.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "chicken_dance.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "turkey_somekid.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "chicken_run.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "chicken_foxroll.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "turkey_angry.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "chicken_staring7.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "chicken_staring6.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "chicken_staring5.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "chicken_staring4.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "chicken_eating.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "chicken_stare2.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "turkey_table.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "chicken_staring3.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "chicken_shake.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "chicken_stare.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "turkey_twitch.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "poultry",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/playlists",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
  ],

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 40.0, 242.0, 1210.0, 683.0 ],
+		"rect" : [ 28.0, 79.0, 1210.0, 683.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -5187,7 +5187,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 248.5, 515.0, 142.0, 22.0 ],
 									"style" : "",
-									"text" : "pace_rocket.mov"
+									"text" : "pace_boardslide.mov"
 								}
 
 							}
@@ -5200,7 +5200,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 17.5, 515.0, 142.0, 22.0 ],
 									"style" : "",
-									"text" : "pace_sold3.mov"
+									"text" : "pace_jointspin.mov"
 								}
 
 							}
@@ -6097,7 +6097,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 176.698486, 93.697525, 142.0, 22.0 ],
 					"style" : "",
-					"text" : "pace_rocket.mov"
+					"text" : "pace_boardslide.mov"
 				}
 
 			}
@@ -6122,7 +6122,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 28.049194, 93.697525, 142.0, 22.0 ],
 					"style" : "",
-					"text" : "pace_sold3.mov"
+					"text" : "pace_jointspin.mov"
 				}
 
 			}
@@ -6935,7 +6935,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 0.447841, 84.0, 71.0, 22.0 ],
-									"presentation_rect" : [ 0.447841, 0.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "getduration"
 								}
@@ -13022,12 +13021,6 @@
 				"name" : "xfade.genjit",
 				"bootpath" : "/Users/Shared/Max 7/Examples/jitter-examples/gen",
 				"type" : "gJIT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pace.txt",
-				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/playlists",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

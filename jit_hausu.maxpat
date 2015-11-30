@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 33.0, 79.0, 1212.0, 683.0 ],
+		"rect" : [ 34.0, 79.0, 1212.0, 683.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -229,7 +229,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 2044.5, 59.585327, 574.0, 360.0 ],
+					"patching_rect" : [ 2044.5, 59.585327, 574.0, 380.0 ],
 					"shared" : 1
 				}
 
@@ -250,7 +250,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 110.0, 79.0, 639.0, 279.0 ],
+						"rect" : [ 370.0, 449.0, 786.0, 273.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -277,8 +277,20 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"attr" : "transform_reset",
+									"id" : "obj-2",
+									"maxclass" : "attrui",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 61.0, 147.0, 322.0, 22.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-11",
 									"linecount" : 2,
@@ -286,9 +298,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 16.0, 227.0, 290.0, 35.0 ],
+									"patching_rect" : [ 16.0, 227.0, 309.0, 35.0 ],
 									"style" : "",
-									"text" : "jit.gl.videoplane mainout @depth_enable 0 @layer 0 @blend_enable 1"
+									"text" : "jit.gl.videoplane mainout @depth_enable 0 @layer 0 @blend_enable 1 @transform_reset 2"
 								}
 
 							}
@@ -313,9 +325,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 334.5, 227.0, 292.0, 35.0 ],
+									"patching_rect" : [ 334.5, 227.0, 435.0, 35.0 ],
 									"style" : "",
-									"text" : "jit.gl.videoplane mainout @depth_enable 0 @layer 1 @blend_enable 1 @blend alphaadd"
+									"text" : "jit.gl.videoplane mainout @depth_enable 0 @layer 1 @blend_enable 1 @blend alphaadd @transform_reset 2"
 								}
 
 							}
@@ -391,6 +403,24 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-104", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-13", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-2", 0 ]
 								}
 
 							}
@@ -704,14 +734,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-27",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "" ],
-					"patching_rect" : [ 2044.5, 486.540375, 305.0, 35.0 ],
+					"patching_rect" : [ 2044.5, 486.540375, 492.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.world mainout @displaylink 0 @enable 1 @shared 1 @output_texture 1"
+					"text" : "jit.world mainout @dim 1280 720 @displaylink 0 @enable 1 @shared 1 @output_texture 1"
 				}
 
 			}
@@ -5287,7 +5316,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 248.5, 515.0, 142.0, 22.0 ],
 									"style" : "",
-									"text" : "chicken_staring8.mov"
+									"text" : "chickens.mp4"
 								}
 
 							}
@@ -5300,7 +5329,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 17.5, 515.0, 142.0, 22.0 ],
 									"style" : "",
-									"text" : "turkey_angry.mov"
+									"text" : "chickens.mp4"
 								}
 
 							}
@@ -6197,7 +6226,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 176.698486, 93.697525, 142.0, 22.0 ],
 					"style" : "",
-					"text" : "chicken_staring8.mov"
+					"text" : "chickens.mp4"
 				}
 
 			}
@@ -6222,7 +6251,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 28.049194, 93.697525, 142.0, 22.0 ],
 					"style" : "",
-					"text" : "turkey_angry.mov"
+					"text" : "chickens.mp4"
 				}
 
 			}
@@ -6987,7 +7016,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 320.0, 143.0, 526.0, 346.0 ],
+						"rect" : [ 320.0, 143.0, 728.0, 346.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -7128,7 +7157,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 21.0, 16.0, 30.0, 30.0 ],
+									"patching_rect" : [ 21.0, 8.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -7293,9 +7322,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 348.0, 238.347656, 299.0, 22.0 ],
+									"patching_rect" : [ 348.0, 238.347656, 326.0, 22.0 ],
 									"style" : "",
-									"text" : "jit.movie @vol 0. @output_texture 1 @colormode uyvy"
+									"text" : "jit.movie @vol 0. m2 @output_texture 1 @colormode uyvy"
 								}
 
 							}
@@ -7306,9 +7335,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 21.0, 238.347656, 301.0, 22.0 ],
+									"patching_rect" : [ 21.0, 238.347656, 321.0, 22.0 ],
 									"style" : "",
-									"text" : "jit.movie @vol 0. @output_texture 1 @colormode uyvy"
+									"text" : "jit.movie m1 @vol 0. @output_texture 1 @colormode uyvy"
 								}
 
 							}
@@ -12381,7 +12410,7 @@
 					"destination" : [ "obj-165", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1756.849854, 564.0, 1769.75, 564.0, 1769.75, 588.0, 1853.366577, 588.0 ],
+					"midpoints" : [ 1756.849854, 561.0, 1769.75, 561.0, 1769.75, 588.0, 1853.366577, 588.0 ],
 					"source" : [ "obj-169", 0 ]
 				}
 
@@ -12500,7 +12529,7 @@
 					"destination" : [ "obj-39", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 2197.0, 543.789917, 2054.0, 543.789917 ],
+					"midpoints" : [ 2290.5, 543.789917, 2054.0, 543.789917 ],
 					"source" : [ "obj-27", 1 ]
 				}
 
@@ -13011,7 +13040,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "poultry",
+				"name" : "chickens.txt",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/playlists",
 				"type" : "TEXT",
 				"implicit" : 1

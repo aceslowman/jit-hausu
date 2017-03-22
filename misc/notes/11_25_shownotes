@@ -1,0 +1,15 @@
+This show went well. Definitely better than the Addison Groove show. Source material makes a huge huge huge difference,
+and whether or not I get tired of my material is determined by it. It works well for as long as I'm entertained, after that, I feel like the quality plummets. Each new effect will add some distance to my source material, but I should always
+be on the lookout for some source. I'm relatively picky about source material though... the thing is that quality can't be mixed, you can't have low res and hi-res, amateur shot and pro shot, it needs that continuity and consistency. I want to 
+try playing around with vhs rips, some alpha masking, etc.
+
+Things I want to improve:
+
+Bugs with the xfadeMess control
+Fine tune the color scaling
+Get title cards working (should actually be a priority)
+Really dig into the GL shaders, get some audio reactive stuff
+Get some purely generative, digital visuals. Have some stuff that breaks away from video source material.
+Record some of my own video source material...
+
+GL shaders are going to be a big jump in understanding, and potential. If I can implement some interesting 3D visuals for some sets, interesting and well thought out playlists for others, I would be well off. The playlister I built should work well for me, it'll help me figure out exactly what to use and the order. Maybe add a crossfader in there, so I can test overlays...

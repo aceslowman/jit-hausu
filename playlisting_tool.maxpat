@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1314.0, 56.0, 1320.0, 986.0 ],
+		"rect" : [ 1314.0, 56.0, 1852.0, 986.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,31 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 862.0, 864.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 531.0, 864.0, 150.0, 33.0 ],
+					"style" : "",
+					"text" : "MUTE ALL\n"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-39",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -59,31 +84,6 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 643.0, 728.0, 24.0, 24.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-16",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 476.0, 803.0, 150.0, 60.0 ],
-					"style" : "",
-					"text" : "TODO:\n\nI need to get that second video display working."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 829.0, 661.0, 42.0, 22.0 ],
-					"style" : "",
-					"text" : "s vid2"
 				}
 
 			}
@@ -287,7 +287,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 921.0, 172.0, 251.0, 480.0 ],
+						"rect" : [ 364.0, 155.0, 251.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -413,7 +413,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 50.833332, 249.0, 91.0, 22.0 ],
+									"patching_rect" : [ 112.833328, 250.0, 91.0, 22.0 ],
 									"style" : "",
 									"text" : "regexp ([^//]+$)"
 								}
@@ -604,7 +604,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
+									"destination" : [ "obj-29", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-7", 1 ]
@@ -714,7 +714,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1468.041748, 405.947327, 121.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 631.0, 18.5, 121.0, 31.0 ],
+					"presentation_rect" : [ 680.0, 167.5, 121.0, 31.0 ],
 					"style" : ""
 				}
 
@@ -732,7 +732,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1224.0, 329.101807, 616.0, 51.230103 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 631.0, 612.706177, 565.0, 38.0 ],
+					"presentation_rect" : [ 680.0, 761.706177, 565.0, 38.0 ],
 					"size" : 100.0,
 					"style" : "velvet"
 				}
@@ -1393,7 +1393,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1533.0, 129.141602, 305.0, 192.716812 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 914.756287, 433.0, 281.243713, 177.706192 ],
+					"presentation_rect" : [ 963.756287, 582.0, 281.243713, 177.706192 ],
 					"shared" : 1
 				}
 
@@ -1409,7 +1409,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1224.0, 129.141602, 305.0, 192.716812 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 631.0, 433.0, 281.243713, 177.706192 ],
+					"presentation_rect" : [ 680.0, 582.0, 281.243713, 177.706192 ],
 					"shared" : 1
 				}
 
@@ -1424,7 +1424,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 570.0, 21.000011, 57.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 502.0, 18.5, 57.0, 31.0 ],
+					"presentation_rect" : [ 551.0, 167.5, 57.0, 31.0 ],
 					"style" : "",
 					"text" : "clear"
 				}
@@ -1466,7 +1466,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 489.399994, 21.000011, 64.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 413.399994, 20.5, 64.0, 27.0 ],
+					"presentation_rect" : [ 462.399994, 169.5, 64.0, 27.0 ],
 					"style" : "",
 					"text" : "export"
 				}
@@ -1479,9 +1479,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 439.399994, 10.500011, 48.0, 48.0 ],
+					"patching_rect" : [ 439.399994, 10.0, 48.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 363.399994, 10.0, 48.0, 48.0 ],
+					"presentation_rect" : [ 412.399994, 159.0, 48.0, 48.0 ],
 					"style" : ""
 				}
 
@@ -2204,7 +2204,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 639.0, 74.0, 565.0, 357.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 631.0, 74.0, 565.0, 357.0 ],
+					"presentation_rect" : [ 680.0, 223.0, 565.0, 357.0 ],
 					"shared" : 1
 				}
 
@@ -2468,7 +2468,6 @@
 , 							{
 								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Trains from Above.mov",
 								"filekind" : "moviefile",
-								"selection" : [ 0.718805, 0.896309 ],
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
@@ -3449,7 +3448,7 @@
 					"outlettype" : [ "jit_matrix", "", "dictionary" ],
 					"patching_rect" : [ 3.0, 74.0, 624.0, 572.599976 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 9.0, 74.0, 615.0, 576.706177 ],
+					"presentation_rect" : [ 58.0, 223.0, 615.0, 576.706177 ],
 					"style" : "velvet"
 				}
 
@@ -3464,7 +3463,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 3.0, 10.0, 328.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 3.0, 10.0, 328.0, 47.0 ],
+					"presentation_rect" : [ 52.0, 159.0, 328.0, 47.0 ],
 					"style" : "",
 					"text" : "jit.hausu playlister",
 					"textjustification" : 1
@@ -3971,12 +3970,6 @@
 				"name" : "Above Train 2.mov",
 				"bootpath" : "~/Dropbox/Psych Fest Promo",
 				"type" : "MooV",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "PsychFest",
-				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/playlists",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

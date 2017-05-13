@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 4,
-			"architecture" : "x86",
+			"minor" : 3,
+			"revision" : 3,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 56.0, 1212.0, 706.0 ],
+		"rect" : [ 34.0, 56.0, 1212.0, 710.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 51.750244, 531.0, 142.0, 22.0 ],
+					"style" : "",
+					"text" : "jit.gl.syphonserver"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "jit.pwindow",
@@ -73,19 +86,6 @@
 					"patching_rect" : [ 15.0, 497.0, 154.750244, 22.0 ],
 					"style" : "",
 					"text" : "colorscale"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-27",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 171.750244, 257.0, 22.0, 22.0 ],
-					"style" : ""
 				}
 
 			}
@@ -290,7 +290,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 15.0, 542.0, 180.500488, 35.0 ],
+					"patching_rect" : [ 15.0, 562.0, 178.750244, 35.0 ],
 					"style" : "",
 					"text" : "jit.gl.videoplane mainout @transform_reset 2"
 				}
@@ -307,20 +307,6 @@
 					"patching_rect" : [ 15.0, 377.0, 154.750244, 22.0 ],
 					"style" : "",
 					"text" : "hipass"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.870588, 0.415686, 0.062745, 1.0 ],
-					"id" : "obj-7",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 15.0, 257.0, 154.750244, 22.0 ],
-					"style" : "",
-					"text" : "heathaze"
 				}
 
 			}
@@ -354,14 +340,14 @@
 					"fontname" : "Helvetica Neue Light",
 					"fontsize" : 18.0,
 					"id" : "obj-4",
-					"items" : "6-25-16_test2",
+					"items" : [ "6-25-16_test2", ",", "PsychFest" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 15.0, 184.0, 178.750244, 30.0 ],
-					"prefix" : "Macintosh HD:/Users/austinslominski/Documents/Max 7/Library/jit-hausu/playlists/",
+					"prefix" : "Untitled:/Users/austin/Documents/Max 7/Library/jit-hausu/playlists/",
 					"style" : ""
 				}
 
@@ -401,9 +387,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 4,
-							"architecture" : "x86",
+							"minor" : 3,
+							"revision" : 3,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -872,9 +858,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 4,
-							"architecture" : "x86",
+							"minor" : 3,
+							"revision" : 3,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -1594,6 +1580,7 @@
 									"destination" : [ "obj-16", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"order" : 5,
 									"source" : [ "obj-11", 2 ]
 								}
 
@@ -1604,6 +1591,7 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"midpoints" : [ 81.5, 84.0, 69.0, 84.0, 69.0, 156.0, 91.5, 156.0 ],
+									"order" : 4,
 									"source" : [ "obj-11", 2 ]
 								}
 
@@ -1614,6 +1602,7 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"midpoints" : [ 81.5, 84.0, 69.0, 84.0, 69.0, 225.0, 91.5, 225.0 ],
+									"order" : 3,
 									"source" : [ "obj-11", 2 ]
 								}
 
@@ -1624,6 +1613,7 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"midpoints" : [ 81.5, 84.0, 69.0, 84.0, 69.0, 444.0, 91.5, 444.0 ],
+									"order" : 0,
 									"source" : [ "obj-11", 2 ]
 								}
 
@@ -1634,6 +1624,7 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"midpoints" : [ 81.5, 84.0, 69.0, 84.0, 69.0, 297.0, 91.5, 297.0 ],
+									"order" : 2,
 									"source" : [ "obj-11", 2 ]
 								}
 
@@ -1644,6 +1635,7 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"midpoints" : [ 81.5, 84.0, 69.0, 84.0, 69.0, 372.0, 91.5, 372.0 ],
+									"order" : 1,
 									"source" : [ "obj-11", 2 ]
 								}
 
@@ -2164,9 +2156,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 0,
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -2182,7 +2185,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-14", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
@@ -2254,15 +2257,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-27", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2285,24 +2279,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-6", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-7", 1 ]
 				}
 
 			}
@@ -2344,7 +2320,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "6-25-16_test2",
+				"name" : "PsychFest",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/playlists",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -2363,12 +2339,6 @@
 			}
 , 			{
 				"name" : "tempo-control.maxpat",
-				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/jit.hausu",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "heathaze.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/jit.hausu",
 				"type" : "JSON",
 				"implicit" : 1
@@ -2432,6 +2402,10 @@
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/jit.hausu",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "jit.gl.syphonserver.mxo",
+				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,

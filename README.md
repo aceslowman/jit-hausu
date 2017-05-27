@@ -15,8 +15,6 @@ My usual setup has been a 2012 Macbook Pro, a Korg Nanokontrol2, and a Korg nano
 
 Each component of the kit needs to follow some kind of standard format.
 
-TODO: Create a template file for component pieces.
-
 ### generators/controllers
 
 Not really the right word for it, but there are a few components that will push out material. Generators.
@@ -35,5 +33,7 @@ color generator
 video controller
 
 3D controller
+
+component template
 
 ---

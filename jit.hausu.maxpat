@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 56.0, 1212.0, 710.0 ],
+		"rect" : [ 34.0, 56.0, 1212.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,36 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 46.0, 603.0, 150.0, 33.0 ],
+					"style" : "",
+					"text" : "fences\n"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 15.0, 140.0, 179.0, 22.0 ],
+					"style" : "",
+					"text" : "speed-adjust"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-28",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 51.750244, 531.0, 142.0, 22.0 ],
+					"patching_rect" : [ 51.750244, 500.0, 142.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.gl.syphonserver"
 				}
@@ -70,7 +94,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 171.750244, 497.0, 22.0, 22.0 ],
+					"patching_rect" : [ 171.750244, 466.0, 22.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -83,7 +107,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "bang" ],
-					"patching_rect" : [ 15.0, 497.0, 154.750244, 22.0 ],
+					"patching_rect" : [ 15.0, 466.0, 154.750244, 22.0 ],
 					"style" : "",
 					"text" : "colorscale"
 				}
@@ -130,26 +154,13 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-23",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 171.750244, 377.0, 22.0, 22.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 171.750244, 407.0, 22.0, 22.0 ],
+					"patching_rect" : [ 171.750244, 376.0, 22.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -162,7 +173,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 171.750244, 465.0, 22.0, 22.0 ],
+					"patching_rect" : [ 171.750244, 434.0, 22.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -175,7 +186,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 171.750244, 436.0, 22.0, 22.0 ],
+					"patching_rect" : [ 171.750244, 405.0, 22.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -188,7 +199,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 15.0, 436.0, 154.750244, 22.0 ],
+					"patching_rect" : [ 15.0, 405.0, 154.750244, 22.0 ],
 					"style" : "",
 					"text" : "brightness-curve"
 				}
@@ -216,7 +227,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 15.0, 465.0, 154.750244, 22.0 ],
+					"patching_rect" : [ 15.0, 434.0, 154.750244, 22.0 ],
 					"style" : "",
 					"text" : "framedelay"
 				}
@@ -230,7 +241,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 15.0, 407.0, 154.750244, 22.0 ],
+					"patching_rect" : [ 15.0, 376.0, 154.750244, 22.0 ],
 					"style" : "",
 					"text" : "huerot"
 				}
@@ -275,7 +286,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 15.0, 150.0, 179.0, 32.0 ],
+					"patching_rect" : [ 15.0, 190.0, 179.0, 32.0 ],
 					"style" : "",
 					"text" : "flare.mov",
 					"textjustification" : 1
@@ -290,23 +301,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 15.0, 562.0, 178.750244, 35.0 ],
+					"patching_rect" : [ 15.0, 531.0, 178.750244, 35.0 ],
 					"style" : "",
 					"text" : "jit.gl.videoplane mainout @transform_reset 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.031373, 0.541176, 0.498039, 1.0 ],
-					"id" : "obj-8",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 15.0, 377.0, 154.750244, 22.0 ],
-					"style" : "",
-					"text" : "hipass"
 				}
 
 			}
@@ -346,7 +343,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 15.0, 184.0, 178.750244, 30.0 ],
+					"patching_rect" : [ 15.0, 224.0, 178.750244, 30.0 ],
 					"prefix" : "Untitled:/Users/austin/Documents/Max 7/Library/jit-hausu/playlists/",
 					"style" : ""
 				}
@@ -359,7 +356,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 15.0, 215.0, 178.750244, 22.0 ],
+					"patching_rect" : [ 15.0, 255.0, 178.750244, 22.0 ],
 					"style" : "",
 					"text" : "playback"
 				}
@@ -2086,7 +2083,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 24.5, 183.0, 19.0, 183.0, 19.0, 212.0, 24.5, 212.0 ],
+					"midpoints" : [ 24.5, 223.0, 19.0, 223.0, 19.0, 252.0, 24.5, 252.0 ],
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -2120,7 +2117,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
+					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-15", 0 ]
@@ -2221,15 +2218,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-15", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2282,24 +2270,6 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-8", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-8", 0 ]
-				}
-
-			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "transitions.maxpat",
@@ -2339,12 +2309,6 @@
 			}
 , 			{
 				"name" : "tempo-control.maxpat",
-				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/jit.hausu",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "hipass.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/jit.hausu",
 				"type" : "JSON",
 				"implicit" : 1
@@ -2399,6 +2363,12 @@
 			}
 , 			{
 				"name" : "colorscale.maxpat",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/jit.hausu",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "speed-adjust.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/jit.hausu",
 				"type" : "JSON",
 				"implicit" : 1

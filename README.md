@@ -34,6 +34,6 @@ video controller
 
 3D controller
 
-component template
+~~component template~~
 
 ---

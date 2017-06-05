@@ -1,0 +1,39 @@
+<jittershader name="blank">
+	<description>
+	slice slide
+	</description>
+
+	<param name="time" type="float" default="0.0" />
+	<param name="slices" type="float" default="6.0" />
+	<param name="rollRate" type="float" default="5.0" />
+	<param name="rollAmount" type="float" default="4.0" />
+	<param name="tex0" type="int" default="0" />
+	<language name="glsl" version="2.1">
+		<bind param="time" program="fp" />
+		<bind param="slices" program="fp" />
+		<bind param="rollRate" program="fp" />
+		<bind param="rollAmount" program="fp" />
+		<bind param="tex0" program="fp" />
+		<program name="basic" type="vertex" source="sh.passthrudim.vp.glsl" />
+		<program name="fp" type="fragment">
+<![CDATA[
+			uniform sampler2DRect tex0;			
+			varying vec2          texdim0;
+			varying vec2          texcoord0;
+
+			uniform float         time;        
+			uniform float         slices;       
+			uniform float         rollRate;    
+			uniform float         rollAmount;  
+
+			void main(void) {
+			  	vec2 p = texcoord0.xy;
+				p.x = mod(p.y + sin(rollRate*time),texdim0.x);
+					
+			  
+			  	gl_FragColor = vec4(texture2DRect(tex0, p).rgb, 1.0);
+			}
+]]>			
+		</program>
+	</language>
+</jittershader>

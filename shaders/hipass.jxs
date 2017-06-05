@@ -1,0 +1,75 @@
+<jittershader name="select_and_sort">
+	<description>
+	fragment shader for hipass effect
+	</description>
+
+	<param name="frequency" type="float" default="0.5" />
+	<param name="rolloff" type="float" default="0.5" />
+	<param name="lohi" type="int" default="0" />
+	
+	<param name="tex0" type="int" default="0" />
+	
+	<language name="glsl" version="2.1">	
+	
+		<bind param="frequency" program="fp" />
+		<bind param="rolloff" program="fp" />
+		<bind param="lohi" program="fp" />
+		
+		<bind param="tex0" program="fp" />
+		
+		<program name="vp" type="vertex">
+			<![CDATA[
+			varying vec2 texcoord0;
+			varying vec2 texcoord1;
+			
+			void main(void)
+			{
+				gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
+			
+				texcoord0 = vec2(gl_TextureMatrix[0] * gl_MultiTexCoord0);
+			}
+			]]>
+		</program>
+		<program name="fp" type="fragment">
+<![CDATA[
+			uniform sampler2DRect tex0;
+			
+			varying vec2 texcoord0;
+			
+			uniform float frequency;
+			uniform float rolloff;
+			uniform int lohi;
+	
+			void main()
+			{
+				vec4 color = texture2DRect(tex0,texcoord0);
+				
+				//low pass filter
+				if(lohi == 0){
+					if(color.r > frequency){
+						color.r = color.r - cos(rolloff/color.r);
+					}
+					if(color.g > frequency){
+						color.g = color.g - cos(rolloff/color.g);
+					}
+					if(color.b > frequency){
+						color.b = color.b - cos(rolloff/color.b);
+					}
+				}else{
+				//high pass filter
+					if(color.r < frequency){
+						color.r = color.r - cos(rolloff/color.r);
+					}
+					if(color.g < frequency){
+						color.g = color.g - cos(rolloff/color.g);
+					}
+					if(color.b < frequency){
+						color.b = color.b - cos(rolloff/color.b);
+					}
+				}
+				gl_FragColor = color;
+			}
+]]>			
+		</program>
+	</language>
+</jittershader>

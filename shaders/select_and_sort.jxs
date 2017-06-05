@@ -1,0 +1,110 @@
+<jittershader name="select_and_sort">
+	<description>
+	fragment shader for pixel dragging effect
+	</description>
+
+	<param name="thresh" type="float" default="0.5" />
+	<param name="tolerance" type="float" default="0.5" />
+	<param name="selector" type="int" default="0" />
+	<param name="color" type="vec4" default="1. 1. 1. 1." />
+	<param name="tex0" type="int" default="0" />
+	<param name="tex1" type="int" default="1" />
+	<language name="glsl" version="2.1">	
+		<bind param="thresh" program="fp" />
+		<bind param="tolerance" program="fp" />
+		<bind param="selector" program="fp" />
+		<bind param="color" program="fp" />
+		<bind param="tex0" program="fp" />
+		<bind param="tex1" program="fp" />
+		<program name="vp" type="vertex">
+			<![CDATA[
+			varying vec2 texcoord0;
+			varying vec2 texcoord1;
+			
+			void main(void)
+			{
+				gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
+			
+				texcoord0 = vec2(gl_TextureMatrix[0] * gl_MultiTexCoord0);
+				texcoord1 = vec2(gl_TextureMatrix[1] * gl_MultiTexCoord1);
+			}
+			]]>
+		</program>
+		<program name="fp" type="fragment">
+<![CDATA[
+			uniform sampler2DRect tex0;
+			uniform sampler2DRect tex1;
+			
+			varying vec2 texcoord0;
+			varying vec2 texcoord1;
+			
+			uniform float thresh;
+			uniform float tolerance;
+			uniform int selector;
+			uniform vec4 color;
+			
+			const vec4 lumcoeff = vec4(0.299,0.587,0.114,0.0);
+			
+			void main()
+			{
+				vec4 su, sd, up, down, amount;
+				vec4 input0 = texture2DRect(tex0, texcoord0);
+				vec4 input1 = texture2DRect(tex1, texcoord1);	
+				float selection;
+				
+				if(selector == 0){
+					if(dot(input0,lumcoeff) > thresh){
+						if(texcoord1.x > texcoord0.x-1.0 && texcoord1.y == texcoord0.y){
+							amount.x = input0.x > input1.x ? 1.0 : 0.0;
+							amount.y = input0.y > input1.y ? 1.0 : 0.0;
+							amount.z = input0.z > input1.z ? 1.0 : 0.0;
+							
+							float d = max(1.0, abs(100.0));
+							sd = vec4(1.0 / d);
+							down = input1 + ((input0 - input1) * sd);
+						
+							float u = max(1.0, abs(0.));
+							su = vec4(1.0 / u);
+							up = input1 + ((input0 - input1) * su);
+						
+							gl_FragColor = mix(down,up,amount); 
+						}else{
+							gl_FragColor = vec4(255,255,255,0);       
+						}
+					}else{ 
+						gl_FragColor = input0;
+					}
+				}else if(selector == 1){					
+					if(
+						color.r > input0.r-tolerance && color.r < input0.r+tolerance &&
+					  	color.g > input0.g-tolerance && color.g < input0.g+tolerance &&
+						color.b > input0.b-tolerance && color.b < input0.b+tolerance
+					  ){
+						if(texcoord1.x > texcoord0.x-1.0 && texcoord1.y == texcoord0.y){
+							amount.x = input0.x > input1.x ? 1.0 : 0.0;
+							amount.y = input0.y > input1.y ? 1.0 : 0.0;
+							amount.z = input0.z > input1.z ? 1.0 : 0.0;
+							
+							// calculate slide down
+							float d = max(1.0, abs(100.0));
+							sd = vec4(1.0 / d);
+							down = input1 + ((input0 - input1) * sd);
+						
+							// calculate slide up
+							float u = max(1.0, abs(0.));
+							su = vec4(1.0 / u);
+							up = input1 + ((input0 - input1) * su);
+						
+							gl_FragColor = mix(down,up,amount); 
+						}else{
+							gl_FragColor = vec4(input0.r,input0.g,input0.b,0);       
+						}
+					}else{ 
+						gl_FragColor = input0;
+					}
+				}
+			}
+]]>			
+		</program>
+	</language>
+</jittershader>

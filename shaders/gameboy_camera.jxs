@@ -1,0 +1,36 @@
+<jittershader name="blank">
+	<description>
+	shader program that does absolutely nothing!
+	</description>
+
+	<param name="srcdim" type="vec2" default="1. 1." />
+	<param name="tex0" type="int" default="0" />
+	<language name="glsl" version="2.1">
+		<bind param="nothing" program="fp" />
+		<bind param="tex0" program="fp" />
+		<program name="vp" type="vertex" source="sh.passthrudim.vp.glsl" />
+		<program name="fp" type="fragment">
+<![CDATA[
+			//texture that is being fed in:
+			uniform sampler2DRect tex0;
+			
+			//current coords of the tex
+			varying vec2 texcoord0;
+			
+			//what we feed in
+			uniform float nothing;
+			
+			
+			void main()
+			{
+				
+    			float gray = dot(gl_Color.rgb, vec3(0.299, 0.587, 0.114));
+    
+    			vec4 gCol = vec4(gray, gray, gray, gl_Color.a);
+				
+				gl_FragColor = texture2DRect(tex0,texcoord0)*gCol;
+			}
+]]>			
+		</program>
+	</language>
+</jittershader>

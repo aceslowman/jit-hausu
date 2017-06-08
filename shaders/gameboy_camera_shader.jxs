@@ -1,4 +1,0 @@
-void main() {
-	gl_FragColor = texture2DRect(tex0,texcoord0)*vec4(nothing);
-	
-}

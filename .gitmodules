@@ -1,0 +1,6 @@
+[submodule "components/glsl-max_weave"]
+	path = components/glsl-max_weave
+	url = https://github.com/aceslowman/glsl-max_weave.git
+[submodule "components/glsl-max_shake"]
+	path = components/glsl-max_shake
+	url = https://github.com/aceslowman/glsl-max_shake.git

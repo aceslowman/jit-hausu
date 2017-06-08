@@ -56,7 +56,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "jit_gl_texture", "bang" ],
+					"outlettype" : [ "", "bang" ],
 					"patching_rect" : [ 15.0, 364.0, 179.0, 22.0 ],
 					"style" : "",
 					"text" : "weave"
@@ -2266,13 +2266,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "6-25-16_test2",
-				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/playlists",
-				"patcherrelativepath" : "./playlists",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "xfade.genjit",
 				"bootpath" : "/Users/Shared/Max 7/Examples/jitter-examples/gen",
 				"patcherrelativepath" : "../../../../../Shared/Max 7/Examples/jitter-examples/gen",
@@ -2365,8 +2358,8 @@
 			}
 , 			{
 				"name" : "shake.maxpat",
-				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components",
-				"patcherrelativepath" : "./components",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/glsl-max_shake",
+				"patcherrelativepath" : "./components/glsl-max_shake",
 				"type" : "JSON",
 				"implicit" : 1
 			}

@@ -4,3 +4,6 @@
 [submodule "components/glsl-max_shake"]
 	path = components/glsl-max_shake
 	url = https://github.com/aceslowman/glsl-max_shake.git
+[submodule "components/glsl-max_cellular-noise"]
+	path = components/glsl-max_cellular-noise
+	url = https://github.com/aceslowman/glsl-max_cellular-noise.git

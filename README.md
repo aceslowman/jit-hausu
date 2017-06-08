@@ -1,6 +1,8 @@
 # jit-hausu
 Jitter collection for live performance using video clips, glsl shaders, and opengl graphics.
 
+![Example](/documentation/jit.hausu_capture.png)
+
 ---
 
 My hope with this project is to create a useable modular video kit for my own shows. So far the focus has been on manipulating found video clips, but I'm going to begin adding more openGL components.

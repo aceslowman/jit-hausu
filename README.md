@@ -1,7 +1,7 @@
 # jit-hausu
 Jitter collection for live performance using video clips, glsl shaders, and opengl graphics.
 
-![Example](/documentation/jit.hausu_capture.png)
+![Example](/documentation/jit.hausu_capture_present.png)
 
 ---
 

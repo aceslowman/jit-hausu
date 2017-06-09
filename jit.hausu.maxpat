@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1791.0, -207.0, 1264.0, 706.0 ],
+		"rect" : [ -37.0, -915.0, 1264.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,32 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 209.750244, 586.0, 22.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"patching_rect" : [ 15.0, 586.0, 178.750244, 22.0 ],
+					"style" : "",
+					"text" : "displacement"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "toggle",
@@ -473,8 +499,8 @@
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "jit_gl_texture" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_gl_texture", "jit_matrix" ],
 					"patching_rect" : [ 15.0, 255.0, 178.750244, 22.0 ],
 					"style" : "",
 					"text" : "playback"
@@ -2123,16 +2149,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
-					"order" : 0,
-					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-29", 0 ],
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -2141,6 +2158,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 1 ],
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 1 ],
+					"source" : [ "obj-2", 1 ]
 				}
 
 			}
@@ -2202,6 +2226,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"order" : 0,
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-29", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"order" : 1,
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"midpoints" : [ 287.5, 174.0, 12.0, 174.0, 12.0, 135.0, 24.5, 135.0 ],
 					"source" : [ "obj-31", 0 ]
@@ -2212,6 +2259,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
 					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 2 ],
+					"source" : [ "obj-33", 0 ]
 				}
 
 			}
@@ -2266,6 +2320,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "6-25-16_test2",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/playlists",
+				"patcherrelativepath" : "./playlists",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "xfade.genjit",
 				"bootpath" : "/Users/Shared/Max 7/Examples/jitter-examples/gen",
 				"patcherrelativepath" : "../../../../../Shared/Max 7/Examples/jitter-examples/gen",
@@ -2288,8 +2349,8 @@
 			}
 , 			{
 				"name" : "smear.maxpat",
-				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components",
-				"patcherrelativepath" : "./components",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/glsl-max_smear",
+				"patcherrelativepath" : "./components/glsl-max_smear",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2302,8 +2363,8 @@
 			}
 , 			{
 				"name" : "huerot.maxpat",
-				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components",
-				"patcherrelativepath" : "./components",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/glsl-max_huerot",
+				"patcherrelativepath" : "./components/glsl-max_huerot",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2374,6 +2435,13 @@
 				"name" : "weave.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/glsl-max_weave",
 				"patcherrelativepath" : "./components/glsl-max_weave",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "displacement.maxpat",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/glsl-max_displacement",
+				"patcherrelativepath" : "./components/glsl-max_displacement",
 				"type" : "JSON",
 				"implicit" : 1
 			}

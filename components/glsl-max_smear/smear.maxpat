@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1017.0, 280.0, 280.0, 376.0 ],
+		"rect" : [ 1017.0, 280.0, 605.0, 398.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -63,8 +63,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 101.0, 25.0 ],
 					"style" : "",
-					"text" : "SMEAR",
-					"textjustification" : 0
+					"text" : "SMEAR"
 				}
 
 			}

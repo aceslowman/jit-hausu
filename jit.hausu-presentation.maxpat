@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 85.0, 1224.0, 657.0 ],
+		"rect" : [ 22.0, 85.0, 1224.0, 657.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,21 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 3,
+					"fontsize" : 36.0,
+					"id" : "obj-10",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 953.0, 488.5, 248.0, 47.0 ],
+					"style" : "",
+					"text" : "jit.hausu",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.82 ],
 					"bgmode" : 2,
 					"border" : 1,
@@ -63,13 +78,13 @@
 					"fontname" : "Helvetica",
 					"fontsize" : 16.0,
 					"id" : "obj-11",
-					"linecount" : 6,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 990.0, 477.0, 211.0, 117.0 ],
+					"patching_rect" : [ 990.0, 541.0, 211.0, 54.0 ],
 					"style" : "",
-					"text" : "jit.hausu\n\n\naustin slominski\naceslowman\naceslowman@gmail.com",
+					"text" : "austin slominski\naceslowman\naceslowman@gmail.com",
 					"textjustification" : 2
 				}
 
@@ -335,8 +350,9 @@
 				"box" : 				{
 					"id" : "obj-28",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 525.0, 604.0, 153.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.gl.syphonserver"
@@ -417,13 +433,13 @@
 					"fontname" : "Helvetica Neue Light",
 					"fontsize" : 18.0,
 					"id" : "obj-4",
-					"items" : "playlisting_tool.maxpat",
+					"items" : [ "default", ",", "playlisting_tool.maxpat" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 540.0, 514.0, 178.750244, 29.0 ],
+					"patching_rect" : [ 540.0, 514.0, 178.750244, 30.0 ],
 					"prefix" : "Untitled:/Users/austin/Documents/Max 7/Library/jit-hausu/playlists/",
 					"style" : ""
 				}
@@ -2126,9 +2142,16 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "default",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/playlists",
+				"patcherrelativepath" : "./playlists",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "xfade.genjit",
-				"bootpath" : "C:/ProgramData/Max 7/examples/jitter-examples/gen",
-				"patcherrelativepath" : "../../../../../../ProgramData/Max 7/examples/jitter-examples/gen",
+				"bootpath" : "/Users/Shared/Max 7/Examples/jitter-examples/gen",
+				"patcherrelativepath" : "../../../../../Shared/Max 7/Examples/jitter-examples/gen",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
@@ -2236,6 +2259,10 @@
 				"patcherrelativepath" : "./components/glsl-max_displacement",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "jit.gl.syphonserver.mxo",
+				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,

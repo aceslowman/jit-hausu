@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 654.0, 85.0, 1229.0, 721.0 ],
+		"rect" : [ 34.0, 56.0, 767.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -83,7 +83,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 999.0, 488.5, 202.0, 48.0 ],
+					"patching_rect" : [ 999.0, 488.5, 202.0, 47.0 ],
 					"style" : "",
 					"text" : "jit.hausu",
 					"textjustification" : 2
@@ -121,7 +121,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 999.0, 541.0, 202.0, 62.0 ],
+					"patching_rect" : [ 999.0, 541.0, 202.0, 54.0 ],
 					"style" : "",
 					"text" : "austin slominski\naceslowman\naceslowman@gmail.com",
 					"textjustification" : 2
@@ -387,19 +387,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "jit.pwindow",
-					"name" : "preview",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 540.0, 15.0, 661.0, 450.0 ],
-					"shared" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Helvetica Neue Light",
 					"fontsize" : 18.0,
 					"id" : "obj-13",
@@ -446,13 +433,13 @@
 					"fontname" : "Helvetica Neue Light",
 					"fontsize" : 18.0,
 					"id" : "obj-4",
-					"items" : [ "default", ",", "playlisting_tool.maxpat" ],
+					"items" : [ "default-mine", ",", "playlisting_tool.maxpat" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 540.0, 514.0, 178.750244, 29.0 ],
+					"patching_rect" : [ 540.0, 514.0, 178.750244, 30.0 ],
 					"prefix" : "Untitled:/Users/austin/Documents/Max 7/Library/jit-hausu/playlists/",
 					"style" : ""
 				}
@@ -2146,9 +2133,16 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "default-mine",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/playlists",
+				"patcherrelativepath" : "./playlists",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "xfade.genjit",
-				"bootpath" : "C:/ProgramData/Max 7/examples/jitter-examples/gen",
-				"patcherrelativepath" : "../../../../../../ProgramData/Max 7/examples/jitter-examples/gen",
+				"bootpath" : "/Users/Shared/Max 7/Examples/jitter-examples/gen",
+				"patcherrelativepath" : "../../../../../Shared/Max 7/Examples/jitter-examples/gen",
 				"type" : "gJIT",
 				"implicit" : 1
 			}

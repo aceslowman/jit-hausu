@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 35.0, 602.0, 890.0, 400.0 ],
+		"rect" : [ 346.0, 398.0, 890.0, 400.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -92,8 +92,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 27.0, 167.0, 120.0, 20.0 ],
 					"style" : "",
-					"text" : "enable lighting",
-					"textjustification" : 0
+					"text" : "enable lighting"
 				}
 
 			}
@@ -108,8 +107,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 27.0, 137.0, 84.0, 20.0 ],
 					"style" : "",
-					"text" : "normalize",
-					"textjustification" : 0
+					"text" : "normalize"
 				}
 
 			}
@@ -124,8 +122,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 27.0, 107.0, 120.0, 20.0 ],
 					"style" : "",
-					"text" : "smooth shading",
-					"textjustification" : 0
+					"text" : "smooth shading"
 				}
 
 			}

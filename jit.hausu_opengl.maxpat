@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 56.0, 767.0, 706.0 ],
+		"rect" : [ 634.0, 85.0, 1244.0, 920.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "jit.pwindow",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 540.0, 120.0, 645.0, 465.0 ],
+					"shared" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 2,
 					"border" : 1,
 					"clickthrough" : 0,
@@ -48,9 +60,10 @@
 					"maxclass" : "bpatcher",
 					"name" : "rendering.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 270.0, 600.0, 405.0, 75.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 540.0, 18.5, 405.0, 90.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -70,7 +83,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 15.0, 645.0, 240.0, 165.0 ],
+					"patching_rect" : [ 15.0, 645.0, 240.0, 195.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -83,7 +96,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 999.0, 488.5, 202.0, 47.0 ],
+					"patching_rect" : [ 1005.0, 585.0, 202.0, 48.0 ],
 					"style" : "",
 					"text" : "jit.hausu",
 					"textjustification" : 2
@@ -121,7 +134,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 999.0, 541.0, 202.0, 54.0 ],
+					"patching_rect" : [ 1005.0, 630.0, 202.0, 62.0 ],
 					"style" : "",
 					"text" : "austin slominski\naceslowman\naceslowman@gmail.com",
 					"textjustification" : 2
@@ -302,7 +315,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 720.0, 528.0, 178.750244, 22.0 ],
+					"patching_rect" : [ 270.0, 746.0, 178.750244, 22.0 ],
 					"style" : "",
 					"text" : "freeze-flicker"
 				}
@@ -317,7 +330,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 906.0, 600.0, 72.0, 22.0 ],
+					"patching_rect" : [ 456.0, 818.0, 72.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -329,7 +342,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 906.0, 576.0, 72.0, 22.0 ],
+					"patching_rect" : [ 456.0, 794.0, 72.0, 22.0 ],
 					"style" : "",
 					"text" : "r tempo"
 				}
@@ -343,7 +356,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 980.0, 600.0, 22.0, 22.0 ],
+					"patching_rect" : [ 530.0, 818.0, 22.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -355,7 +368,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 906.0, 504.0, 72.0, 72.0 ],
+					"patching_rect" : [ 456.0, 722.0, 72.0, 72.0 ],
 					"style" : ""
 				}
 
@@ -367,7 +380,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 906.0, 480.0, 72.0, 22.0 ],
+					"patching_rect" : [ 456.0, 698.0, 72.0, 22.0 ],
 					"style" : "",
 					"text" : "r beat"
 				}
@@ -379,7 +392,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 720.0, 576.0, 179.0, 22.0 ],
+					"patching_rect" : [ 270.0, 794.0, 179.0, 22.0 ],
 					"style" : "",
 					"text" : "speed-adjust"
 				}
@@ -396,9 +409,9 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 540.0, 480.0, 179.0, 32.0 ],
+					"patching_rect" : [ 1035.0, 15.0, 179.0, 32.0 ],
 					"style" : "",
-					"text" : "flare.mov",
+					"text" : "sunflower.mp4",
 					"textjustification" : 1
 				}
 
@@ -409,7 +422,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 720.0, 600.0, 178.750244, 22.0 ],
+					"patching_rect" : [ 270.0, 818.0, 178.750244, 22.0 ],
 					"style" : "",
 					"text" : "tempo-control"
 				}
@@ -421,7 +434,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 720.0, 552.0, 178.750244, 22.0 ],
+					"patching_rect" : [ 270.0, 770.0, 178.750244, 22.0 ],
 					"style" : "",
 					"text" : "xfade"
 				}
@@ -439,7 +452,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 540.0, 514.0, 178.750244, 30.0 ],
+					"patching_rect" : [ 1035.0, 49.0, 178.750244, 29.0 ],
 					"prefix" : "Untitled:/Users/austin/Documents/Max 7/Library/jit-hausu/playlists/",
 					"style" : ""
 				}
@@ -452,7 +465,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "jit_matrix" ],
-					"patching_rect" : [ 540.0, 545.0, 178.750244, 22.0 ],
+					"patching_rect" : [ 1035.0, 80.0, 178.750244, 22.0 ],
 					"style" : "",
 					"text" : "playback"
 				}
@@ -879,7 +892,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 720.0, 504.0, 178.750244, 22.0 ],
+					"patching_rect" : [ 270.0, 722.0, 178.750244, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1977,7 +1990,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 720.0, 480.0, 178.750244, 22.0 ],
+					"patching_rect" : [ 270.0, 698.0, 178.750244, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2003,7 +2016,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"midpoints" : [ 549.5, 513.0, 537.0, 513.0, 537.0, 540.0, 549.5, 540.0 ],
+					"midpoints" : [ 1044.5, 48.0, 1032.0, 48.0, 1032.0, 75.0, 1044.5, 75.0 ],
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -2011,14 +2024,22 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
+					"midpoints" : [ 279.5, 597.0, 525.0, 597.0, 525.0, 12.0, 549.5, 12.0 ],
 					"source" : [ "obj-15", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 549.5, 575.0, 528.0, 575.0, 528.0, 0.0, 24.5, 0.0 ],
+					"midpoints" : [ 1044.5, 107.0, 957.0, 107.0, 957.0, 0.0, 24.5, 0.0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -2026,6 +2047,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 1 ],
+					"midpoints" : [ 1204.250244, 105.0, 1224.0, 105.0, 1224.0, 0.0, 522.0, 0.0, 522.0, 519.0, 500.5, 519.0 ],
 					"source" : [ "obj-2", 1 ]
 				}
 
@@ -2033,7 +2055,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
-					"midpoints" : [ 915.5, 504.0, 915.5, 504.0 ],
+					"midpoints" : [ 465.5, 722.0, 465.5, 722.0 ],
 					"source" : [ "obj-27", 0 ]
 				}
 
@@ -2041,7 +2063,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"midpoints" : [ 989.5, 621.0, 727.0, 621.0, 727.0, 591.0, 729.5, 591.0 ],
+					"midpoints" : [ 539.5, 839.0, 277.0, 839.0, 277.0, 809.0, 279.5, 809.0 ],
 					"source" : [ "obj-31", 0 ]
 				}
 
@@ -2049,7 +2071,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
-					"midpoints" : [ 915.5, 600.0, 915.5, 600.0 ],
+					"midpoints" : [ 465.5, 818.0, 465.5, 818.0 ],
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -2065,7 +2087,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
-					"midpoints" : [ 629.375122, 575.0, 720.0, 575.0, 720.0, 540.0, 709.250244, 540.0 ],
+					"midpoints" : [ 1124.375122, 110.0, 1215.0, 110.0, 1215.0, 75.0, 1204.250244, 75.0 ],
 					"source" : [ "obj-4", 1 ]
 				}
 
@@ -2133,16 +2155,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "default-mine",
-				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/playlists",
-				"patcherrelativepath" : "./playlists",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "xfade.genjit",
-				"bootpath" : "/Users/Shared/Max 7/Examples/jitter-examples/gen",
-				"patcherrelativepath" : "../../../../../Shared/Max 7/Examples/jitter-examples/gen",
+				"bootpath" : "C:/ProgramData/Max 7/examples/jitter-examples/gen",
+				"patcherrelativepath" : "../../../../../../ProgramData/Max 7/examples/jitter-examples/gen",
 				"type" : "gJIT",
 				"implicit" : 1
 			}

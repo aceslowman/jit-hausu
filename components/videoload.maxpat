@@ -484,6 +484,27 @@
 			}
 , 			{
 				"box" : 				{
+					"coll_data" : 					{
+						"count" : 4,
+						"data" : [ 							{
+								"key" : 1,
+								"value" : [ "sunflower.mp4" ]
+							}
+, 							{
+								"key" : 2,
+								"value" : [ "bball.mov" ]
+							}
+, 							{
+								"key" : 3,
+								"value" : [ "chickens.mp4" ]
+							}
+, 							{
+								"key" : 4,
+								"value" : [ "dust.mp4" ]
+							}
+ ]
+					}
+,
 					"id" : "obj-29",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -491,7 +512,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 167.666672, 338.0, 174.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0
+						"embed" : 1
 					}
 ,
 					"style" : "",
@@ -631,6 +652,27 @@
 			}
 , 			{
 				"box" : 				{
+					"coll_data" : 					{
+						"count" : 4,
+						"data" : [ 							{
+								"key" : 1,
+								"value" : [ "sunflower.mp4" ]
+							}
+, 							{
+								"key" : 2,
+								"value" : [ "bball.mov" ]
+							}
+, 							{
+								"key" : 3,
+								"value" : [ "chickens.mp4" ]
+							}
+, 							{
+								"key" : 4,
+								"value" : [ "dust.mp4" ]
+							}
+ ]
+					}
+,
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -638,7 +680,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 54.0, 158.0, 124.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0
+						"embed" : 1
 					}
 ,
 					"style" : "",

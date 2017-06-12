@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 346.0, 398.0, 891.0, 400.0 ],
+		"rect" : [ 303.0, 189.0, 891.0, 400.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -292,6 +292,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 60.0, 30.0, 100.0, 22.0 ],
 					"prefix" : "C:/Users/aceslowman/Documents/Max 7/Library/jit-hausu/assets/models/",
+					"prefix_mode" : 2,
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 49.0, 239.0, 22.0 ],
 					"style" : ""
@@ -306,9 +307,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.5, 252.0, 145.0, 25.0 ],
+					"patching_rect" : [ 15.5, 252.0, 145.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 0.0, 149.0, 25.0 ],
+					"presentation_rect" : [ 1.0, 0.0, 149.0, 24.0 ],
 					"style" : "",
 					"text" : "MODEL LOADER"
 				}
@@ -321,7 +322,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 572.5, 270.0, 74.0, 20.0 ],
+					"patching_rect" : [ 315.0, 233.0, 74.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 27.0, 239.0, 20.0 ],
 					"style" : "",

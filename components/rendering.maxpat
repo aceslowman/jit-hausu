@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1013.0, 437.0, 434.0, 285.0 ],
+		"rect" : [ 527.0, 228.0, 434.0, 285.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 34.0, 15.0, 60.0, 22.0 ],
+					"style" : "",
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 2,
 					"id" : "obj-14",
 					"maxclass" : "comment",
@@ -59,7 +72,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 150.0, 105.0, 24.0, 24.0 ],
+					"patching_rect" : [ 120.0, 105.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 126.0, 30.0, 22.0, 22.0 ],
 					"style" : ""
@@ -73,7 +86,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 150.0, 135.0, 61.0, 22.0 ],
+					"patching_rect" : [ 120.0, 135.0, 61.0, 22.0 ],
 					"style" : "",
 					"text" : "visible $1"
 				}
@@ -99,7 +112,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 255.0, 15.0, 150.0, 20.0 ],
+					"patching_rect" : [ 146.0, 105.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 25.0, 31.0, 90.0, 20.0 ],
 					"style" : "",
@@ -156,9 +169,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 15.0, 145.0, 25.0 ],
+					"patching_rect" : [ 99.0, 15.0, 145.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 0.0, 149.0, 25.0 ],
+					"presentation_rect" : [ 1.0, 0.0, 149.0, 24.0 ],
 					"style" : "",
 					"text" : "RENDERING"
 				}
@@ -171,9 +184,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "" ],
-					"patching_rect" : [ 60.0, 60.0, 323.0, 22.0 ],
+					"patching_rect" : [ 60.0, 60.0, 382.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.world mainout @enable 1 @shared 1 @output_texture 1"
+					"text" : "jit.world mainout @enable 1 @shared 1 @output_texture 1 @visible 0"
 				}
 
 			}
@@ -196,6 +209,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-5", 1 ],
 					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}

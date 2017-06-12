@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 274.0, 105.0, 827.0, 779.0 ],
+		"rect" : [ 995.0, 85.0, 890.0, 920.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,18 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 105.0, 332.0, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-27",
 					"linecount" : 2,
@@ -516,7 +528,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "coll playlist"
+					"text" : "coll playlist default.txt"
 				}
 
 			}
@@ -594,7 +606,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 213.0, 433.0, 180.5, 22.0 ],
 					"style" : "",
-					"text" : "rocky_curry3.mov"
+					"text" : "sunflower.mp4"
 				}
 
 			}
@@ -620,7 +632,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 54.0, 433.0, 150.0, 22.0 ],
 					"style" : "",
-					"text" : "rd_oceanwaves.mov"
+					"text" : "dust.mp4"
 				}
 
 			}
@@ -1068,6 +1080,15 @@
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
 					"midpoints" : [ 123.5, 228.0, 123.5, 228.0 ],
+					"order" : 1,
+					"source" : [ "obj-5", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 1 ],
+					"order" : 0,
 					"source" : [ "obj-5", 1 ]
 				}
 

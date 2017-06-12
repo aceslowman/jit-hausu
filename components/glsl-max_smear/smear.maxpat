@@ -76,7 +76,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 157.0, 87.750244, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 255.0, 30.0, 75.0, 22.0 ],
+					"presentation_rect" : [ 165.0, 75.0, 69.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -121,7 +121,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 487.257446, 16.0, 93.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 258.0, 5.0, 69.0, 20.0 ],
+					"presentation_rect" : [ 165.0, 54.0, 69.0, 20.0 ],
 					"style" : "",
 					"text" : "context",
 					"textjustification" : 1

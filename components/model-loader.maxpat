@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 346.0, 398.0, 890.0, 400.0 ],
+		"rect" : [ 346.0, 398.0, 891.0, 400.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,50 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontface" : 2,
+					"id" : "obj-7",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 585.0, 43.0, 120.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 27.0, 165.0, 120.0, 20.0 ],
+					"style" : "",
+					"text" : "enable lighting"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 405.0, 285.0, 94.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend drawto"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"items" : [ "vid-ctx", ",", "3d-ctx", ",", "mainout" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 405.0, 252.0, 100.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 150.0, 167.0, 75.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"attr" : "material_mode",
 					"id" : "obj-29",
@@ -90,9 +134,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 570.0, 28.0, 120.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 27.0, 167.0, 120.0, 20.0 ],
+					"presentation_rect" : [ 150.0, 145.0, 75.0, 20.0 ],
 					"style" : "",
-					"text" : "enable lighting"
+					"text" : "context"
 				}
 
 			}
@@ -217,9 +261,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 255.0, 285.0, 117.0, 22.0 ],
+					"patching_rect" : [ 210.0, 330.0, 109.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.handle mainout"
+					"text" : "jit.gl.handle vid-ctx"
 				}
 
 			}
@@ -246,7 +290,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 60.0, 21.0, 100.0, 22.0 ],
+					"patching_rect" : [ 60.0, 30.0, 100.0, 22.0 ],
 					"prefix" : "C:/Users/aceslowman/Documents/Max 7/Library/jit-hausu/assets/models/",
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 49.0, 239.0, 22.0 ],
@@ -307,9 +351,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 60.0, 209.0, 340.0, 22.0 ],
+					"patching_rect" : [ 60.0, 209.0, 332.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.model mainout @file YoungWarrior.stl @material_mode 2"
+					"text" : "jit.gl.model vid-ctx @file YoungWarrior.stl @material_mode 0"
 				}
 
 			}
@@ -326,6 +370,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"order" : 1,
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"order" : 0,
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
@@ -405,6 +465,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"midpoints" : [ 455.0, 275.249756, 414.5, 275.249756 ],
+					"source" : [ "obj-6", 1 ]
 				}
 
 			}

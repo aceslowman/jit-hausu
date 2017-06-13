@@ -322,16 +322,15 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 18.0,
 					"id" : "obj-69",
 					"maxclass" : "number",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 226.5, 280.0, 58.0, 29.0 ],
+					"patching_rect" : [ 226.5, 280.0, 46.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 105.0, 60.0, 60.0, 29.0 ],
+					"presentation_rect" : [ 105.0, 60.0, 48.0, 22.0 ],
 					"style" : "default"
 				}
 
@@ -563,7 +562,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 2.166748, 144.0, 25.0 ],
+					"patching_rect" : [ -0.250244, 0.0, 144.0, 25.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 101.0, 25.0 ],
 					"style" : "",

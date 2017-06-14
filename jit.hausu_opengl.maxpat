@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1627.0, 102.0, 1264.0, 929.0 ],
+		"rect" : [ 1627.0, 102.0, 1177.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -51,7 +51,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 810.0, 765.0, 240.0, 194.0 ],
+					"patching_rect" : [ 810.0, 645.0, 240.0, 284.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -195,34 +195,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-21",
-					"linecount" : 2,
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 270.0, 822.5, 240.0, 35.0 ],
-					"style" : "",
-					"text" : "jit.gl.videoplane mainout @transform_reset 2 @enable 1 @layer 0 @depth_enable 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-20",
-					"linecount" : 2,
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "jit_gl_texture", "", "" ],
-					"patching_rect" : [ 270.0, 405.0, 240.0, 35.0 ],
-					"style" : "",
-					"text" : "jit.gl.node mainout @name vid-ctx @enable 1 @capture 1 @adapt 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-9",
 					"linecount" : 2,
 					"maxclass" : "newobj",
@@ -270,7 +242,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 525.0, 90.0, 540.0, 390.0 ],
+					"patching_rect" : [ 525.0, 90.0, 630.0, 390.0 ],
 					"shared" : 1
 				}
 
@@ -348,7 +320,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 270.0, 751.0, 240.0, 60.0 ],
+					"patching_rect" : [ 810.0, 1248.0, 240.0, 60.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -407,7 +379,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 270.0, 450.0, 240.0, 210.0 ],
+					"patching_rect" : [ 810.0, 947.0, 240.0, 210.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -470,7 +442,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 270.0, 675.0, 240.0, 60.0 ],
+					"patching_rect" : [ 810.0, 1172.0, 240.0, 60.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -2090,7 +2062,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-3", 0 ],
+					"midpoints" : [ 819.5, 1310.0, 795.0, 1310.0, 795.0, 636.0, 819.5, 636.0 ],
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -2105,14 +2078,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 279.5, 444.0, 279.5, 444.0 ],
-					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"midpoints" : [ 24.5, 333.0, 24.5, 333.0 ],
 					"source" : [ "obj-24", 0 ]
@@ -2121,18 +2086,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"color" : [ 1.0, 0.337255, 0.619608, 1.0 ],
-					"destination" : [ "obj-15", 1 ],
-					"midpoints" : [ 245.5, 342.0, 267.0, 342.0, 267.0, 747.0, 500.5, 747.0 ],
-					"source" : [ "obj-24", 1 ]
+					"destination" : [ "obj-26", 0 ],
+					"midpoints" : [ 1029.5, 48.0, 1029.5, 48.0 ],
+					"source" : [ "obj-28", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"midpoints" : [ 1029.5, 48.0, 1029.5, 48.0 ],
-					"source" : [ "obj-28", 0 ]
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -2178,7 +2141,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-46", 0 ],
-					"midpoints" : [ 279.5, 663.0, 279.5, 663.0 ],
+					"midpoints" : [ 819.5, 1160.0, 819.5, 1160.0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -2308,6 +2271,13 @@
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components",
 				"patcherrelativepath" : "./components",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "default-mine",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/playlists",
+				"patcherrelativepath" : "./playlists",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

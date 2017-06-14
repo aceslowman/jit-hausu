@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1238.0, 85.0, 647.0, 397.0 ],
+		"rect" : [ 1638.0, 172.0, 647.0, 397.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -249,9 +249,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 60.0, 330.0, 96.0, 25.0 ],
+					"patching_rect" : [ 60.0, 330.0, 96.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 96.0, 25.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 96.0, 24.0 ],
 					"style" : "",
 					"text" : "CAMERA"
 				}

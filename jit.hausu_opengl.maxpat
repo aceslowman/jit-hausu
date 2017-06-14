@@ -38,6 +38,23 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 3,
+					"fontname" : "Helvetica",
+					"fontsize" : 16.0,
+					"id" : "obj-5",
+					"linecount" : 18,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 955.0, 589.0, 200.0, 356.0 ],
+					"style" : "",
+					"text" : "EFFECTS\nsaturation\nhuerot\nframe-delay\nsharpen\nbrightness-curve\nsmear\nshake\nweave\ndisplacement\n\nSHADERS\ncel-shading\n\nGENERATOR\ntext\nvideo\nmodel-loader\n",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.71 ],
 					"bgmode" : 2,
 					"border" : 1,
@@ -51,7 +68,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 870.0, 735.0, 240.0, 304.0 ],
+					"patching_rect" : [ 525.0, 900.0, 240.0, 304.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -145,7 +162,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 825.0, 660.0, 87.0, 34.0 ],
+					"patching_rect" : [ 810.0, 660.0, 102.0, 34.0 ],
 					"style" : "",
 					"text" : "Turn on/off all components"
 				}
@@ -2052,7 +2069,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 1 ],
-					"midpoints" : [ 24.5, 333.0, 2.0, 333.0, 2.0, 1302.0, 522.0, 1302.0, 522.0, 1179.0, 500.5, 1179.0 ],
+					"midpoints" : [ 24.5, 333.0, 2.0, 333.0, 2.0, 1302.0, 517.0, 1302.0, 517.0, 1179.0, 500.5, 1179.0 ],
 					"source" : [ "obj-24", 0 ]
 				}
 

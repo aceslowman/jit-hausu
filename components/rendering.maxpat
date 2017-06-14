@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 461.0, 671.0, 475.0, 282.0 ],
+		"rect" : [ 303.0, 199.0, 821.0, 735.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,20 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "jit.pwindow",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 34.0, 270.0, 630.0, 390.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1.0, 60.0, 630.0, 390.0 ],
+					"shared" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -57,7 +71,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 120.0, 225.0, 285.5, 22.0 ],
+					"patching_rect" : [ 120.0, 225.0, 286.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -227,19 +241,6 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "Preview out",
-					"id" : "obj-10",
-					"index" : 1,
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 34.0, 225.0, 30.0, 30.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontface" : 3,
 					"fontsize" : 16.0,
 					"id" : "obj-1",
@@ -331,8 +332,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"midpoints" : [ 43.5, 174.0, 43.5, 174.0 ],
+					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-5", 0 ]
 				}
 

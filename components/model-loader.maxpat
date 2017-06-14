@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1433.0, 291.0, 891.0, 606.0 ],
+		"rect" : [ 512.0, 186.0, 891.0, 606.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -458,7 +458,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-6",
-					"items" : [ "vid-ctx", ",", "3d-ctx", ",", "mainout", ",", "text", "some-new-ctx", ",", "text", "some-new-ctx", ",", "some-new-ctx", ",", "some-new-ct" ],
+					"items" : [ "mainout", ",", "vid-ctx", ",", "3d-ctx" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -701,9 +701,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 75.0, 249.0, 145.0, 24.0 ],
+					"patching_rect" : [ 75.0, 249.0, 145.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 0.0, 149.0, 24.0 ],
+					"presentation_rect" : [ 1.0, 0.0, 149.0, 25.0 ],
 					"style" : "",
 					"text" : "MODEL LOADER"
 				}

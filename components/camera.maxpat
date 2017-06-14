@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1638.0, 172.0, 647.0, 397.0 ],
+		"rect" : [ 588.0, 220.0, 647.0, 397.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 73.0, 180.0, 52.0, 22.0 ],
+					"style" : "",
+					"text" : "r ctx-list"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
@@ -249,9 +262,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 60.0, 330.0, 96.0, 24.0 ],
+					"patching_rect" : [ 60.0, 330.0, 96.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 96.0, 24.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 96.0, 25.0 ],
 					"style" : "",
 					"text" : "CAMERA"
 				}
@@ -573,6 +586,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-109", 1 ],
 					"source" : [ "obj-111", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-84", 0 ],
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}

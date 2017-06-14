@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1652.0, 379.0, 640.0, 480.0 ],
+		"rect" : [ 452.0, 146.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -177,7 +177,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 195.0, 586.5, 105.0, 49.0 ],
+					"patching_rect" : [ 195.0, 586.5, 105.0, 50.0 ],
 					"style" : "",
 					"text" : "append mainout, append vid-ctx, append 3d-ctx"
 				}
@@ -330,7 +330,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 390.0, 240.0, 47.0 ],
+					"patching_rect" : [ 30.0, 390.0, 240.0, 48.0 ],
 					"style" : "",
 					"text" : "when any new node is created, APPEND the name of the new subcontext (node name) to all context umenus"
 				}
@@ -576,9 +576,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 30.0, 96.0, 24.0 ],
+					"patching_rect" : [ 30.0, 30.0, 96.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 96.0, 24.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 96.0, 25.0 ],
 					"style" : "",
 					"text" : "NODE"
 				}
@@ -592,9 +592,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 315.0, 345.0, 300.0, 35.0 ],
+					"patching_rect" : [ 315.0, 345.0, 304.0, 36.0 ],
 					"style" : "",
-					"text" : "jit.gl.videoplane mainout @transform_reset 2 @enable 1 @layer 0 @depth_enable 0"
+					"text" : "jit.gl.videoplane mainout @transform_reset 2 @enable 1 @layer 0 @depth_enable 0 @blend_enable 1"
 				}
 
 			}
@@ -633,7 +633,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_gl_texture", "", "" ],
-					"patching_rect" : [ 30.0, 300.0, 240.0, 35.0 ],
+					"patching_rect" : [ 30.0, 300.0, 240.0, 36.0 ],
 					"style" : "",
 					"text" : "jit.gl.node mainout @name vid-ctx @enable 1 @capture 1 @adapt 1"
 				}
@@ -833,8 +833,18 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"midpoints" : [ 414.5, 240.0, 15.0, 240.0, 15.0, 294.0, 39.5, 294.0 ],
+					"order" : 1,
+					"source" : [ "obj-51", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"midpoints" : [ 414.5, 330.0, 324.5, 330.0 ],
+					"order" : 0,
 					"source" : [ "obj-51", 0 ]
 				}
 

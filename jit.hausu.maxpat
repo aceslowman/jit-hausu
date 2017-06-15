@@ -175,7 +175,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @save 2",
-					"varname" : "u387001654"
+					"varname" : "u410000370"
 				}
 
 			}

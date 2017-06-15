@@ -38,6 +38,36 @@
 		"subpatcher_template" : "jit.hausu slab template",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-65",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 465.0, 90.0, 58.0, 22.0 ],
+					"restore" : 					{
+						"color-a" : [ 0.0 ],
+						"color-b" : [ 0.0 ],
+						"color-g" : [ 0.0 ],
+						"color-r" : [ 0.0 ],
+						"context" : [ 1 ],
+						"dac-onoff" : [ 1 ],
+						"dirx" : [ 0.0 ],
+						"diry" : [ 0.0 ],
+						"onoff" : [ 0 ],
+						"onoff-midi" : [ 0 ],
+						"scale" : [ 0.031 ],
+						"shake-midi" : [ 2 ],
+						"zoom" : [ 0.0 ]
+					}
+,
+					"style" : "",
+					"text" : "autopattr",
+					"varname" : "u537001175"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "newobj",
 					"numinlets" : 0,

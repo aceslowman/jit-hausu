@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 642.0, 345.0, 600.0, 514.0 ],
+		"rect" : [ 642.0, 345.0, 600.0, 304.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -43,7 +43,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 180.0, 30.0, 58.0, 22.0 ],
+					"patching_rect" : [ 405.0, 225.0, 58.0, 22.0 ],
 					"restore" : 					{
 						"ambient" : [ 0.0, 1.0, 1.0, 1.0, 0.5, 1.0, 0.5 ],
 						"lightposx" : [ 0.0 ],
@@ -54,7 +54,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u890003684"
+					"varname" : "u467001085"
 				}
 
 			}
@@ -65,7 +65,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 452.0, 203.0, 128.0, 20.0 ],
+					"patching_rect" : [ 422.0, 68.0, 128.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 192.0, 240.0, 20.0 ],
 					"style" : "",
@@ -81,7 +81,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 287.0, 203.0, 128.0, 20.0 ],
+					"patching_rect" : [ 257.0, 68.0, 128.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 83.0, 240.0, 20.0 ],
 					"style" : "",
@@ -99,7 +99,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 219.0, 235.0, 50.0, 22.0 ],
+					"patching_rect" : [ 189.0, 100.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 90.0, 49.0, 50.0, 22.0 ],
 					"style" : "",
@@ -116,7 +116,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 161.0, 235.0, 50.0, 22.0 ],
+					"patching_rect" : [ 131.0, 100.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 45.0, 49.0, 46.0, 22.0 ],
 					"style" : "",
@@ -133,7 +133,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 103.0, 235.0, 50.0, 22.0 ],
+					"patching_rect" : [ 73.0, 100.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 49.0, 45.0, 22.0 ],
 					"style" : "",
@@ -149,7 +149,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 452.0, 225.0, 128.0, 32.0 ],
+					"patching_rect" : [ 422.0, 90.0, 128.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 214.0, 240.0, 85.0 ],
 					"saturation" : 1.0,
@@ -165,7 +165,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 287.0, 225.0, 128.0, 32.0 ],
+					"patching_rect" : [ 257.0, 90.0, 128.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 105.0, 240.0, 85.0 ],
 					"saturation" : 1.0,
@@ -180,7 +180,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 452.0, 285.0, 144.0, 22.0 ],
+					"patching_rect" : [ 422.0, 150.0, 144.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend AmbientMaterial"
 				}
@@ -193,7 +193,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 287.0, 285.0, 148.0, 22.0 ],
+					"patching_rect" : [ 257.0, 150.0, 148.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend SpecularMaterial"
 				}
@@ -206,7 +206,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 285.0, 193.0, 22.0 ],
+					"patching_rect" : [ 15.0, 150.0, 193.0, 22.0 ],
 					"style" : "",
 					"text" : "pak LightPosition 1. 0.19 0."
 				}
@@ -219,7 +219,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 330.0, 92.0, 22.0 ],
+					"patching_rect" : [ 15.0, 195.0, 92.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend param"
 				}
@@ -232,7 +232,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 45.0, 360.0, 330.0, 22.0 ],
+					"patching_rect" : [ 15.0, 225.0, 330.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.gl.shader mainout @file cel-shader.jxs @name cel-shader"
 				}
@@ -261,7 +261,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 103.0, 210.0, 166.0, 20.0 ],
+					"patching_rect" : [ 73.0, 75.0, 166.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 27.0, 140.0, 20.0 ],
 					"style" : "",

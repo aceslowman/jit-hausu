@@ -38,6 +38,28 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 551.0, 30.0, 58.0, 22.0 ],
+					"restore" : 					{
+						"adapt" : [ 1 ],
+						"context" : [ 0 ],
+						"enable" : [ 1 ],
+						"layer" : [ 0 ],
+						"output_context" : [ 0 ]
+					}
+,
+					"style" : "",
+					"text" : "autopattr",
+					"varname" : "u800003017"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 2,
 					"id" : "obj-49",
 					"maxclass" : "comment",
@@ -77,7 +99,8 @@
 					"patching_rect" : [ 30.0, 113.0, 100.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 45.0, 106.5, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "context"
 				}
 
 			}
@@ -148,7 +171,8 @@
 					"patching_rect" : [ 165.0, 30.0, 150.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 75.0, 240.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "erasecolor"
 				}
 
 			}
@@ -376,7 +400,8 @@
 					"patching_rect" : [ 525.0, 120.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 165.0, 150.0, 45.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "layer"
 				}
 
 			}
@@ -405,7 +430,8 @@
 					"patching_rect" : [ 405.0, 120.0, 100.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 150.0, 106.5, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "output_context"
 				}
 
 			}
@@ -478,7 +504,8 @@
 					"patching_rect" : [ 270.0, 111.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 200.0, 45.0, 22.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "adapt"
 				}
 
 			}
@@ -535,7 +562,8 @@
 					"patching_rect" : [ 165.0, 111.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 150.0, 45.0, 22.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "enable"
 				}
 
 			}
@@ -633,9 +661,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_gl_texture", "", "" ],
-					"patching_rect" : [ 30.0, 300.0, 240.0, 36.0 ],
+					"patching_rect" : [ 30.0, 300.0, 264.0, 36.0 ],
 					"style" : "",
-					"text" : "jit.gl.node mainout @name vid-ctx @enable 1 @capture 1 @adapt 1"
+					"text" : "jit.gl.node mainout @name vid-ctx @enable 1 @capture 1 @adapt 1 @erase_color 0. 0. 0. 0."
 				}
 
 			}

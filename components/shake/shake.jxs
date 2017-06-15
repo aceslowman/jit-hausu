@@ -1,0 +1,62 @@
+<jittershader name="shake">
+	<description>
+	Shake
+	</description>
+	<param name="shake" type="float" default="0.0" />	
+	<param name="preview" type="bool" default="0.0" />
+	<param name="zoom" type="float" default="0.8" />
+	<param name="direction" type="vec2" default="0.0 1.0" />	
+	<param name="colorshift" type="vec4" default="0.0 0.0 0.0 0.0" />	
+	<language name="glsl" version="2.1">
+		<bind param="shake" program="fp" />		
+		<bind param="preview" program="fp" />
+		<bind param="zoom" program="fp" />
+		<bind param="direction" program="fp" />
+		<bind param="colorshift" program="fp" />		
+		<program name="vp" type="vertex" source="sh.passthrudim.vp.glsl" />
+		<program name="fp" type="fragment">
+<![CDATA[
+uniform sampler2DRect tex0;
+varying vec2 texcoord0;
+varying vec2 texdim0;
+
+uniform float zoom;
+uniform bool preview;
+uniform float shake;
+uniform vec2 direction;
+uniform vec4 colorshift;
+
+void main()
+{
+	vec2 uv = texcoord0/texdim0;
+	
+	vec4 color;
+	uv -= 0.5;
+	uv += 0.5/zoom;
+	uv *= zoom;
+	
+	//uv += vec2(shake*direction);
+	
+	vec2 r_uv = uv + vec2((shake*(1.-colorshift.r))*direction);
+	vec2 g_uv = uv + vec2((shake*(1.-colorshift.g))*direction);
+	vec2 b_uv = uv + vec2((shake*(1.-colorshift.b))*direction);
+	vec2 a_uv = uv + vec2((shake*(1.-colorshift.a))*direction);
+
+	color.r = texture2DRect(tex0, r_uv*texdim0).r;
+	color.g = texture2DRect(tex0, g_uv*texdim0).g;
+	color.b = texture2DRect(tex0, b_uv*texdim0).b;
+	color.a = texture2DRect(tex0, a_uv*texdim0).a;	
+
+	if(texcoord0.x < (texdim0.x/2.) && preview){
+		vec2 pos = texcoord0;
+		pos.x += texdim0.x/2.;
+		gl_FragColor = texture2DRect(tex0, pos);
+	}else{
+		gl_FragColor = color;
+	}
+}
+
+]]>
+		</program>
+	</language>
+</jittershader>

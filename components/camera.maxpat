@@ -38,6 +38,31 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 540.5, 15.5, 58.0, 22.0 ],
+					"restore" : 					{
+						"context" : [ 0 ],
+						"posx" : [ 0.0 ],
+						"posy" : [ 0.0 ],
+						"posz" : [ 0.0 ],
+						"rotx" : [ 0.0 ],
+						"roty" : [ 0.0 ],
+						"rotz" : [ 0.0 ],
+						"zoombeat-onoff" : [ 0 ]
+					}
+,
+					"style" : "",
+					"text" : "autopattr",
+					"varname" : "u626003591"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -102,7 +127,8 @@
 					"patching_rect" : [ 330.0, 15.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 187.5, 90.0, 22.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "zoombeat-onoff"
 				}
 
 			}
@@ -147,7 +173,8 @@
 					"patching_rect" : [ 196.0, 120.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 90.0, 90.0, 50.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "rotz"
 				}
 
 			}
@@ -163,7 +190,8 @@
 					"patching_rect" : [ 141.0, 120.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 45.0, 90.0, 46.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "roty"
 				}
 
 			}
@@ -179,7 +207,8 @@
 					"patching_rect" : [ 86.0, 120.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 90.0, 45.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "rotx"
 				}
 
 			}
@@ -221,7 +250,8 @@
 					"patching_rect" : [ 73.0, 229.5, 100.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 165.0, 44.915771, 69.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "context"
 				}
 
 			}
@@ -298,7 +328,8 @@
 					"patching_rect" : [ 193.0, 37.5, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 90.0, 45.0, 50.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "posz"
 				}
 
 			}
@@ -314,7 +345,8 @@
 					"patching_rect" : [ 138.0, 37.5, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 45.0, 45.0, 46.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "posy"
 				}
 
 			}
@@ -330,7 +362,8 @@
 					"patching_rect" : [ 83.0, 37.5, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 45.0, 45.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "posx"
 				}
 
 			}

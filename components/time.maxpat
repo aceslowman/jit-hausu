@@ -38,15 +38,22 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-39",
-					"maxclass" : "button",
+					"id" : "obj-5",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 134.749756, 435.0, 24.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 47.0, 60.0, 45.0, 45.0 ],
-					"style" : ""
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 510.0, 106.0, 58.0, 22.0 ],
+					"restore" : 					{
+						"bpm" : [ 0 ],
+						"clocktime-onoff" : [ 0 ],
+						"taptempo-midi" : [ 0 ],
+						"tempo-onoff" : [ 0 ]
+					}
+,
+					"style" : "",
+					"text" : "autopattr",
+					"varname" : "u225003557"
 				}
 
 			}
@@ -91,7 +98,8 @@
 					"patching_rect" : [ 48.749756, 75.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 195.0, 60.0, 22.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "clocktime-onoff"
 				}
 
 			}
@@ -215,7 +223,8 @@
 					"patching_rect" : [ 43.249756, 331.0, 57.0, 57.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 60.0, 45.0, 45.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "tempo-onoff"
 				}
 
 			}
@@ -331,7 +340,8 @@
 					"patching_rect" : [ 226.5, 280.0, 46.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 105.0, 60.0, 48.0, 22.0 ],
-					"style" : "default"
+					"style" : "default",
+					"varname" : "bpm"
 				}
 
 			}
@@ -477,7 +487,8 @@
 					"patching_rect" : [ 408.0, 57.249756, 57.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 107.0, 45.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "taptempo-midi"
 				}
 
 			}
@@ -612,15 +623,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"order" : 1,
-					"source" : [ "obj-123", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
-					"order" : 0,
 					"source" : [ "obj-123", 0 ]
 				}
 

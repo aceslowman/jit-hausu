@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 995.0, 85.0, 890.0, 345.0 ],
+		"rect" : [ 995.0, 85.0, 504.0, 345.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,30 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 353.149719, 30.0, 58.0, 22.0 ],
+					"restore" : 					{
+						"context" : [ 0 ],
+						"delay" : [ 0 ],
+						"delay-midi" : [ 9 ],
+						"onoff" : [ 1 ],
+						"onoff-midi" : [ 17 ],
+						"xfade" : [ 0.0 ],
+						"xfade-midi" : [ 1 ]
+					}
+,
+					"style" : "",
+					"text" : "autopattr",
+					"varname" : "u371003123"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
@@ -87,7 +111,8 @@
 					"patching_rect" : [ 240.0, 230.416504, 100.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 165.0, 90.0, 69.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "context"
 				}
 
 			}
@@ -118,7 +143,8 @@
 					"patching_rect" : [ 120.0, 19.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 165.0, 45.0, 22.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "onoff"
 				}
 
 			}
@@ -213,7 +239,8 @@
 					"patching_rect" : [ 717.0, 107.416504, 71.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 189.0, 45.0, 45.0, 22.0 ],
-					"style" : "chiba"
+					"style" : "chiba",
+					"varname" : "onoff-midi"
 				}
 
 			}
@@ -360,7 +387,8 @@
 					"patching_rect" : [ 594.0, 107.416504, 71.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 105.0, 90.0, 46.0, 22.0 ],
-					"style" : "chiba"
+					"style" : "chiba",
+					"varname" : "delay-midi"
 				}
 
 			}
@@ -376,7 +404,8 @@
 					"patching_rect" : [ 455.0, 107.416504, 71.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 105.0, 45.0, 46.0, 22.0 ],
-					"style" : "chiba"
+					"style" : "chiba",
+					"varname" : "xfade-midi"
 				}
 
 			}
@@ -1067,7 +1096,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 45.0, 104.0, 22.0 ],
 					"size" : 100.0,
-					"style" : "velvet"
+					"style" : "velvet",
+					"varname" : "xfade"
 				}
 
 			}
@@ -1082,7 +1112,8 @@
 					"patching_rect" : [ 353.149719, 75.0, 79.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 90.0, 105.0, 22.0 ],
-					"style" : "velvet"
+					"style" : "velvet",
+					"varname" : "delay"
 				}
 
 			}

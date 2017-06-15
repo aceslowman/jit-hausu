@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1077.0, 436.0, 624.0, 347.0 ],
+		"rect" : [ 694.0, 436.0, 621.0, 347.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,28 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 494.0, 22.0, 58.0, 22.0 ],
+					"restore" : 					{
+						"context" : [ 0 ],
+						"onoff" : [ 1 ],
+						"onoff-midi" : [ 19 ],
+						"sharpen" : [ 0.0 ],
+						"sharpen-midi" : [ 11 ]
+					}
+,
+					"style" : "",
+					"text" : "autopattr",
+					"varname" : "u248003303"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-24",
 					"maxclass" : "newobj",
@@ -87,7 +109,8 @@
 					"patching_rect" : [ 120.749817, 259.583496, 100.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 240.0, 29.0, 69.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "context"
 				}
 
 			}
@@ -118,7 +141,8 @@
 					"patching_rect" : [ 74.749817, 18.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 165.0, 30.0, 22.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "onoff"
 				}
 
 			}
@@ -193,7 +217,8 @@
 					"patching_rect" : [ 494.0, 108.0, 71.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 189.0, 30.0, 45.0, 22.0 ],
-					"style" : "chiba"
+					"style" : "chiba",
+					"varname" : "onoff-midi"
 				}
 
 			}
@@ -314,7 +339,8 @@
 					"patching_rect" : [ 120.749817, 119.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 30.0, 106.0, 22.0 ],
-					"style" : "velvet"
+					"style" : "velvet",
+					"varname" : "sharpen"
 				}
 
 			}
@@ -343,7 +369,8 @@
 					"patching_rect" : [ 341.0, 104.654602, 71.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 105.0, 30.0, 45.0, 22.0 ],
-					"style" : "chiba"
+					"style" : "chiba",
+					"varname" : "sharpen-midi"
 				}
 
 			}

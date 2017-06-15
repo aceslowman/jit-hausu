@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1266.0, 87.0, 615.0, 407.0 ],
+		"rect" : [ 266.0, 274.0, 615.0, 407.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,28 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 315.0, 360.0, 58.0, 22.0 ],
+					"restore" : 					{
+						"context" : [ 0 ],
+						"onoff" : [ 1 ],
+						"onoff-midi" : [ 19 ],
+						"threshold" : [ 0.0 ],
+						"threshold-midi" : [ 3 ]
+					}
+,
+					"style" : "",
+					"text" : "autopattr",
+					"varname" : "u121003366"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "newobj",
@@ -103,7 +125,8 @@
 					"patching_rect" : [ 157.0, 87.750244, 100.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 240.0, 30.0, 69.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "context"
 				}
 
 			}
@@ -118,7 +141,8 @@
 					"patching_rect" : [ 69.749817, 21.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 165.0, 30.0, 22.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "onoff"
 				}
 
 			}
@@ -193,7 +217,8 @@
 					"patching_rect" : [ 517.0, 115.0, 71.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 189.0, 30.0, 45.0, 22.0 ],
-					"style" : "chiba"
+					"style" : "chiba",
+					"varname" : "onoff-midi"
 				}
 
 			}
@@ -274,7 +299,8 @@
 					"patching_rect" : [ 375.0, 115.0, 71.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 105.0, 30.0, 45.0, 22.0 ],
-					"style" : "chiba"
+					"style" : "chiba",
+					"varname" : "threshold-midi"
 				}
 
 			}
@@ -437,7 +463,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 30.0, 105.0, 22.0 ],
 					"size" : 100.0,
-					"style" : "velvet"
+					"style" : "velvet",
+					"varname" : "threshold"
 				}
 
 			}

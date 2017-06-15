@@ -38,6 +38,28 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 317.757446, 24.166748, 58.0, 22.0 ],
+					"restore" : 					{
+						"context" : [ 0 ],
+						"huerot" : [ 0.0 ],
+						"huerot-midi" : [ 10 ],
+						"onoff" : [ 1 ],
+						"onoff-midi" : [ 18 ]
+					}
+,
+					"style" : "",
+					"text" : "autopattr",
+					"varname" : "u473003240"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -87,7 +109,8 @@
 					"patching_rect" : [ 120.249817, 242.395508, 100.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 240.0, 30.0, 69.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "context"
 				}
 
 			}
@@ -118,7 +141,8 @@
 					"patching_rect" : [ 70.749817, 19.166748, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 165.0, 30.0, 21.5, 21.5 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "onoff"
 				}
 
 			}
@@ -180,7 +204,8 @@
 					"patching_rect" : [ 463.757446, 88.56102, 71.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 188.5, 30.0, 45.0, 22.0 ],
-					"style" : "chiba"
+					"style" : "chiba",
+					"varname" : "onoff-midi"
 				}
 
 			}
@@ -328,7 +353,8 @@
 					"patching_rect" : [ 189.0, 119.56102, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 30.0, 105.0, 22.0 ],
-					"style" : "velvet"
+					"style" : "velvet",
+					"varname" : "huerot"
 				}
 
 			}
@@ -370,7 +396,8 @@
 					"patching_rect" : [ 317.757446, 88.56102, 71.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 105.0, 30.0, 45.0, 22.0 ],
-					"style" : "chiba"
+					"style" : "chiba",
+					"varname" : "huerot-midi"
 				}
 
 			}

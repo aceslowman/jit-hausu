@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 82.0, 1202.0, 920.0 ],
+		"rect" : [ 42.0, 85.0, 1202.0, 920.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,104 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 898.5, 1062.0, 47.0, 22.0 ],
+					"style" : "",
+					"text" : "store 3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 853.5, 1062.0, 47.0, 22.0 ],
+					"style" : "",
+					"text" : "store 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 810.0, 1062.0, 47.0, 22.0 ],
+					"style" : "",
+					"text" : "store 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1005.0, 1062.0, 29.5, 22.0 ],
+					"style" : "",
+					"text" : "3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 976.5, 1062.0, 29.5, 22.0 ],
+					"style" : "",
+					"text" : "2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 946.5, 1062.0, 29.5, 22.0 ],
+					"style" : "",
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 810.0, 1110.0, 165.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"client_rect" : [ 4, 44, 358, 172 ],
+						"parameter_enable" : 0,
+						"storage_rect" : [ 583, 69, 1034, 197 ]
+					}
+,
+					"style" : "",
+					"text" : "pattrstorage",
+					"varname" : "u760003570"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 3,
 					"fontname" : "Helvetica",
 					"fontsize" : 16.0,
@@ -46,7 +144,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 955.0, 589.0, 200.0, 356.0 ],
+					"patching_rect" : [ 955.0, 589.0, 200.0, 338.0 ],
 					"style" : "",
 					"text" : "EFFECTS\nsaturation\nhuerot\nframe-delay\nsharpen\nbrightness-curve\nsmear\nshake\nweave\ndisplacement\n\nSHADERS\ncel-shading\n\nGENERATOR\ntext\nvideo\nmodel-loader\n",
 					"textjustification" : 2
@@ -68,7 +166,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 525.0, 900.0, 240.0, 304.0 ],
+					"patching_rect" : [ 525.0, 930.0, 240.0, 304.0 ],
+					"varname" : "cel-shading",
 					"viewvisibility" : 1
 				}
 
@@ -90,6 +189,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
 					"patching_rect" : [ 270.0, 420.0, 240.0, 284.0 ],
+					"varname" : "node[1]",
 					"viewvisibility" : 1
 				}
 
@@ -110,7 +210,8 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 15.0, 345.0, 240.0, 284.0 ],
+					"patching_rect" : [ 15.0, 345.0, 240.0, 285.0 ],
+					"varname" : "node",
 					"viewvisibility" : 1
 				}
 
@@ -130,7 +231,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 525.0, 765.0, 240.0, 120.0 ],
+					"patching_rect" : [ 525.0, 765.0, 240.0, 153.0 ],
+					"varname" : "text",
 					"viewvisibility" : 1
 				}
 
@@ -151,6 +253,7 @@
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 525.0, 630.0, 240.0, 120.0 ],
+					"varname" : "camera",
 					"viewvisibility" : 1
 				}
 
@@ -230,6 +333,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture", "jit_matrix" ],
 					"patching_rect" : [ 15.0, 15.0, 240.0, 315.0 ],
+					"varname" : "playback",
 					"viewvisibility" : 1
 				}
 
@@ -250,6 +354,7 @@
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 525.0, 480.0, 240.0, 135.0 ],
+					"varname" : "time",
 					"viewvisibility" : 1
 				}
 
@@ -291,6 +396,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 270.0, 15.0, 240.0, 388.0 ],
+					"varname" : "model-loader",
 					"viewvisibility" : 1
 				}
 
@@ -327,6 +433,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 270.0, 1185.0, 240.0, 60.0 ],
+					"varname" : "displacement",
 					"viewvisibility" : 1
 				}
 
@@ -365,6 +472,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.0, 795.0, 240.0, 123.0 ],
+					"varname" : "framedelay",
 					"viewvisibility" : 1
 				}
 
@@ -386,6 +494,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.0, 1005.0, 240.0, 210.0 ],
+					"varname" : "brightness-curve",
 					"viewvisibility" : 1
 				}
 
@@ -428,6 +537,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 270.0, 960.0, 240.0, 210.0 ],
+					"varname" : "weave",
 					"viewvisibility" : 1
 				}
 
@@ -449,6 +559,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.0, 1230.0, 240.0, 60.0 ],
+					"varname" : "smear",
 					"viewvisibility" : 1
 				}
 
@@ -470,6 +581,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.0, 930.0, 240.0, 60.0 ],
+					"varname" : "sharpen",
 					"viewvisibility" : 1
 				}
 
@@ -491,6 +603,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.0, 645.0, 240.0, 59.0 ],
+					"varname" : "saturation",
 					"viewvisibility" : 1
 				}
 
@@ -512,6 +625,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.0, 720.0, 240.0, 60.0 ],
+					"varname" : "huerot",
 					"viewvisibility" : 1
 				}
 
@@ -2059,10 +2173,52 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"color" : [ 1.0, 0.337255, 0.619608, 1.0 ],
 					"destination" : [ "obj-4", 0 ],
 					"midpoints" : [ 279.5, 1260.0, 263.0, 1260.0, 263.0, 414.0, 279.5, 414.0 ],
 					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -2152,8 +2308,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "huerot.maxpat",
-				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/glsl-max_huerot",
-				"patcherrelativepath" : "./components/glsl-max_huerot",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/huerot",
+				"patcherrelativepath" : "./components/huerot",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2173,22 +2329,22 @@
 			}
 , 			{
 				"name" : "smear.maxpat",
-				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/glsl-max_smear",
-				"patcherrelativepath" : "./components/glsl-max_smear",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/smear",
+				"patcherrelativepath" : "./components/smear",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "weave.maxpat",
-				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/glsl-max_weave",
-				"patcherrelativepath" : "./components/glsl-max_weave",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/weave",
+				"patcherrelativepath" : "./components/weave",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "shake.maxpat",
-				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/glsl-max_shake",
-				"patcherrelativepath" : "./components/glsl-max_shake",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/shake",
+				"patcherrelativepath" : "./components/shake",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2229,8 +2385,8 @@
 			}
 , 			{
 				"name" : "displacement.maxpat",
-				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/glsl-max_displacement",
-				"patcherrelativepath" : "./components/glsl-max_displacement",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/displacement",
+				"patcherrelativepath" : "./components/displacement",
 				"type" : "JSON",
 				"implicit" : 1
 			}

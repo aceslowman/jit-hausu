@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 988.0, 345.0, 640.0, 514.0 ],
+		"rect" : [ 642.0, 345.0, 600.0, 514.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,28 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 180.0, 30.0, 58.0, 22.0 ],
+					"restore" : 					{
+						"ambient" : [ 0.0, 1.0, 1.0, 1.0, 0.5, 1.0, 0.5 ],
+						"lightposx" : [ 0.0 ],
+						"lightposy" : [ 0.0 ],
+						"lightposz" : [ 0.0 ],
+						"specular" : [ 0.0, 1.0, 1.0, 1.0, 0.5, 1.0, 0.5 ]
+					}
+,
+					"style" : "",
+					"text" : "autopattr",
+					"varname" : "u890003684"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontface" : 2,
 					"id" : "obj-17",
@@ -80,7 +102,8 @@
 					"patching_rect" : [ 219.0, 235.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 90.0, 49.0, 50.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "lightposz"
 				}
 
 			}
@@ -96,7 +119,8 @@
 					"patching_rect" : [ 161.0, 235.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 45.0, 49.0, 46.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "lightposy"
 				}
 
 			}
@@ -112,7 +136,8 @@
 					"patching_rect" : [ 103.0, 235.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 49.0, 45.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "lightposx"
 				}
 
 			}
@@ -127,7 +152,8 @@
 					"patching_rect" : [ 452.0, 225.0, 128.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 214.0, 240.0, 85.0 ],
-					"saturation" : 1.0
+					"saturation" : 1.0,
+					"varname" : "ambient"
 				}
 
 			}
@@ -142,7 +168,8 @@
 					"patching_rect" : [ 287.0, 225.0, 128.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 105.0, 240.0, 85.0 ],
-					"saturation" : 1.0
+					"saturation" : 1.0,
+					"varname" : "specular"
 				}
 
 			}

@@ -38,6 +38,28 @@
 		"subpatcher_template" : "jit.hausu slab template",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 390.0, 555.0, 58.0, 22.0 ],
+					"restore" : 					{
+						"context" : [ 0 ],
+						"onoff" : [ 1 ],
+						"onoff-midi" : [ 18 ],
+						"strength" : [ 0.0 ],
+						"strength-midi" : [ 2 ]
+					}
+,
+					"style" : "",
+					"text" : "autopattr",
+					"varname" : "u223003418"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-28",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -87,7 +109,8 @@
 					"patching_rect" : [ 146.0, 216.394272, 100.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 240.0, 30.0, 69.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "context"
 				}
 
 			}
@@ -118,7 +141,8 @@
 					"patching_rect" : [ 75.0, 45.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 165.0, 30.0, 22.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "onoff"
 				}
 
 			}
@@ -175,7 +199,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "jit_gl_texture" ],
 					"patching_rect" : [ 310.0, 36.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -289,7 +313,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 30.0, 105.0, 22.0 ],
 					"size" : 26.0,
-					"style" : "velvet"
+					"style" : "velvet",
+					"varname" : "strength"
 				}
 
 			}
@@ -319,7 +344,8 @@
 					"patching_rect" : [ 363.257446, 221.394272, 71.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 105.0, 30.0, 46.0, 22.0 ],
-					"style" : "chiba"
+					"style" : "chiba",
+					"varname" : "strength-midi"
 				}
 
 			}
@@ -378,7 +404,8 @@
 					"patching_rect" : [ 508.757446, 227.894272, 71.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 189.0, 30.0, 45.0, 22.0 ],
-					"style" : "chiba"
+					"style" : "chiba",
+					"varname" : "onoff-midi"
 				}
 
 			}

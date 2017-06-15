@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 143.0, 226.0, 1398.0, 567.0 ],
+		"rect" : [ 143.0, 226.0, 1012.0, 567.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,28 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-51",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 1290.0, 15.0, 58.0, 22.0 ],
+					"restore" : 					{
+						"blendingmode" : [ 0 ],
+						"clipname" : [ "dust.mp4" ],
+						"context" : [ 0 ],
+						"playlist" : [ 0 ],
+						"xfade" : [ 0.0 ]
+					}
+,
+					"style" : "",
+					"text" : "autopattr",
+					"varname" : "u362003095"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-50",
 					"maxclass" : "newobj",
@@ -121,7 +143,8 @@
 					"patching_rect" : [ 135.0, 327.0, 100.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 160.5, 210.0, 69.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "context"
 				}
 
 			}
@@ -166,7 +189,8 @@
 					"patching_rect" : [ 1239.0, 335.615051, 121.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 285.0, 101.0, 22.0 ],
-					"style" : "default"
+					"style" : "default",
+					"varname" : "blendingmode"
 				}
 
 			}
@@ -426,7 +450,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 255.0, 101.0, 22.0 ],
 					"size" : 100.0,
-					"style" : ""
+					"style" : "",
+					"varname" : "xfade"
 				}
 
 			}
@@ -478,7 +503,8 @@
 					"presentation_rect" : [ 0.0, 105.0, 240.0, 30.0 ],
 					"style" : "",
 					"text" : "dust.mp4",
-					"textjustification" : 1
+					"textjustification" : 1,
+					"varname" : "clipname"
 				}
 
 			}
@@ -498,7 +524,8 @@
 					"prefix" : "Untitled:/Users/austin/Documents/Max 7/Library/jit-hausu/playlists/",
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 45.0, 240.0, 29.0 ],
-					"style" : ""
+					"style" : "",
+					"varname" : "playlist"
 				}
 
 			}

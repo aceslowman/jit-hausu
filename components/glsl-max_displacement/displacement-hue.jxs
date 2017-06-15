@@ -1,0 +1,114 @@
+<jittershader name="voronoi">
+	<description>
+	Voronoi
+	</description>
+	<param name="tex0" type="int" default="0" />
+	<param name="tex1" type="int" default="1" />
+	<param name="dim" type="vec2" default="500. 500." />
+	<param name="strength" type="float" default="19." />
+	<language name="glsl" version="2.1">
+		<bind param="tex0" program="fp" />
+		<bind param="tex1" program="fp" />
+		<bind param="dim" program="fp" />
+		<bind param="strength" program="fp" />
+		<program name="vp" type="vertex" source="sh.passthrudim.vp.glsl" />
+		<program name="fp" type="fragment">
+<![CDATA[
+	uniform sampler2DRect tex0;
+	uniform sampler2DRect tex1;
+
+	varying vec2 texcoord0;
+	varying vec2 texcoord1;
+
+	uniform float strength;
+	uniform vec2 dim;
+	
+	/*
+ 	*	HUE ROTATION
+	*/
+	const mat3 rgb2yiq = mat3(0.299, 0.587, 0.114, 0.595716, -0.274453, -0.321263, 0.211456, -0.522591, 0.311135);
+	const mat3 yiq2rgb = mat3(1.0, 0.9563, 0.6210, 1.0, -0.2721, -0.6474, 1.0, -1.1070, 1.7046);	
+	
+	vec3 rotateHue(vec3 color, float hue){
+		vec3 yColor = rgb2yiq * color; 
+		
+		float originalHue = atan(yColor.b, yColor.g);
+		float finalHue = originalHue + hue;
+		
+		float chroma = sqrt(yColor.b*yColor.b+yColor.g*yColor.g);
+		
+		vec3 yFinalColor = vec3(yColor.r, chroma * cos(finalHue), chroma * sin(finalHue));
+		return yiq2rgb*yFinalColor;
+	}
+	
+	/*
+ 	*	SATURATION
+	*/
+	
+	const vec3 LumCoeff = vec3 (0.2125, 0.7154, 0.0721);
+	
+	vec3 saturate(vec3 color, float amnt){
+    	vec3 intensity = vec3 (dot(color, LumCoeff));
+		return mix(intensity, color, amnt);
+	}
+	
+	/*
+ 	*	SMEAR
+	*/	
+	
+	vec3 smear(vec3 color, float thresh){
+		vec3 su, sd, up, down, amount;
+		if(dot(color,LumCoeff) > thresh){
+			
+				amount.x =  0.2;
+				amount.y =  0.5;
+				amount.z =  0.8;
+				
+				float d = max(1., abs(100.0));
+				sd = vec3(1.0 / d);
+				down = ((color) * sd);
+			
+				float u = max(1.0, abs(0.));
+				su = vec3(1.0 / u);
+				up = color + ((color) * su);
+			
+				return mix(down,up,amount); 
+			
+		}else{ 
+			return color;
+		}
+	}
+	
+	/*
+ 	*	INVERT
+	*/	
+
+	vec3 invert(vec3 color, float amnt){
+		vec3 inverted = mix(color, 1.-color, amnt);
+		return inverted;
+	}
+
+	void main(){
+		vec2 uv0 = texcoord0 / dim; //uv coordinates of the video
+		vec2 uv1 = texcoord1 / dim; //uv coordinates of the displacement map
+
+		vec3 displacement = texture2DRect(tex1, uv1 * dim).xyz; //find the current grayscale value at the uv1 location
+
+		//focus on the plus here. is there something else I can do to scale it in a more interesting way?
+		uv0.x = (uv0.x - displacement.x / strength);
+		uv0.y = (uv0.y - displacement.y / strength);
+
+		vec3 color = texture2DRect(tex0, uv0*dim).xyz;
+		
+		color = rotateHue(color, displacement.x * 6.);
+//		color = saturate(color, (displacement.x) * 5.0); 
+//		color = smear(color, displacement.x*0.5);
+//		color = invert(color, displacement.x);
+
+		gl_FragColor = vec4(color,1.0);
+	}
+
+]]>
+		</program>
+	</language>
+</jittershader>

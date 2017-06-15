@@ -1,0 +1,73 @@
+<jittershader name="voronoi">
+	<description>
+	Voronoi
+	</description>
+	<param name="time" type="float" default="0.0" />
+	<param name="scale" type="float" default="4." />
+	<param name="rand_seed" type="float" default="1." />
+	<param name="speed" type="float" default="2000." />
+	<param name="dim" type="vec2" default="500. 500." />
+	<language name="glsl" version="1.2">
+		<bind param="time" program="fp" />
+		<bind param="scale" program="fp" />
+		<bind param="speed" program="fp" />
+		<bind param="rand_seed" program="fp" />
+		<bind param="dim" program="fp" />
+		<program name="vp" type="vertex" source="sh.passthru.xform.vp.glsl" />
+		<program name="fp" type="fragment">
+<![CDATA[
+
+uniform float time;
+uniform float scale;
+uniform float speed;
+uniform float rand_seed;
+uniform vec2 dim;
+
+float rand(vec2 co){
+    return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);
+}
+
+void main()
+{
+	vec2 st = gl_FragCoord.xy/dim.xy;
+	st.x *= dim.x/dim.y;
+	vec3 color = vec3(.0);
+
+	st *= scale;
+	
+	vec2 i_st = floor(st);
+	vec2 f_st = fract(st);
+	
+	float m_dist = 1.;
+
+	for(int y = -1; y <= 1; y++){
+		for(int x = -1; x <= 1; x++){
+			vec2 neighbor = vec2(float(x),float(y));
+			vec2 point = rand((i_st + neighbor)*rand_seed);
+			
+			point = 0.5 + 0.5*sin((time/speed) + 6.2831*point);
+			
+			vec2 diff = neighbor + point - f_st;
+			
+			float dist = length(diff);
+			
+			m_dist = min(m_dist, dist);
+		}
+	}	
+	
+	
+	color += m_dist;
+	
+	//isolines
+	//color -= step(.7,abs(sin(100.0*m_dist)))*.3;
+	
+	//point dot
+	//color += 1.-step(.02, m_dist);
+
+	gl_FragColor = vec4(color,1.0);	
+}
+
+]]>
+		</program>
+	</language>
+</jittershader>

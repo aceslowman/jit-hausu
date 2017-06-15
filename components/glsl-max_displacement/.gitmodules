@@ -1,0 +1,3 @@
+[submodule "cellular_noise"]
+	path = cellular_noise
+	url = https://github.com/aceslowman/glsl-max_cellular-noise.git

@@ -1,0 +1,113 @@
+<jittershader name="voronoi">
+	<description>
+	Voronoi
+	</description>
+	<param name="time" type="float" default="0.0" />
+	<param name="scale" type="float" default="4." />
+	<param name="speed" type="float" default="2000." />
+	<param name="rand_seed" type="float" default="1." />
+	<param name="dim" type="vec2" default="500. 500." />
+	<language name="glsl" version="1.2">
+		<bind param="time" program="fp" />
+		<bind param="scale" program="fp" />
+		<bind param="speed" program="fp" />
+		<bind param="dim" program="fp" />
+		<bind param="rand_seed" program="fp" />
+		<program name="vp" type="vertex" source="sh.passthru.xform.vp.glsl" />
+		<program name="fp" type="fragment">
+<![CDATA[
+
+uniform float time;
+uniform float scale;
+uniform float speed;
+uniform vec2 dim;
+
+uniform float rand_seed;
+
+float rand(vec2 co){
+    return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);
+}
+
+float voronoiDistance(vec2 x){
+	vec2 p = floor(x);
+	vec2 f = fract(x);
+
+	vec2 mb;
+	vec2 mr;
+
+	float res = 8.0;
+
+	for(int j=-1; j<=1; j++){
+		for(int i=-1; i<=1; i++){
+			vec2 b = vec2(i,j);
+			vec2 o = vec2(rand((p+b)*rand_seed));
+
+			o = vec2(0.5 + 0.5*sin( (time/speed) + 6.2831*o ));
+
+			vec2 r = b + o - f;
+
+			float d = dot(r,r);
+
+			if(d < res){
+				res = d;
+				mr  = r;
+				mb  = b;
+			}
+
+			res = min(res,d);
+		}
+	}
+
+	for(int j=-2; j<=2; j++){
+		for(int i=-2; i<=2; i++){
+			vec2 b = vec2(mb + vec2(i,j));
+			vec2 o = vec2(rand((p+b)*rand_seed));
+
+			o = 0.5 + 0.5*sin( (time/speed) + 6.2831*o );
+
+			vec2 r = b + o - f;
+
+			float d = dot( 0.5*(mr+r), normalize(r-mr) );
+
+			res = min(res,d);
+		}
+	}
+
+	return res;
+}
+
+float getBorder(vec2 p){
+	float dis = voronoiDistance(p);
+
+	return 1.0 - smoothstep(0.0,0.05,dis);
+}
+
+void main()
+{
+	vec2 p = gl_FragCoord.xy/dim.xy;
+	p.x *= dim.x/dim.y;
+	p *= scale;
+
+	vec3 c = vec3(voronoiDistance(p));
+
+
+	// colors
+	vec3 col = vec3(c.x);
+	// isolines
+    col = c.x*(0.5 + 2.*sin(110.0*c.x))*vec3(1.0);
+    // borders
+//    col = mix( vec3(1.0,1.0,1.0), col, smoothstep( 0.04, 0.07, c.x ) );
+    // feature points
+	//float dd = length( c.yz );
+	//col = mix( vec3(1.0,0.6,0.1), col, smoothstep( 0.0, 0.12, dd) );
+	//col += 1.-step(.02, c);
+	//col += vec3(1.0,0.6,0.1)*(1.0-smoothstep( 0.0, 0.04, dd));
+
+
+	gl_FragColor = vec4(col,1.0);
+}
+
+]]>
+		</program>
+	</language>
+</jittershader>

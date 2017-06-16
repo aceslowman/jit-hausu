@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 85.0, 1216.0, 920.0 ],
+		"rect" : [ 35.0, 85.0, 890.0, 920.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -175,7 +175,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @save 2",
-					"varname" : "u410000370"
+					"varname" : "u767000390"
 				}
 
 			}
@@ -232,7 +232,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "jit_gl_texture" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 270.0, 420.0, 240.0, 284.0 ],
 					"varname" : "node[1]",
 					"viewvisibility" : 1

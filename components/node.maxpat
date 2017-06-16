@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1002.0, 197.0, 650.0, 480.0 ],
+		"rect" : [ 34.0, 56.0, 767.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,27 +38,70 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-31",
-					"maxclass" : "newobj",
+					"fontface" : 2,
+					"id" : "obj-59",
+					"maxclass" : "comment",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 495.0, 30.0, 24.0, 22.0 ],
+					"numoutlets" : 0,
+					"patching_rect" : [ 541.5, 443.0, 93.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 79.0, 195.0, 106.5, 20.0 ],
 					"style" : "",
-					"text" : "t b"
+					"text" : "sync chain",
+					"textjustification" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-29",
+					"id" : "obj-58",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 576.0, 465.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 49.0, 193.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-55",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 525.0, 30.0, 66.0, 22.0 ],
+					"patching_rect" : [ 660.0, 630.0, 90.0, 22.0 ],
+					"style" : "",
+					"text" : "context vid-ctx"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-53",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 576.0, 525.0, 73.25, 22.0 ],
 					"style" : "",
 					"text" : "getcontext"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "Sync Out",
+					"id" : "obj-25",
+					"index" : 2,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 615.0, 622.0, 30.0, 30.0 ],
+					"style" : ""
 				}
 
 			}
@@ -69,18 +112,18 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 517.0, 60.0, 58.0, 22.0 ],
+					"patching_rect" : [ 576.0, 570.0, 58.0, 22.0 ],
 					"restore" : 					{
-						"adapt" : [ 1 ],
-						"context" : [ 0 ],
-						"enable" : [ 1 ],
-						"layer" : [ 1 ],
+						"adapt" : [ 0 ],
+						"context" : [ 1 ],
+						"enable" : [ 0 ],
+						"layer" : [ 0 ],
 						"output_context" : [ 0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u249001107"
+					"varname" : "u546005214"
 				}
 
 			}
@@ -93,7 +136,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 30.0, 491.0, 93.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 128.5, 202.0, 106.5, 20.0 ],
+					"presentation_rect" : [ 128.5, 247.0, 106.5, 20.0 ],
 					"style" : "",
 					"text" : "add context",
 					"textjustification" : 1
@@ -180,7 +223,7 @@
 					"patching_rect" : [ 21.5, 513.0, 105.0, 30.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 128.5, 224.0, 107.0, 22.0 ],
+					"presentation_rect" : [ 128.5, 269.0, 107.0, 22.0 ],
 					"style" : "",
 					"text" : "my-special-context"
 				}
@@ -227,7 +270,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 195.0, 586.5, 105.0, 50.0 ],
+					"patching_rect" : [ 195.0, 586.5, 105.0, 49.0 ],
 					"style" : "",
 					"text" : "append mainout, append vid-ctx, append 3d-ctx"
 				}
@@ -307,7 +350,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 355.0, 570.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 224.0, 106.5, 22.0 ],
+					"presentation_rect" : [ 0.0, 269.0, 106.5, 22.0 ],
 					"style" : ""
 				}
 
@@ -321,7 +364,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 355.0, 540.0, 93.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 202.0, 106.5, 20.0 ],
+					"presentation_rect" : [ 0.0, 247.0, 106.5, 20.0 ],
 					"style" : "",
 					"text" : "remove context",
 					"textjustification" : 1
@@ -337,7 +380,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 195.0, 525.0, 142.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 101.5, 255.0, 37.0, 22.0 ],
+					"presentation_rect" : [ 101.5, 300.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "clear"
 				}
@@ -352,7 +395,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 195.0, 480.0, 241.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 180.0, 240.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 225.0, 240.0, 20.0 ],
 					"style" : "",
 					"text" : "(global) context settings",
 					"textjustification" : 1,
@@ -380,7 +423,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 390.0, 240.0, 48.0 ],
+					"patching_rect" : [ 30.0, 390.0, 240.0, 47.0 ],
 					"style" : "",
 					"text" : "when any new node is created, APPEND the name of the new subcontext (node name) to all context umenus"
 				}
@@ -630,9 +673,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 30.0, 96.0, 25.0 ],
+					"patching_rect" : [ 30.0, 30.0, 96.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 96.0, 25.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 96.0, 24.0 ],
 					"style" : "",
 					"text" : "NODE"
 				}
@@ -646,7 +689,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 315.0, 345.0, 304.0, 36.0 ],
+					"patching_rect" : [ 315.0, 345.0, 304.0, 35.0 ],
 					"style" : "",
 					"text" : "jit.gl.videoplane mainout @transform_reset 2 @enable 1 @layer 0 @depth_enable 0 @blend_enable 1"
 				}
@@ -687,7 +730,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_gl_texture", "", "" ],
-					"patching_rect" : [ 30.0, 300.0, 264.0, 36.0 ],
+					"patching_rect" : [ 30.0, 300.0, 264.0, 35.0 ],
 					"style" : "",
 					"text" : "jit.gl.node mainout @name vid-ctx @enable 1 @capture 1 @adapt 1 @erase_color 0. 0. 0. 0."
 				}
@@ -704,7 +747,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-25", 0 ],
+					"order" : 1,
+					"source" : [ "obj-10", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-55", 1 ],
+					"order" : 0,
 					"source" : [ "obj-10", 3 ]
 				}
 
@@ -930,6 +982,20 @@
 					"midpoints" : [ 414.5, 330.0, 324.5, 330.0 ],
 					"order" : 0,
 					"source" : [ "obj-51", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-53", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"source" : [ "obj-58", 0 ]
 				}
 
 			}

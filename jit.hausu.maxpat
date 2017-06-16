@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 85.0, 1216.0, 920.0 ],
+		"rect" : [ 34.0, 56.0, 1212.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -160,7 +160,6 @@
 			}
 , 			{
 				"box" : 				{
-					"autorestore" : "default.json",
 					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -168,14 +167,14 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 825.0, 1133.0, 125.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 8, 44, 930, 962 ],
+						"client_rect" : [ 1057, 45, 1440, 407 ],
 						"parameter_enable" : 0,
 						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
 					"style" : "",
 					"text" : "pattrstorage @save 2",
-					"varname" : "u410000370"
+					"varname" : "u858004505"
 				}
 
 			}
@@ -189,7 +188,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 947.0, 600.0, 200.0, 338.0 ],
+					"patching_rect" : [ 947.0, 600.0, 200.0, 294.0 ],
 					"style" : "",
 					"text" : "EFFECTS\nsaturation\nhuerot\nframe-delay\nsharpen\nbrightness-curve\nsmear\nshake\nweave\ndisplacement\n\nSHADERS\ncel-shading\n\nGENERATOR\ntext\nvideo\nmodel-loader\n",
 					"textjustification" : 2
@@ -230,10 +229,10 @@
 					"maxclass" : "bpatcher",
 					"name" : "node.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 270.0, 420.0, 240.0, 284.0 ],
+					"outlettype" : [ "jit_gl_texture", "" ],
+					"patching_rect" : [ 270.0, 420.0, 240.0, 330.0 ],
 					"varname" : "node[1]",
 					"viewvisibility" : 1
 				}
@@ -252,9 +251,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "node.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "jit_gl_texture" ],
+					"outlettype" : [ "jit_gl_texture", "" ],
 					"patching_rect" : [ 15.0, 345.0, 240.0, 285.0 ],
 					"varname" : "node",
 					"viewvisibility" : 1
@@ -310,7 +309,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 810.0, 660.0, 102.0, 34.0 ],
+					"patching_rect" : [ 810.0, 660.0, 102.0, 33.0 ],
 					"style" : "",
 					"text" : "Turn on/off all components"
 				}
@@ -454,7 +453,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 957.5, 480.0, 197.5, 48.0 ],
+					"patching_rect" : [ 957.5, 480.0, 197.5, 47.0 ],
 					"style" : "",
 					"text" : "jit.hausu",
 					"textjustification" : 2
@@ -473,11 +472,11 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "displacement.maxpat",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 270.0, 1185.0, 240.0, 60.0 ],
+					"patching_rect" : [ 270.0, 1230.0, 240.0, 60.0 ],
 					"varname" : "displacement",
 					"viewvisibility" : 1
 				}
@@ -493,7 +492,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 955.0, 525.0, 200.0, 62.0 ],
+					"patching_rect" : [ 955.0, 525.0, 200.0, 54.0 ],
 					"style" : "",
 					"text" : "austin slominski\naceslowman\naceslowman@gmail.com",
 					"textjustification" : 2
@@ -556,11 +555,11 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "shake.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 270.0, 720.0, 240.0, 226.0 ],
+					"patching_rect" : [ 270.0, 765.0, 240.0, 226.0 ],
 					"varname" : "shake",
 					"viewvisibility" : 1
 				}
@@ -578,11 +577,11 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "weave.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 270.0, 960.0, 240.0, 210.0 ],
+					"patching_rect" : [ 270.0, 1005.0, 240.0, 210.0 ],
 					"varname" : "weave",
 					"viewvisibility" : 1
 				}
@@ -2277,7 +2276,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 1 ],
-					"midpoints" : [ 24.5, 333.0, 2.0, 333.0, 2.0, 1302.0, 516.0, 1302.0, 516.0, 1179.0, 500.5, 1179.0 ],
+					"midpoints" : [ 24.5, 333.0, 0.0, 333.0, 0.0, 1302.0, 267.0, 1302.0, 267.0, 1224.0, 390.0, 1224.0 ],
 					"source" : [ "obj-24", 0 ]
 				}
 
@@ -2314,8 +2313,32 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 1 ],
+					"order" : 2,
+					"source" : [ "obj-4", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 2 ],
+					"order" : 0,
+					"source" : [ "obj-4", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-47", 1 ],
+					"order" : 1,
+					"source" : [ "obj-4", 1 ]
 				}
 
 			}
@@ -2380,6 +2403,10 @@
 
 			}
  ],
+		"parameters" : 		{
+
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "huerot.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/slabs/huerot",
@@ -2452,8 +2479,8 @@
 			}
 , 			{
 				"name" : "xfade.genjit",
-				"bootpath" : "C:/ProgramData/Max 7/examples/jitter-examples/gen",
-				"patcherrelativepath" : "../../../../../../ProgramData/Max 7/examples/jitter-examples/gen",
+				"bootpath" : "/Users/Shared/Max 7/Examples/jitter-examples/gen",
+				"patcherrelativepath" : "../../../../../Shared/Max 7/Examples/jitter-examples/gen",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
@@ -2500,6 +2527,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "default-mine",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/playlists",
+				"patcherrelativepath" : "./playlists",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "freeze-flicker.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components",
 				"patcherrelativepath" : "./components",
@@ -2531,13 +2565,6 @@
 				"name" : "cel-shading.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/shaders",
 				"patcherrelativepath" : "./components/shaders",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "default.json",
-				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/presets",
-				"patcherrelativepath" : "./presets",
 				"type" : "JSON",
 				"implicit" : 1
 			}

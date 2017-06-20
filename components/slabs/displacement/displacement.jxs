@@ -1,15 +1,13 @@
-<jittershader name="voronoi">
+<jittershader name="displacement">
 	<description>
-	Voronoi
+	Displacement
 	</description>
 	<param name="tex0" type="int" default="0" />
 	<param name="tex1" type="int" default="1" />
-	<param name="dim" type="vec2" default="500. 500." />
 	<param name="strength" type="float" default="19." />
 	<language name="glsl" version="2.1">
 		<bind param="tex0" program="fp" />
 		<bind param="tex1" program="fp" />
-		<bind param="dim" program="fp" />
 		<bind param="strength" program="fp" />
 		<program name="vp" type="vertex" source="sh.passthrudim.vp.glsl" />
 		<program name="fp" type="fragment">

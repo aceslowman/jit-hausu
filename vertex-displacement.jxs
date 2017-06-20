@@ -1,0 +1,49 @@
+<jittershader name="vertdisplace">
+	<param name="displacement" type="int" default="0" />
+	<param name="tex0" type="int" default="0" />
+	<param name="scale" type="float" default="1.0" />
+	<language name="glsl" version="1.0">
+		<bind param="displacement" program="vp" />
+		<bind param="scale" program="vp" />
+		<bind param="tex0" program="fp" />
+		<program name="vp" type="vertex">
+<![CDATA[
+uniform sampler2D displacement;
+uniform float scale;
+
+varying vec2 texcoord0;
+
+void main(void)
+{
+	vec4 newVertexPos;
+	vec4 dv;
+	float df;
+
+	texcoord0 = gl_MultiTexCoord0.xy;
+
+	dv = texture2D( displacement, gl_MultiTexCoord0.xy );
+
+	df = 0.30*dv.x + 0.59*dv.y + 0.11*dv.z;
+
+	newVertexPos = vec4(gl_Normal * df * scale, 0.0) + gl_Vertex;
+
+	gl_Position = gl_ModelViewProjectionMatrix * newVertexPos;
+}
+
+]]>
+		</program>
+		<program name="fp" type="fragment" >
+<![CDATA[
+uniform sampler2D tex0;
+
+varying vec2 texcoord0;
+
+void main(void)
+{
+	gl_FragColor = gl_Color;
+   //gl_FragColor = texture2D(tex0, texcoord0);
+}
+]]>
+		</program>
+	</language>
+</jittershader>

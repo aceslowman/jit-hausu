@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 77.0, 1852.0, 929.0 ],
+		"rect" : [ 34.0, 56.0, 1212.0, 710.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -141,9 +141,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ -0.250244, 0.0, 144.0, 43.0 ],
+					"patching_rect" : [ -0.250244, 0.0, 144.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 165.0, 25.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 165.0, 24.0 ],
 					"style" : "",
 					"text" : "FBM GENERATOR"
 				}
@@ -452,7 +452,7 @@
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 116.257446, 123.0, 161.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.matrix this 1 char 800 800"
+					"text" : "jit.matrix this 1 char 100 100"
 				}
 
 			}

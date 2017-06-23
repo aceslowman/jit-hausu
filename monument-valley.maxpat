@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 995.0, 85.0, 890.0, 920.0 ],
+		"rect" : [ 34.0, 56.0, 1212.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -205,7 +205,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 645.0, 193.0, 217.0, 263.0 ],
+					"patching_rect" : [ 640.0, 155.0, 217.0, 263.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -426,21 +426,21 @@
 		"dependency_cache" : [ 			{
 				"name" : "rendering.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components",
-				"patcherrelativepath" : "./jit-hausu/components",
+				"patcherrelativepath" : "./components",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fbm-generator.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/slabs/fbm",
-				"patcherrelativepath" : "./jit-hausu/components/slabs/fbm",
+				"patcherrelativepath" : "./components/slabs/fbm",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "time.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components",
-				"patcherrelativepath" : "./jit-hausu/components",
+				"patcherrelativepath" : "./components",
 				"type" : "JSON",
 				"implicit" : 1
 			}

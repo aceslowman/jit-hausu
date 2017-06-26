@@ -1,0 +1,55 @@
+{
+	"diffuse_model" : "toon",
+	"specular_model" : "toon",
+	"tex_normals" : 1,
+	"tex_heightmap" : 1,
+	"bump" : 1,
+	"heightmap_mode" : "vtf",
+	"fog" : "none",
+	"params" : 	{
+		"diffuse_smooth" : 0.0,
+		"specular_size" : 0.193,
+		"diffuse_size" : 0.697,
+		"heightmap" : 1,
+		"specular_smooth" : 0.0,
+		"normals" : 0
+	}
+,
+	"textures" : 	{
+		"heightmap" : 		{
+			"type" : "float32",
+			"colormode" : "auto",
+			"rectangle" : 0,
+			"correction" : "nicest",
+			"filter" : "linear",
+			"mipmap" : "none",
+			"texgen" : "",
+			"wrap" : [ "clampedge", "clampedge", "clampedge" ],
+			"bordercolor" : [ 0.5, 0.5, 0.5, 1.0 ],
+			"anisotropy" : 0
+		}
+,
+		"normals" : 		{
+			"type" : "float32",
+			"colormode" : "auto",
+			"rectangle" : 0,
+			"correction" : "nicest",
+			"filter" : "linear",
+			"mipmap" : "none",
+			"texgen" : "",
+			"wrap" : [ "clampedge", "clampedge", "clampedge" ],
+			"bordercolor" : [ 0.5, 0.5, 0.5, 1.0 ],
+			"anisotropy" : 0
+		}
+
+	}
+,
+	"filename" : "water-cel-shading.jitmtl",
+	"color" : [ 0.0, 0.570962, 0.898192, 1.0 ],
+	"mat_emission" : [ 0.152941, 0.152941, 0.152941, 1.0 ],
+	"mat_ambient" : [ 0.0, 0.273259, 0.429862, 1.0 ],
+	"mat_diffuse" : [ 0.098039, 0.439216, 0.619608, 1.0 ],
+	"mat_specular" : [ 1.0, 1.0, 1.0, 1.0 ],
+	"shininess" : [ 2.97 ],
+	"fog_params" : [ 0.5, 0.5, 0.5, 0.0, 1.0, 1.0, 100.0 ]
+}

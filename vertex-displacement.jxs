@@ -2,7 +2,7 @@
 	<param name="displacement" type="int" default="0" />
 	<param name="tex0" type="int" default="0" />
 	<param name="scale" type="float" default="1.0" />
-	<language name="glsl" version="1.0">
+	<language name="glsl" version="1.50">
 		<bind param="displacement" program="vp" />
 		<bind param="scale" program="vp" />
 		<bind param="tex0" program="fp" />
@@ -11,10 +11,15 @@
 uniform sampler2D displacement;
 uniform float scale;
 
+varying vec4 bump;
 varying vec2 texcoord0;
+
+const ivec3 off = ivec3(-1,0,1);
 
 void main(void)
 {
+	vec2 size = vec2(scale,0.0);
+	
 	vec4 newVertexPos;
 	vec4 dv;
 	float df;
@@ -27,6 +32,17 @@ void main(void)
 
 	newVertexPos = vec4(gl_Normal * df * scale, 0.0) + gl_Vertex;
 
+	vec4 wave = texture2D(displacement,texcoord0);
+	
+	float s11 = wave.x;
+	float s01 = textureOffset(displacement, texcoord0, off.xy).x;
+	float s21 = textureOffset(displacement, texcoord0, off.zy).x;
+	float s10 = textureOffset(displacement, texcoord0, off.yx).x;
+	float s12 = textureOffset(displacement, texcoord0, off.yz).x;
+	vec3  va  = normalize(vec3(size.xy,s21-s01));
+	vec3  vb  = normalize(vec3(size.yx,s12-s10));
+	bump 	  = vec4(cross(va,vb), s11);
+
 	gl_Position = gl_ModelViewProjectionMatrix * newVertexPos;
 }
 
@@ -36,11 +52,14 @@ void main(void)
 <![CDATA[
 uniform sampler2D tex0;
 
+varying vec4 bump;
+
 varying vec2 texcoord0;
 
 void main(void)
 {
-	gl_FragColor = gl_Color;
+	gl_FragColor = bump;
+	//gl_FragColor = gl_Color;
    //gl_FragColor = texture2D(tex0, texcoord0);
 }
 ]]>

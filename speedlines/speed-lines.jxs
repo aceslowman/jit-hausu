@@ -1,0 +1,56 @@
+<jittershader name="slidescan">
+	<description>
+	Speedline effect
+	</description>
+	<param name="time" type="float" default="0.0" />
+	<param name="preview" type="bool" default="0.0" />
+	<param name="warp" type="float" default="0.005" />
+	<param name="bands" type="float" default="101." />
+	<param name="rollRate" type="float" default="2.5" />
+	<param name="rollAmount" type="float" default=".15" />
+	<language name="glsl" version="2.1">
+		<bind param="time" program="fp" />
+		<bind param="bands" program="fp" />
+		<bind param="preview" program="fp" />
+		<bind param="warp" program="fp" />
+		<bind param="rollRate" program="fp" />
+		<bind param="rollAmount" program="fp" />
+		<program name="vp" type="vertex" source="sh.passthrudim.vp.glsl" />
+		<program name="fp" type="fragment">
+<![CDATA[
+
+uniform sampler2DRect tex0;
+varying vec2 texcoord0;
+varying vec2 texdim0;
+
+uniform bool preview;
+uniform float time;
+uniform float warp;
+uniform float bands;
+uniform float rollRate;
+uniform float rollAmount;
+
+void main()
+{
+	// get uv coordinates
+	vec2 uv = texcoord0/texdim0;
+
+	uv.x -= mod(uv.x, 1.0 / bands)*(1. - warp);
+
+	uv.x = mod(uv.y + rollAmount * sin(rollRate * time * uv.x/2.), 1.0);
+
+	vec4 color = texture2DRect(tex0, uv*texdim0);
+
+	if(texcoord0.x < (texdim0.x/2.) && preview){
+		vec2 pos = texcoord0;
+		pos.x += texdim0.x/2.;
+		gl_FragColor = texture2DRect(tex0, pos);
+	}else{
+		gl_FragColor = color;
+	}
+}
+
+]]>
+		</program>
+	</language>
+</jittershader>

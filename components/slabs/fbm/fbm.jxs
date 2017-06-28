@@ -1,4 +1,4 @@
-<jittershader name="voronoi">
+<jittershader name="fbm">
 	<description>
 	Fractional Brownian Noise
 	</description>
@@ -7,15 +7,17 @@
 	<param name="octaves" type="int" default="4" />
 	<param name="map" type="vec2" default="0. 1." />
 	<param name="scale" type="vec2" default="5. 5." />
+	<param name="offset" type="vec2" default="1. 0." />
 	<language name="glsl" version="2.1">
 		<bind param="time" program="fp" />
 		<bind param="bSmooth" program="fp" />
 		<bind param="octaves" program="fp" />
 		<bind param="map" program="fp" />
 		<bind param="scale" program="fp" />
+		<bind param="offset" program="fp" />
 		<program name="vp" type="vertex" source="sh.passthrudim.vp.glsl" />
 		<program name="fp" type="fragment">
-	
+
 <![CDATA[
 
 
@@ -130,6 +132,7 @@ uniform float time;
 uniform int bSmooth;
 uniform vec2 map;
 uniform vec2 scale;
+uniform vec2 offset;
 uniform int octaves;
 
 void main()
@@ -137,7 +140,7 @@ void main()
 	float noise;
 	float octave = 1.0;
 
-	vec2 uv = texcoord0 / texdim0;
+	vec2 uv = (texcoord0 / texdim0) + (offset * time);
 
 	for(int i = 0; i < octaves; i++){
 		noise += (1./octave) * snoise(octave * vec3(uv.x * scale.x, uv.y * scale.y, time));

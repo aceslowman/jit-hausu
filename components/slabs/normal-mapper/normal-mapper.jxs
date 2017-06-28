@@ -1,9 +1,7 @@
-<jittershader name="vertdisplace">
-	<param name="displacement" type="int" default="0" />
+<jittershader name="normalmapper">
 	<param name="tex0" type="int" default="0" />
 	<param name="size" type="vec2" default="1.0 0.0" />
 	<language name="glsl" version="1.50">
-		<bind param="displacement" program="vp" />
 		<bind param="scale" program="fp" />
 		<bind param="tex0" program="fp" />
 		<bind param="size" program="fp" />

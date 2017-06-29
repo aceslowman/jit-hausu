@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1314.0, 56.0, 1320.0, 986.0 ],
+		"rect" : [ 34.0, 56.0, 1212.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 504.399994, 37.000011, 64.0, 27.0 ],
+					"patching_rect" : [ 750.400024, 10.000011, 64.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 854.400024, 169.5, 70.0, 27.0 ],
 					"style" : "",
@@ -312,7 +312,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -344,7 +344,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "Message to Second Movie",
@@ -551,8 +550,6 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-26", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -560,8 +557,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-16", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-13", 0 ]
 								}
 
@@ -569,8 +564,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-20", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-16", 0 ]
 								}
 
@@ -578,8 +571,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 0,
 									"source" : [ "obj-18", 0 ]
 								}
@@ -588,8 +579,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 1,
 									"source" : [ "obj-18", 0 ]
 								}
@@ -598,8 +587,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-18", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-2", 0 ]
 								}
 
@@ -607,8 +594,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-25", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-20", 0 ]
 								}
 
@@ -616,8 +601,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-16", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-21", 0 ]
 								}
 
@@ -625,8 +608,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-26", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-25", 0 ]
 								}
 
@@ -634,8 +615,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-26", 1 ]
 								}
 
@@ -643,8 +622,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-18", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-29", 0 ]
 								}
 
@@ -652,8 +629,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-18", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-6", 0 ]
 								}
 
@@ -661,8 +636,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-29", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-7", 1 ]
 								}
 
@@ -670,8 +643,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-29", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-8", 2 ]
 								}
 
@@ -806,7 +777,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1190,8 +1161,6 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-9", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-12", 0 ]
 								}
 
@@ -1199,8 +1168,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-29", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-13", 1 ]
 								}
 
@@ -1208,8 +1175,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-14", 1 ]
 								}
 
@@ -1217,8 +1182,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-62", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-17", 0 ]
 								}
 
@@ -1226,8 +1189,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-17", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-18", 0 ]
 								}
 
@@ -1235,8 +1196,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-2", 0 ]
 								}
 
@@ -1244,8 +1203,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-18", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 0,
 									"source" : [ "obj-24", 0 ]
 								}
@@ -1254,8 +1211,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-26", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"midpoints" : [ 384.5, 192.0, 360.0, 192.0, 360.0, 72.0, 384.5, 72.0 ],
 									"order" : 1,
 									"source" : [ "obj-24", 0 ]
@@ -1265,8 +1220,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-26", 0 ]
 								}
 
@@ -1274,8 +1227,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-13", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-27", 0 ]
 								}
 
@@ -1283,8 +1234,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-24", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"midpoints" : [ 304.5, 159.333328, 370.0, 159.333328, 370.0, 160.0, 384.5, 160.0 ],
 									"order" : 0,
 									"source" : [ "obj-28", 0 ]
@@ -1294,8 +1243,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-30", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 1,
 									"source" : [ "obj-28", 0 ]
 								}
@@ -1304,8 +1251,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-30", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-29", 1 ]
 								}
 
@@ -1313,8 +1258,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-30", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-29", 0 ]
 								}
 
@@ -1322,8 +1265,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -1331,8 +1272,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-27", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"midpoints" : [ 245.5, 192.0, 221.0, 192.0, 221.0, 72.0, 245.5, 72.0 ],
 									"order" : 1,
 									"source" : [ "obj-30", 0 ]
@@ -1342,8 +1281,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-32", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 0,
 									"source" : [ "obj-30", 0 ]
 								}
@@ -1352,8 +1289,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-32", 0 ]
 								}
 
@@ -1361,8 +1296,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-12", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-34", 0 ]
 								}
 
@@ -1370,8 +1303,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-4", 0 ]
 								}
 
@@ -1379,8 +1310,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-24", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-5", 1 ]
 								}
 
@@ -1388,8 +1317,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-24", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-5", 0 ]
 								}
 
@@ -1397,8 +1324,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-10", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-62", 0 ]
 								}
 
@@ -1406,8 +1331,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"midpoints" : [ 108.5, 86.0, 52.0, 86.0, 52.0, 86.0, 31.5, 86.0 ],
 									"source" : [ "obj-7", 0 ]
 								}
@@ -1564,7 +1487,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 3,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1596,7 +1519,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "Use Absolute Path / Use Filename Only",
@@ -1768,6 +1690,187 @@
 							}
 , 							{
 								"box" : 								{
+									"coll_data" : 									{
+										"count" : 44,
+										"data" : [ 											{
+												"key" : 1,
+												"value" : [ "tree_badasswater.mov" ]
+											}
+, 											{
+												"key" : 2,
+												"value" : [ "req_harry-marion.mov" ]
+											}
+, 											{
+												"key" : 3,
+												"value" : [ "req_paper-airplanes.mov" ]
+											}
+, 											{
+												"key" : 4,
+												"value" : [ "hausu_waterandcat.mov" ]
+											}
+, 											{
+												"key" : 5,
+												"value" : [ "tree_blob2.mov" ]
+											}
+, 											{
+												"key" : 6,
+												"value" : [ "tree_confused.mov" ]
+											}
+, 											{
+												"key" : 7,
+												"value" : [ "tree_blob3.mov" ]
+											}
+, 											{
+												"key" : 8,
+												"value" : [ "req_flesh-and-faces.mov" ]
+											}
+, 											{
+												"key" : 9,
+												"value" : [ "rd_carnival.mov" ]
+											}
+, 											{
+												"key" : 10,
+												"value" : [ "rocky_underwater.mov" ]
+											}
+, 											{
+												"key" : 11,
+												"value" : [ "tree_volcano.mov" ]
+											}
+, 											{
+												"key" : 12,
+												"value" : [ "tree_woman.mov" ]
+											}
+, 											{
+												"key" : 13,
+												"value" : [ "tree_watermassive.mov" ]
+											}
+, 											{
+												"key" : 14,
+												"value" : [ "tree_brad.mov" ]
+											}
+, 											{
+												"key" : 15,
+												"value" : [ "tree_geyser.mov" ]
+											}
+, 											{
+												"key" : 16,
+												"value" : [ "tree_cow.mov" ]
+											}
+, 											{
+												"key" : 17,
+												"value" : [ "hausu_trees.mov" ]
+											}
+, 											{
+												"key" : 18,
+												"value" : [ "rocky_smokespin.mov" ]
+											}
+, 											{
+												"key" : 19,
+												"value" : [ "tree_glass.mov" ]
+											}
+, 											{
+												"key" : 20,
+												"value" : [ "tree_jelly.mov" ]
+											}
+, 											{
+												"key" : 21,
+												"value" : [ "req_we-got-a-winner.mov" ]
+											}
+, 											{
+												"key" : 22,
+												"value" : [ "hausu_cat.mov" ]
+											}
+, 											{
+												"key" : 23,
+												"value" : [ "tree_nebula4.mov" ]
+											}
+, 											{
+												"key" : 24,
+												"value" : [ "drive_water.mov" ]
+											}
+, 											{
+												"key" : 25,
+												"value" : [ "hausu_womanflowing.mov" ]
+											}
+, 											{
+												"key" : 26,
+												"value" : [ "tree_sunflow2.mov" ]
+											}
+, 											{
+												"key" : 27,
+												"value" : [ "tree_pennhand.mov" ]
+											}
+, 											{
+												"key" : 28,
+												"value" : [ "tree_kelp.mov" ]
+											}
+, 											{
+												"key" : 29,
+												"value" : [ "mar_landscape4.mov" ]
+											}
+, 											{
+												"key" : 30,
+												"value" : [ "drive_cashzoom.mov" ]
+											}
+, 											{
+												"key" : 31,
+												"value" : [ "drive_cityspin.mov" ]
+											}
+, 											{
+												"key" : 32,
+												"value" : [ "tree_nebula5.mov" ]
+											}
+, 											{
+												"key" : 33,
+												"value" : [ "tree_glass-ceiling.mov" ]
+											}
+, 											{
+												"key" : 34,
+												"value" : [ "hausu_mirrorbreak.mov" ]
+											}
+, 											{
+												"key" : 35,
+												"value" : [ "tree_sky.mov" ]
+											}
+, 											{
+												"key" : 36,
+												"value" : [ "hausu_aunt.mov" ]
+											}
+, 											{
+												"key" : 37,
+												"value" : [ "tree_blob5.mov" ]
+											}
+, 											{
+												"key" : 38,
+												"value" : [ "hausu_catflash.mov" ]
+											}
+, 											{
+												"key" : 39,
+												"value" : [ "tree_sunflow3.mov" ]
+											}
+, 											{
+												"key" : 40,
+												"value" : [ "hausu_womanflowingfinal.mov" ]
+											}
+, 											{
+												"key" : 41,
+												"value" : [ "tree_volcano4.mov" ]
+											}
+, 											{
+												"key" : 42,
+												"value" : [ "req_screaming-in-water.mov" ]
+											}
+, 											{
+												"key" : 43,
+												"value" : [ "tree_tree2.mov" ]
+											}
+, 											{
+												"key" : 44,
+												"value" : [ "tree_nebula3.mov" ]
+											}
+ ]
+									}
+,
 									"color" : [ 0.447059, 0.823529, 0.772549, 1.0 ],
 									"id" : "obj-4",
 									"maxclass" : "newobj",
@@ -1776,7 +1879,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 130.166656, 674.0, 69.0, 22.0 ],
 									"saved_object_attributes" : 									{
-										"embed" : 0
+										"embed" : 1
 									}
 ,
 									"style" : "",
@@ -1938,8 +2041,6 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-10", 0 ]
 								}
 
@@ -1947,8 +2048,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-13", 1 ]
 								}
 
@@ -1956,8 +2055,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-32", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-13", 0 ]
 								}
 
@@ -1965,8 +2062,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-13", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-14", 1 ]
 								}
 
@@ -1974,8 +2069,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-17", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-15", 0 ]
 								}
 
@@ -1983,8 +2076,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-18", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 1,
 									"source" : [ "obj-17", 0 ]
 								}
@@ -1993,8 +2084,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-29", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 0,
 									"source" : [ "obj-17", 0 ]
 								}
@@ -2003,8 +2092,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-10", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"midpoints" : [ 127.5, 216.0, 31.0, 216.0, 31.0, 585.0, 82.5, 585.0 ],
 									"source" : [ "obj-18", 1 ]
 								}
@@ -2013,8 +2100,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-52", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"midpoints" : [ 156.0, 197.0, 278.0, 197.0, 278.0, 510.0, 210.666672, 510.0 ],
 									"order" : 0,
 									"source" : [ "obj-18", 2 ]
@@ -2024,8 +2109,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-57", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"order" : 1,
 									"source" : [ "obj-18", 2 ]
 								}
@@ -2034,8 +2117,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-51", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-2", 2 ]
 								}
 
@@ -2043,8 +2124,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-13", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-20", 0 ]
 								}
 
@@ -2052,8 +2131,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-20", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-22", 0 ]
 								}
 
@@ -2061,8 +2138,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-30", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-23", 0 ]
 								}
 
@@ -2070,8 +2145,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-8", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-24", 0 ]
 								}
 
@@ -2079,8 +2152,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-28", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-27", 0 ]
 								}
 
@@ -2088,8 +2159,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-23", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-28", 1 ]
 								}
 
@@ -2097,8 +2166,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-23", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-28", 0 ]
 								}
 
@@ -2106,8 +2173,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -2115,8 +2180,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-30", 0 ]
 								}
 
@@ -2124,8 +2187,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-51", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-32", 1 ]
 								}
 
@@ -2133,8 +2194,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-40", 0 ]
 								}
 
@@ -2142,8 +2201,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"midpoints" : [ 66.0, 223.5, 37.0, 223.5, 37.0, 240.0, 37.0, 240.0, 37.0, 354.0, 55.5, 354.0 ],
 									"source" : [ "obj-5", 1 ]
 								}
@@ -2152,8 +2209,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"midpoints" : [ 55.5, 95.0, 156.0, 95.0 ],
 									"source" : [ "obj-5", 0 ]
 								}
@@ -2162,8 +2217,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-40", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-50", 0 ]
 								}
 
@@ -2171,8 +2224,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-50", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-51", 1 ]
 								}
 
@@ -2180,8 +2231,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-52", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-51", 0 ]
 								}
 
@@ -2189,8 +2238,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-50", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-52", 0 ]
 								}
 
@@ -2198,8 +2245,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-27", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-57", 0 ],
 									"watchpoint_flags" : 2,
 									"watchpoint_id" : 1
@@ -2209,8 +2254,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-18", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-8", 0 ]
 								}
 
@@ -2218,8 +2261,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"midpoints" : [ 139.666664, 160.0, 26.0, 160.0, 26.0, 650.0, 139.666656, 650.0 ],
 									"source" : [ "obj-8", 1 ]
 								}
@@ -2260,7 +2301,6 @@
 					"colormode" : "uyvy",
 					"id" : "obj-1",
 					"maxclass" : "jit.pwindow",
-					"name" : "mainout",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
@@ -2276,1226 +2316,1586 @@
 					"clipheight" : 80.0,
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Water from Higgins.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_badasswater.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Water from Higgins Bridge.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/req_harry-marion.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Water from Brennans.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/req_paper-airplanes.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/wate.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/hausu_waterandcat.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Walking Bridge Building.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_blob2.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/View of Higgins Bridge.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_confused.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Trains from Side.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_blob3.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Trains from Above.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/req_flesh-and-faces.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Train through grid.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/rd_carnival.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Train like houses.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/rocky_underwater.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Train from Top.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_volcano.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Train cars moving.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_woman.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Train Blurred.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_watermassive.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Train and rail.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_brad.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Spruce.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_geyser.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Scott St Bridge.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_cow.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Northside Valley Shot.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/hausu_trees.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Near Brennans Wave.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/rocky_smokespin.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Higgins Bridge.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_glass.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Higgins bridge cars.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_jelly.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Graveyard.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/req_we-got-a-winner.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Fungus.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/hausu_cat.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/From the Walking Bridge.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_nebula4.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/From Caras.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/drive_water.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Eyes 3.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/hausu_womanflowing.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Eyes 2.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_sunflow2.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Eyes 1.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_pennhand.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Driving thru Downtown.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_kelp.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Dirt and Leaves.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/mar_landscape4.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Carousel Pinwheel.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/drive_cashzoom.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Carousel Pinwheel Josh.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/drive_cityspin.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Brennans Wave.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_nebula5.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Above train.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_glass-ceiling.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
 , 							{
-								"filename" : "/Users/austin/Dropbox/Psych Fest Promo/Above Train 2.mov",
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/hausu_mirrorbreak.mov",
 								"filekind" : "moviefile",
 								"loop" : 0,
 								"content_state" : 								{
 									"outputmode" : [ 1 ],
-									"out_name" : [ "u956000457" ],
+									"out_name" : [ "u363001243" ],
 									"dim" : [ 1, 1 ],
-									"moviefile" : [ "" ],
-									"usedstrect" : [ 0 ],
-									"drawto" : [ "" ],
-									"loopend" : [ 0 ],
-									"adapt" : [ 1 ],
-									"looppoints" : [ 0, 0 ],
-									"position" : [ 0.0 ],
-									"usesrcrect" : [ 0 ],
 									"loopstart" : [ 0 ],
-									"vol" : [ 0 ],
-									"colormode" : [ "argb" ],
-									"dstrect" : [ 0, 0, 1, 1 ],
-									"framereport" : [ 0 ],
-									"texture_name" : [ "u510000455" ],
-									"unique" : [ 0 ],
-									"rate" : [ 1.0 ],
-									"srcrect" : [ 0, 0, 1, 1 ],
-									"output_texture" : [ 0 ],
-									"autostart" : [ 1 ],
-									"time_secs" : [ 0.0 ],
 									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
 									"automatic" : [ 0 ],
-									"engine" : [ "avf" ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
 									"loopreport" : [ 0 ],
-									"time" : [ 0 ]
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_sky.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u363001243" ],
+									"dim" : [ 1, 1 ],
+									"loopstart" : [ 0 ],
+									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
+									"automatic" : [ 0 ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/hausu_aunt.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u363001243" ],
+									"dim" : [ 1, 1 ],
+									"loopstart" : [ 0 ],
+									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
+									"automatic" : [ 0 ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_blob5.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u363001243" ],
+									"dim" : [ 1, 1 ],
+									"loopstart" : [ 0 ],
+									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
+									"automatic" : [ 0 ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/hausu_catflash.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u363001243" ],
+									"dim" : [ 1, 1 ],
+									"loopstart" : [ 0 ],
+									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
+									"automatic" : [ 0 ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_sunflow3.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u363001243" ],
+									"dim" : [ 1, 1 ],
+									"loopstart" : [ 0 ],
+									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
+									"automatic" : [ 0 ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/hausu_womanflowingfinal.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u363001243" ],
+									"dim" : [ 1, 1 ],
+									"loopstart" : [ 0 ],
+									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
+									"automatic" : [ 0 ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_volcano4.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u363001243" ],
+									"dim" : [ 1, 1 ],
+									"loopstart" : [ 0 ],
+									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
+									"automatic" : [ 0 ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/req_screaming-in-water.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u363001243" ],
+									"dim" : [ 1, 1 ],
+									"loopstart" : [ 0 ],
+									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
+									"automatic" : [ 0 ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_tree2.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u363001243" ],
+									"dim" : [ 1, 1 ],
+									"loopstart" : [ 0 ],
+									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
+									"automatic" : [ 0 ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austin/Documents/Max 7/Library/jit-hausu/assets/video/tree_nebula3.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u363001243" ],
+									"dim" : [ 1, 1 ],
+									"loopstart" : [ 0 ],
+									"interp" : [ 0 ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"rate" : [ 1.0 ],
+									"automatic" : [ 0 ],
+									"time" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"texture_name" : [ "u601001241" ],
+									"autostart" : [ 1 ],
+									"moviefile" : [ "" ],
+									"time_secs" : [ 0.0 ],
+									"looppoints" : [ 0, 0 ],
+									"colormode" : [ "argb" ],
+									"position" : [ 0.0 ],
+									"framereport" : [ 0 ],
+									"loopreport" : [ 0 ],
+									"drawto" : [ "" ],
+									"vol" : [ 1.0 ],
+									"usedstrect" : [ 0 ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"adapt" : [ 1 ],
+									"engine" : [ "avf" ],
+									"usesrcrect" : [ 0 ]
 								}
 
 							}
@@ -3537,8 +3937,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -3546,8 +3944,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 648.5, 28.0, 633.0, 28.0, 633.0, 10.0, 579.5, 10.0 ],
 					"source" : [ "obj-12", 0 ]
 				}
@@ -3556,8 +3952,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-152", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-146", 0 ]
 				}
 
@@ -3565,8 +3959,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-152", 0 ]
 				}
 
@@ -3574,8 +3966,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-146", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 1345.020874, 442.0, 1221.0, 442.0, 1221.0, 325.0, 1233.5, 325.0 ],
 					"source" : [ "obj-152", 1 ]
 				}
@@ -3584,8 +3974,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-155", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 1456.541748, 442.0, 1599.0, 442.0, 1599.0, 391.0, 1477.541748, 391.0 ],
 					"source" : [ "obj-152", 2 ]
 				}
@@ -3594,8 +3982,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-152", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 1528.541748, 442.0, 1599.0, 442.0, 1599.0, 391.0, 1456.541748, 391.0 ],
 					"source" : [ "obj-155", 1 ]
 				}
@@ -3604,8 +3990,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -3613,8 +3997,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -3622,8 +4004,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -3631,8 +4011,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-20", 1 ]
 				}
@@ -3641,8 +4019,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 2,
 					"source" : [ "obj-20", 0 ]
 				}
@@ -3651,8 +4027,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-20", 1 ]
 				}
@@ -3661,8 +4035,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-20", 0 ]
 				}
@@ -3671,8 +4043,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 2,
 					"source" : [ "obj-20", 1 ]
 				}
@@ -3681,8 +4051,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 3,
 					"source" : [ "obj-20", 0 ]
 				}
@@ -3691,8 +4059,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-20", 0 ]
 				}
@@ -3701,8 +4067,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-21", 0 ]
 				}
 
@@ -3710,8 +4074,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -3719,8 +4081,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -3728,8 +4088,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 357.533356, 60.400002, 12.5, 60.400002 ],
 					"source" : [ "obj-26", 0 ]
 				}
@@ -3738,8 +4096,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-28", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 729.5, 60.0, 636.0, 60.0, 636.0, 627.0, 729.5, 627.0 ],
 					"order" : 0,
 					"source" : [ "obj-31", 0 ]
@@ -3749,8 +4105,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 729.5, 60.0, 12.5, 60.0 ],
 					"order" : 1,
 					"source" : [ "obj-31", 0 ]
@@ -3760,8 +4114,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 448.899994, 62.0, 430.0, 62.0, 430.0, 7.0, 296.000031, 7.0 ],
 					"source" : [ "obj-33", 0 ]
 				}
@@ -3770,8 +4122,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-29", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-35", 0 ]
 				}
 
@@ -3779,8 +4129,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-37", 1 ]
 				}
 
@@ -3788,8 +4136,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-37", 0 ]
 				}
 
@@ -3797,8 +4143,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-38", 0 ]
 				}
 
@@ -3806,8 +4150,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 579.5, 64.0, 562.0, 64.0, 562.0, 7.0, 234.0, 7.0, 234.0, 55.0, 12.5, 55.0 ],
 					"source" : [ "obj-7", 0 ]
 				}
@@ -3816,8 +4158,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-8", 1 ]
 				}
 
@@ -3825,8 +4165,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 1,
 					"source" : [ "obj-8", 0 ]
 				}
@@ -3835,8 +4173,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
@@ -3845,8 +4181,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 0,
 					"source" : [ "obj-8", 2 ]
 				}
@@ -3855,8 +4189,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"order" : 2,
 					"source" : [ "obj-8", 2 ]
 				}
@@ -3865,8 +4197,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 617.5, 643.0, 632.0, 643.0, 632.0, 424.200012, 648.5, 424.200012 ],
 					"order" : 1,
 					"source" : [ "obj-8", 2 ]
@@ -3875,212 +4205,324 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "Water from Higgins.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "tree_badasswater.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Water from Higgins Bridge.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "req_harry-marion.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Water from Brennans.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "req_paper-airplanes.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "wate.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "hausu_waterandcat.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Walking Bridge Building.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "tree_blob2.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "View of Higgins Bridge.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "tree_confused.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Trains from Side.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "tree_blob3.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Trains from Above.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "req_flesh-and-faces.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Train through grid.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "rd_carnival.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Train like houses.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "rocky_underwater.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Train from Top.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "tree_volcano.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Train cars moving.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "tree_woman.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Train Blurred.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "tree_watermassive.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Train and rail.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "tree_brad.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Spruce.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "tree_geyser.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Scott St Bridge.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "tree_cow.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Northside Valley Shot.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "hausu_trees.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Near Brennans Wave.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "rocky_smokespin.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Higgins Bridge.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "tree_glass.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Higgins bridge cars.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "tree_jelly.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Graveyard.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "req_we-got-a-winner.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Fungus.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "hausu_cat.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "From the Walking Bridge.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "tree_nebula4.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "From Caras.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "drive_water.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Eyes 3.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "hausu_womanflowing.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Eyes 2.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "tree_sunflow2.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Eyes 1.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "tree_pennhand.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Driving thru Downtown.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "tree_kelp.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Dirt and Leaves.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "mar_landscape4.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Carousel Pinwheel.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "drive_cashzoom.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Carousel Pinwheel Josh.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "drive_cityspin.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Brennans Wave.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "tree_nebula5.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Above train.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "tree_glass-ceiling.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Above Train 2.mov",
-				"bootpath" : "~/Dropbox/Psych Fest Promo",
+				"name" : "hausu_mirrorbreak.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
 				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tree_sky.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "hausu_aunt.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tree_blob5.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "hausu_catflash.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tree_sunflow3.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "hausu_womanflowingfinal.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tree_volcano4.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "req_screaming-in-water.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tree_tree2.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tree_nebula3.mov",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/assets/video",
+				"patcherrelativepath" : "../assets/video",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zacc-mio-moments2",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/playlists",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "xfade.genjit",
 				"bootpath" : "/Users/Shared/Max 7/Examples/jitter-examples/gen",
+				"patcherrelativepath" : "../../../../../../Shared/Max 7/Examples/jitter-examples/gen",
 				"type" : "gJIT",
 				"implicit" : 1
 			}

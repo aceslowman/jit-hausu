@@ -38,6 +38,24 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 275.0, 195.0, 58.0, 22.0 ],
+					"restore" : 					{
+						"taptempo-midi" : [ 0 ]
+					}
+,
+					"style" : "",
+					"text" : "autopattr",
+					"varname" : "u315001518"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,

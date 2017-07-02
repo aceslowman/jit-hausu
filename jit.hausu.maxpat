@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 56.0, 1212.0, 710.0 ],
+		"rect" : [ 35.0, 57.0, 1212.0, 710.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,26 @@
 		"subpatcher_template" : "",
 		"globalpatchername" : "u079001943",
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-4",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "freeze-flicker_REBUILD.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 615.0, 915.0, 255.0, 120.0 ],
+					"varname" : "freeze-flicker_REBUILD",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
@@ -188,7 +208,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @save 2",
-					"varname" : "u226000875"
+					"varname" : "u737001794"
 				}
 
 			}
@@ -2414,9 +2434,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "showready.json",
-				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/playlists",
-				"patcherrelativepath" : "./playlists",
+				"name" : "freeze-flicker_REBUILD.maxpat",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components",
+				"patcherrelativepath" : "./components",
 				"type" : "JSON",
 				"implicit" : 1
 			}

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 85.0, 1229.0, 929.0 ],
+		"rect" : [ 42.0, 85.0, 1229.0, 921.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -306,7 +306,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 660.0, 308.5, 195.0, 245.0 ],
+					"patching_rect" : [ 787.0, 321.5, 195.0, 245.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -534,7 +534,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u466000590"
+									"varname" : "u006000570"
 								}
 
 							}
@@ -1877,9 +1877,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_gl_texture", "" ],
-									"patching_rect" : [ 71.0, 210.0, 417.0, 22.0 ],
+									"patching_rect" : [ 71.0, 210.0, 342.0, 22.0 ],
 									"style" : "",
-									"text" : "jit.gl.slab mainout @file fbm.jxs @type float32 @rectangle 0 @name fbm-tex"
+									"text" : "jit.gl.slab mainout @file fbm.jxs @type float32 @name fbm-tex"
 								}
 
 							}
@@ -2663,7 +2663,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 6 ],
-					"midpoints" : [ 669.5, 296.5, 645.0, 296.5, 645.0, 578.5, 734.928597, 578.5 ],
+					"midpoints" : [ 669.5, 296.5, 645.0, 296.5, 645.0, 531.5, 734.928597, 531.5 ],
 					"order" : 0,
 					"source" : [ "obj-13", 0 ]
 				}

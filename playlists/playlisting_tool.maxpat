@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 56.0, 1212.0, 706.0 ],
+		"rect" : [ 42.0, 85.0, 1218.0, 920.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 750.400024, 10.000011, 64.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 854.400024, 169.5, 70.0, 27.0 ],
+					"presentation_rect" : [ 816.400024, 34.5, 70.0, 27.0 ],
 					"style" : "",
 					"text" : "Sound"
 				}
@@ -73,7 +73,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 720.0, 10.000011, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 820.0, 167.5, 31.0, 31.0 ],
+					"presentation_rect" : [ 782.0, 32.5, 31.0, 31.0 ],
 					"style" : ""
 				}
 
@@ -98,7 +98,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 676.0, 724.5, 131.0, 33.0 ],
+					"patching_rect" : [ 581.0, 735.5, 137.0, 34.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 937.0, 34.5, 137.0, 34.0 ],
 					"style" : "",
 					"text" : "(0) Use Absolute Path\n(1) Use Filename Only"
 				}
@@ -112,7 +115,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 643.0, 729.0, 24.0, 24.0 ],
+					"patching_rect" : [ 548.0, 740.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 904.0, 39.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -741,7 +746,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1468.041748, 406.947327, 121.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 680.0, 167.5, 121.0, 31.0 ],
+					"presentation_rect" : [ 642.0, 32.5, 121.0, 31.0 ],
 					"style" : ""
 				}
 
@@ -759,7 +764,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1224.0, 330.101807, 616.0, 51.230103 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 680.0, 761.706177, 565.0, 38.0 ],
+					"presentation_rect" : [ 642.0, 626.706177, 565.0, 38.0 ],
 					"size" : 100.0,
 					"style" : "velvet"
 				}
@@ -1383,7 +1388,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1533.0, 130.141602, 305.0, 192.716812 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 963.756287, 582.0, 281.243713, 177.706192 ],
+					"presentation_rect" : [ 925.756287, 447.0, 281.243713, 177.706192 ],
 					"shared" : 1
 				}
 
@@ -1399,7 +1404,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1224.0, 130.141602, 305.0, 192.716812 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 680.0, 582.0, 281.243713, 177.706192 ],
+					"presentation_rect" : [ 642.0, 447.0, 281.243713, 177.706192 ],
 					"shared" : 1
 				}
 
@@ -1414,7 +1419,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 570.0, 22.000011, 57.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 534.0, 167.5, 57.0, 31.0 ],
+					"presentation_rect" : [ 496.0, 32.5, 57.0, 31.0 ],
 					"style" : "",
 					"text" : "clear"
 				}
@@ -1456,7 +1461,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 489.399994, 22.000011, 64.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 450.399994, 169.5, 64.0, 27.0 ],
+					"presentation_rect" : [ 412.399994, 34.5, 64.0, 27.0 ],
 					"style" : "",
 					"text" : "export"
 				}
@@ -1471,7 +1476,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 439.399994, 11.0, 48.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 400.399994, 159.0, 48.0, 48.0 ],
+					"presentation_rect" : [ 362.399994, 24.0, 48.0, 48.0 ],
 					"style" : ""
 				}
 
@@ -1691,182 +1696,42 @@
 , 							{
 								"box" : 								{
 									"coll_data" : 									{
-										"count" : 44,
+										"count" : 9,
 										"data" : [ 											{
 												"key" : 1,
-												"value" : [ "tree_badasswater.mov" ]
+												"value" : [ "clips[0]::filename D:\\Dropbox\\jit-hausu_library\\zl_dawnoffirst.mov" ]
 											}
 , 											{
 												"key" : 2,
-												"value" : [ "req_harry-marion.mov" ]
+												"value" : [ "clips[1]::filename D:\\Dropbox\\jit-hausu_library\\tree_water-to-man.mov" ]
 											}
 , 											{
 												"key" : 3,
-												"value" : [ "req_paper-airplanes.mov" ]
+												"value" : [ "clips[2]::filename D:\\Dropbox\\jit-hausu_library\\tree_watermoving.mov" ]
 											}
 , 											{
 												"key" : 4,
-												"value" : [ "tree_nebula3.mov" ]
+												"value" : [ "clips[3]::filename D:\\Dropbox\\jit-hausu_library\\tree_watermassive.mov" ]
 											}
 , 											{
 												"key" : 5,
-												"value" : [ "tree_blob2.mov" ]
+												"value" : [ "clips[4]::filename D:\\Dropbox\\jit-hausu_library\\tree_walkthruwater.mov" ]
 											}
 , 											{
 												"key" : 6,
-												"value" : [ "tree_confused.mov" ]
+												"value" : [ "clips[5]::filename D:\\Dropbox\\jit-hausu_library\\tree_volcano2.mov" ]
 											}
 , 											{
 												"key" : 7,
-												"value" : [ "tree_blob3.mov" ]
+												"value" : [ "clips[6]::filename D:\\Dropbox\\jit-hausu_library\\tree_tree.mov" ]
 											}
 , 											{
 												"key" : 8,
-												"value" : [ "req_flesh-and-faces.mov" ]
+												"value" : [ "clips[7]::filename D:\\Dropbox\\jit-hausu_library\\tree_sky.mov" ]
 											}
 , 											{
 												"key" : 9,
-												"value" : [ "rd_carnival.mov" ]
-											}
-, 											{
-												"key" : 10,
-												"value" : [ "rocky_underwater.mov" ]
-											}
-, 											{
-												"key" : 11,
-												"value" : [ "tree_volcano.mov" ]
-											}
-, 											{
-												"key" : 12,
-												"value" : [ "tree_woman.mov" ]
-											}
-, 											{
-												"key" : 13,
-												"value" : [ "tree_watermassive.mov" ]
-											}
-, 											{
-												"key" : 14,
-												"value" : [ "tree_brad.mov" ]
-											}
-, 											{
-												"key" : 15,
-												"value" : [ "tree_geyser.mov" ]
-											}
-, 											{
-												"key" : 16,
-												"value" : [ "tree_cow.mov" ]
-											}
-, 											{
-												"key" : 17,
-												"value" : [ "hausu_trees.mov" ]
-											}
-, 											{
-												"key" : 18,
-												"value" : [ "rocky_smokespin.mov" ]
-											}
-, 											{
-												"key" : 19,
-												"value" : [ "tree_glass.mov" ]
-											}
-, 											{
-												"key" : 20,
-												"value" : [ "tree_jelly.mov" ]
-											}
-, 											{
-												"key" : 21,
-												"value" : [ "req_we-got-a-winner.mov" ]
-											}
-, 											{
-												"key" : 22,
-												"value" : [ "hausu_cat.mov" ]
-											}
-, 											{
-												"key" : 23,
-												"value" : [ "tree_nebula4.mov" ]
-											}
-, 											{
-												"key" : 24,
-												"value" : [ "drive_water.mov" ]
-											}
-, 											{
-												"key" : 25,
-												"value" : [ "hausu_womanflowing.mov" ]
-											}
-, 											{
-												"key" : 26,
-												"value" : [ "tree_sunflow2.mov" ]
-											}
-, 											{
-												"key" : 27,
-												"value" : [ "tree_pennhand.mov" ]
-											}
-, 											{
-												"key" : 28,
-												"value" : [ "tree_kelp.mov" ]
-											}
-, 											{
-												"key" : 29,
-												"value" : [ "mar_landscape4.mov" ]
-											}
-, 											{
-												"key" : 30,
-												"value" : [ "drive_cashzoom.mov" ]
-											}
-, 											{
-												"key" : 31,
-												"value" : [ "drive_cityspin.mov" ]
-											}
-, 											{
-												"key" : 32,
-												"value" : [ "tree_nebula5.mov" ]
-											}
-, 											{
-												"key" : 33,
-												"value" : [ "tree_glass-ceiling.mov" ]
-											}
-, 											{
-												"key" : 34,
-												"value" : [ "hausu_mirrorbreak.mov" ]
-											}
-, 											{
-												"key" : 35,
-												"value" : [ "tree_sky.mov" ]
-											}
-, 											{
-												"key" : 36,
-												"value" : [ "hausu_aunt.mov" ]
-											}
-, 											{
-												"key" : 37,
-												"value" : [ "tree_blob5.mov" ]
-											}
-, 											{
-												"key" : 38,
-												"value" : [ "hausu_catflash.mov" ]
-											}
-, 											{
-												"key" : 39,
-												"value" : [ "tree_sunflow3.mov" ]
-											}
-, 											{
-												"key" : 40,
-												"value" : [ "hausu_womanflowingfinal.mov" ]
-											}
-, 											{
-												"key" : 41,
-												"value" : [ "tree_volcano4.mov" ]
-											}
-, 											{
-												"key" : 42,
-												"value" : [ "req_screaming-in-water.mov" ]
-											}
-, 											{
-												"key" : 43,
-												"value" : [ "tree_tree2.mov" ]
-											}
-, 											{
-												"key" : 44,
-												"value" : [ "tree_nebula3.mov" ]
+												"value" : [ "clips[8]::filename D:\\Dropbox\\jit-hausu_library\\tree_salt.mov" ]
 											}
  ]
 									}
@@ -2269,7 +2134,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 608.0, 765.0, 54.0, 22.0 ],
+					"patching_rect" : [ 513.0, 776.0, 54.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2306,7 +2171,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 639.0, 75.0, 565.0, 357.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 680.0, 223.0, 565.0, 357.0 ],
+					"presentation_rect" : [ 642.0, 88.0, 565.0, 357.0 ],
 					"shared" : 1
 				}
 
@@ -2315,7 +2180,376 @@
 				"box" : 				{
 					"clipheight" : 80.0,
 					"data" : 					{
-						"clips" : [  ]
+						"clips" : [ 							{
+								"filename" : "D:\\Dropbox\\jit-hausu_library\\zl_dawnoffirst.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u692000894" ],
+									"dim" : [ 1, 1 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"framecount" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"loopreport" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"vol" : [ 1.0 ],
+									"timescale" : [ 600 ],
+									"drawto" : [ "" ],
+									"moviefile" : [ "" ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"cache_size" : [ 0.1 ],
+									"adapt" : [ 1 ],
+									"duration" : [ 0 ],
+									"loopstart" : [ 0 ],
+									"usedstrect" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"engine" : [ "viddll" ],
+									"position" : [ 0.0 ],
+									"rate" : [ 1.0 ],
+									"usesrcrect" : [ 0 ],
+									"framereport" : [ 0 ],
+									"interp" : [ 0 ],
+									"time" : [ 0 ],
+									"fps" : [ 0.0 ],
+									"texture_name" : [ "u793000892" ],
+									"autostart" : [ 1 ],
+									"dstrect" : [ 0, 0, 1, 1 ]
+								}
+
+							}
+, 							{
+								"filename" : "D:\\Dropbox\\jit-hausu_library\\tree_water-to-man.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u692000894" ],
+									"dim" : [ 1, 1 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"framecount" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"loopreport" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"vol" : [ 1.0 ],
+									"timescale" : [ 600 ],
+									"drawto" : [ "" ],
+									"moviefile" : [ "" ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"cache_size" : [ 0.1 ],
+									"adapt" : [ 1 ],
+									"duration" : [ 0 ],
+									"loopstart" : [ 0 ],
+									"usedstrect" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"engine" : [ "viddll" ],
+									"position" : [ 0.0 ],
+									"rate" : [ 1.0 ],
+									"usesrcrect" : [ 0 ],
+									"framereport" : [ 0 ],
+									"interp" : [ 0 ],
+									"time" : [ 0 ],
+									"fps" : [ 0.0 ],
+									"texture_name" : [ "u793000892" ],
+									"autostart" : [ 1 ],
+									"dstrect" : [ 0, 0, 1, 1 ]
+								}
+
+							}
+, 							{
+								"filename" : "D:\\Dropbox\\jit-hausu_library\\tree_watermoving.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u692000894" ],
+									"dim" : [ 1, 1 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"framecount" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"loopreport" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"vol" : [ 1.0 ],
+									"timescale" : [ 600 ],
+									"drawto" : [ "" ],
+									"moviefile" : [ "" ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"cache_size" : [ 0.1 ],
+									"adapt" : [ 1 ],
+									"duration" : [ 0 ],
+									"loopstart" : [ 0 ],
+									"usedstrect" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"engine" : [ "viddll" ],
+									"position" : [ 0.0 ],
+									"rate" : [ 1.0 ],
+									"usesrcrect" : [ 0 ],
+									"framereport" : [ 0 ],
+									"interp" : [ 0 ],
+									"time" : [ 0 ],
+									"fps" : [ 0.0 ],
+									"texture_name" : [ "u793000892" ],
+									"autostart" : [ 1 ],
+									"dstrect" : [ 0, 0, 1, 1 ]
+								}
+
+							}
+, 							{
+								"filename" : "D:\\Dropbox\\jit-hausu_library\\tree_watermassive.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u692000894" ],
+									"dim" : [ 1, 1 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"framecount" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"loopreport" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"vol" : [ 1.0 ],
+									"timescale" : [ 600 ],
+									"drawto" : [ "" ],
+									"moviefile" : [ "" ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"cache_size" : [ 0.1 ],
+									"adapt" : [ 1 ],
+									"duration" : [ 0 ],
+									"loopstart" : [ 0 ],
+									"usedstrect" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"engine" : [ "viddll" ],
+									"position" : [ 0.0 ],
+									"rate" : [ 1.0 ],
+									"usesrcrect" : [ 0 ],
+									"framereport" : [ 0 ],
+									"interp" : [ 0 ],
+									"time" : [ 0 ],
+									"fps" : [ 0.0 ],
+									"texture_name" : [ "u793000892" ],
+									"autostart" : [ 1 ],
+									"dstrect" : [ 0, 0, 1, 1 ]
+								}
+
+							}
+, 							{
+								"filename" : "D:\\Dropbox\\jit-hausu_library\\tree_walkthruwater.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u692000894" ],
+									"dim" : [ 1, 1 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"framecount" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"loopreport" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"vol" : [ 1.0 ],
+									"timescale" : [ 600 ],
+									"drawto" : [ "" ],
+									"moviefile" : [ "" ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"cache_size" : [ 0.1 ],
+									"adapt" : [ 1 ],
+									"duration" : [ 0 ],
+									"loopstart" : [ 0 ],
+									"usedstrect" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"engine" : [ "viddll" ],
+									"position" : [ 0.0 ],
+									"rate" : [ 1.0 ],
+									"usesrcrect" : [ 0 ],
+									"framereport" : [ 0 ],
+									"interp" : [ 0 ],
+									"time" : [ 0 ],
+									"fps" : [ 0.0 ],
+									"texture_name" : [ "u793000892" ],
+									"autostart" : [ 1 ],
+									"dstrect" : [ 0, 0, 1, 1 ]
+								}
+
+							}
+, 							{
+								"filename" : "D:\\Dropbox\\jit-hausu_library\\tree_volcano2.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u692000894" ],
+									"dim" : [ 1, 1 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"framecount" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"loopreport" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"vol" : [ 1.0 ],
+									"timescale" : [ 600 ],
+									"drawto" : [ "" ],
+									"moviefile" : [ "" ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"cache_size" : [ 0.1 ],
+									"adapt" : [ 1 ],
+									"duration" : [ 0 ],
+									"loopstart" : [ 0 ],
+									"usedstrect" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"engine" : [ "viddll" ],
+									"position" : [ 0.0 ],
+									"rate" : [ 1.0 ],
+									"usesrcrect" : [ 0 ],
+									"framereport" : [ 0 ],
+									"interp" : [ 0 ],
+									"time" : [ 0 ],
+									"fps" : [ 0.0 ],
+									"texture_name" : [ "u793000892" ],
+									"autostart" : [ 1 ],
+									"dstrect" : [ 0, 0, 1, 1 ]
+								}
+
+							}
+, 							{
+								"filename" : "D:\\Dropbox\\jit-hausu_library\\tree_tree.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u692000894" ],
+									"dim" : [ 1, 1 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"framecount" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"loopreport" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"vol" : [ 1.0 ],
+									"timescale" : [ 600 ],
+									"drawto" : [ "" ],
+									"moviefile" : [ "" ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"cache_size" : [ 0.1 ],
+									"adapt" : [ 1 ],
+									"duration" : [ 0 ],
+									"loopstart" : [ 0 ],
+									"usedstrect" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"engine" : [ "viddll" ],
+									"position" : [ 0.0 ],
+									"rate" : [ 1.0 ],
+									"usesrcrect" : [ 0 ],
+									"framereport" : [ 0 ],
+									"interp" : [ 0 ],
+									"time" : [ 0 ],
+									"fps" : [ 0.0 ],
+									"texture_name" : [ "u793000892" ],
+									"autostart" : [ 1 ],
+									"dstrect" : [ 0, 0, 1, 1 ]
+								}
+
+							}
+, 							{
+								"filename" : "D:\\Dropbox\\jit-hausu_library\\tree_sky.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u692000894" ],
+									"dim" : [ 1, 1 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"framecount" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"loopreport" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"vol" : [ 1.0 ],
+									"timescale" : [ 600 ],
+									"drawto" : [ "" ],
+									"moviefile" : [ "" ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"cache_size" : [ 0.1 ],
+									"adapt" : [ 1 ],
+									"duration" : [ 0 ],
+									"loopstart" : [ 0 ],
+									"usedstrect" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"engine" : [ "viddll" ],
+									"position" : [ 0.0 ],
+									"rate" : [ 1.0 ],
+									"usesrcrect" : [ 0 ],
+									"framereport" : [ 0 ],
+									"interp" : [ 0 ],
+									"time" : [ 0 ],
+									"fps" : [ 0.0 ],
+									"texture_name" : [ "u793000892" ],
+									"autostart" : [ 1 ],
+									"dstrect" : [ 0, 0, 1, 1 ]
+								}
+
+							}
+, 							{
+								"filename" : "D:\\Dropbox\\jit-hausu_library\\tree_salt.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u692000894" ],
+									"dim" : [ 1, 1 ],
+									"looppoints" : [ 0, 0 ],
+									"automatic" : [ 0 ],
+									"framecount" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"loopreport" : [ 0 ],
+									"time_secs" : [ 0.0 ],
+									"vol" : [ 1.0 ],
+									"timescale" : [ 600 ],
+									"drawto" : [ "" ],
+									"moviefile" : [ "" ],
+									"unique" : [ 0 ],
+									"loopend" : [ 0 ],
+									"cache_size" : [ 0.1 ],
+									"adapt" : [ 1 ],
+									"duration" : [ 0 ],
+									"loopstart" : [ 0 ],
+									"usedstrect" : [ 0 ],
+									"colormode" : [ "argb" ],
+									"engine" : [ "viddll" ],
+									"position" : [ 0.0 ],
+									"rate" : [ 1.0 ],
+									"usesrcrect" : [ 0 ],
+									"framereport" : [ 0 ],
+									"interp" : [ 0 ],
+									"time" : [ 0 ],
+									"fps" : [ 0.0 ],
+									"texture_name" : [ "u793000892" ],
+									"autostart" : [ 1 ],
+									"dstrect" : [ 0, 0, 1, 1 ]
+								}
+
+							}
+ ]
 					}
 ,
 					"expansion" : "static",
@@ -2325,9 +2559,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "", "dictionary" ],
 					"output_texture" : 1,
-					"patching_rect" : [ 3.0, 75.0, 624.0, 572.599976 ],
+					"patching_rect" : [ 3.0, 75.0, 529.0, 572.599976 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 60.0, 223.0, 615.0, 576.706177 ],
+					"presentation_rect" : [ 22.0, 88.0, 615.0, 576.706177 ],
 					"style" : "velvet"
 				}
 
@@ -2340,9 +2574,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3.0, 11.0, 328.0, 47.0 ],
+					"patching_rect" : [ 3.0, 11.0, 328.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 52.0, 159.0, 328.0, 47.0 ],
+					"presentation_rect" : [ 14.0, 24.0, 328.0, 48.0 ],
 					"style" : "",
 					"text" : "jit.hausu playlister",
 					"textjustification" : 1
@@ -2613,7 +2847,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 617.5, 643.0, 632.0, 643.0, 632.0, 424.200012, 648.5, 424.200012 ],
+					"midpoints" : [ 522.5, 643.0, 632.0, 643.0, 632.0, 424.200012, 648.5, 424.200012 ],
 					"order" : 1,
 					"source" : [ "obj-8", 2 ]
 				}
@@ -2621,7 +2855,61 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "zacc-mio-moments",
+				"name" : "zl_dawnoffirst.mov",
+				"bootpath" : "D:/Dropbox/jit-hausu_library",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tree_water-to-man.mov",
+				"bootpath" : "D:/Dropbox/jit-hausu_library",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tree_watermoving.mov",
+				"bootpath" : "D:/Dropbox/jit-hausu_library",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tree_watermassive.mov",
+				"bootpath" : "D:/Dropbox/jit-hausu_library",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tree_walkthruwater.mov",
+				"bootpath" : "D:/Dropbox/jit-hausu_library",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tree_volcano2.mov",
+				"bootpath" : "D:/Dropbox/jit-hausu_library",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tree_tree.mov",
+				"bootpath" : "D:/Dropbox/jit-hausu_library",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tree_sky.mov",
+				"bootpath" : "D:/Dropbox/jit-hausu_library",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tree_salt.mov",
+				"bootpath" : "D:/Dropbox/jit-hausu_library",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "test2",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/playlists",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
@@ -2629,8 +2917,8 @@
 			}
 , 			{
 				"name" : "xfade.genjit",
-				"bootpath" : "/Users/Shared/Max 7/Examples/jitter-examples/gen",
-				"patcherrelativepath" : "../../../../../../Shared/Max 7/Examples/jitter-examples/gen",
+				"bootpath" : "C:/ProgramData/Max 7/examples/jitter-examples/gen",
+				"patcherrelativepath" : "../../../../../../../ProgramData/Max 7/examples/jitter-examples/gen",
 				"type" : "gJIT",
 				"implicit" : 1
 			}

@@ -8,7 +8,7 @@
 		<program name="vp" type="vertex" source="sh.passthrudim.vp.glsl" />
 		<program name="fp" type="fragment" >
 <![CDATA[
-uniform sampler2D tex0;
+uniform sampler2DRect tex0;
 uniform vec2 size;
 
 varying vec2 texcoord0;
@@ -17,7 +17,7 @@ const ivec3 off = ivec3(-1,0,1);
 
 void main(void)
 {
-	vec4 wave = texture2D(tex0,texcoord0);
+	vec4 wave = texture2DRect(tex0,texcoord0);
 
 	float s11 = wave.x;
 	float s01 = textureOffset(tex0, texcoord0, off.xy).x;

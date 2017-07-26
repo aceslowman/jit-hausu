@@ -1,5 +1,7 @@
 assets/video/*
 .DS_Store
 playlists/*
+!playlists/default_1.txt
+!playlists/default_2.txt
 !playlists/playlisting_tool
 presets/*

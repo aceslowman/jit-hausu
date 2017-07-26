@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 77.0, 1229.0, 929.0 ],
+		"rect" : [ 42.0, 85.0, 1229.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -534,7 +534,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u316000597"
+									"varname" : "u466000590"
 								}
 
 							}
@@ -2754,28 +2754,28 @@
 		"dependency_cache" : [ 			{
 				"name" : "rendering.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components",
-				"patcherrelativepath" : "./components",
+				"patcherrelativepath" : "../components",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fbm-generator.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/slabs/fbm",
-				"patcherrelativepath" : "./components/slabs/fbm",
+				"patcherrelativepath" : "../components/slabs/fbm",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "time.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components",
-				"patcherrelativepath" : "./components",
+				"patcherrelativepath" : "../components",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "normal-mapper.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/slabs/normal-mapper",
-				"patcherrelativepath" : "./components/slabs/normal-mapper",
+				"patcherrelativepath" : "../components/slabs/normal-mapper",
 				"type" : "JSON",
 				"implicit" : 1
 			}

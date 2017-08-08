@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 35.0, 57.0, 1212.0, 710.0 ],
+		"rect" : [ 34.0, 77.0, 1345.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,40 @@
 		"globalpatchername" : "u079001943",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.91 ],
+					"bgmode" : 2,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-12",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "feedback.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 270.0, 840.0, 240.0, 120.0 ],
+					"varname" : "feedback",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1022.0, 915.0, 150.0, 20.0 ],
+					"style" : "",
+					"text" : "rebuilding"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -51,22 +85,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 615.0, 915.0, 255.0, 120.0 ],
+					"patching_rect" : [ 917.0, 840.0, 255.0, 120.0 ],
 					"varname" : "freeze-flicker_REBUILD",
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 270.0, 840.0, 153.0, 22.0 ],
-					"style" : "",
-					"text" : "jit.gl.syphonserver mainout"
 				}
 
 			}
@@ -193,7 +214,6 @@
 			}
 , 			{
 				"box" : 				{
-					"autorestore" : "showready.json",
 					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -208,7 +228,7 @@
 ,
 					"style" : "",
 					"text" : "pattrstorage @save 2",
-					"varname" : "u737001794"
+					"varname" : "u123001334"
 				}
 
 			}
@@ -241,7 +261,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 810.0, 540.0, 102.0, 33.0 ],
+					"patching_rect" : [ 810.0, 540.0, 102.0, 34.0 ],
 					"style" : "",
 					"text" : "Turn on/off all components"
 				}
@@ -366,7 +386,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 957.5, 480.0, 197.5, 47.0 ],
+					"patching_rect" : [ 957.5, 480.0, 197.5, 48.0 ],
 					"style" : "",
 					"text" : "jit.hausu",
 					"textjustification" : 2
@@ -405,7 +425,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 955.0, 525.0, 200.0, 54.0 ],
+					"patching_rect" : [ 955.0, 525.0, 200.0, 62.0 ],
 					"style" : "",
 					"text" : "austin slominski\naceslowman\naceslowman@gmail.com",
 					"textjustification" : 2
@@ -2132,6 +2152,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.929412, 0.360784, 0.866667, 1.0 ],
+					"destination" : [ "obj-3", 0 ],
+					"midpoints" : [ 279.5, 1117.0, 0.0, 1117.0, 0.0, 368.0, 24.5, 368.0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"midpoints" : [ 926.5, 780.0, 789.5, 780.0 ],
 					"source" : [ "obj-13", 0 ]
@@ -2283,18 +2312,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"order" : 0,
-					"source" : [ "obj-8", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.929412, 0.360784, 0.866667, 1.0 ],
-					"destination" : [ "obj-3", 0 ],
-					"midpoints" : [ 279.5, 832.0, 0.0, 832.0, 0.0, 368.0, 24.5, 368.0 ],
-					"order" : 1,
+					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -2372,8 +2390,8 @@
 			}
 , 			{
 				"name" : "xfade.genjit",
-				"bootpath" : "/Users/Shared/Max 7/Examples/jitter-examples/gen",
-				"patcherrelativepath" : "../../../../../Shared/Max 7/Examples/jitter-examples/gen",
+				"bootpath" : "C:/ProgramData/Max 7/examples/jitter-examples/gen",
+				"patcherrelativepath" : "../../../../../../ProgramData/Max 7/examples/jitter-examples/gen",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
@@ -2413,13 +2431,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "zacc-mio-moments",
-				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/playlists",
-				"patcherrelativepath" : "./playlists",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "freeze-flicker.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components",
 				"patcherrelativepath" : "./components",
@@ -2441,8 +2452,17 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jit.gl.syphonserver.mxo",
-				"type" : "iLaX"
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "feedback.maxpat",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/slabs/feedback",
+				"patcherrelativepath" : "./components/slabs/feedback",
+				"type" : "JSON",
+				"implicit" : 1
 			}
  ],
 		"autosave" : 0,

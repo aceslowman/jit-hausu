@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1497.0, -240.0, 1212.0, 706.0 ],
+		"rect" : [ 986.0, 326.0, 244.0, 346.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -99,13 +99,13 @@
 						"context" : [ 0 ],
 						"midi-blend" : [ 8 ],
 						"midi-xfade" : [ 0 ],
-						"playlist" : [ 3 ],
+						"playlist" : [ 4 ],
 						"xfade" : [ 0.0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u590004186"
+					"varname" : "u356001015"
 				}
 
 			}
@@ -462,7 +462,7 @@
 					"fontname" : "Helvetica Neue Light",
 					"fontsize" : 18.0,
 					"id" : "obj-47",
-					"items" : [ "default-mine", ",", "playlisting_tool.maxpat", ",", "zacc-mio-moments", ",", "zacc-mio-moments2" ],
+					"items" : [ "default-mine", ",", "playlisting_tool.maxpat", ",", "showready.json", ",", "unnaturalblue", ",", "zacc-mio-moments" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -996,7 +996,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 240.0, 150.0, 22.0 ],
 					"style" : "",
-					"text" : "req_harry-marion.mov"
+					"text" : "req_we-got-a-winner.mov"
 				}
 
 			}
@@ -1011,7 +1011,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 195.0, 150.0, 22.0 ],
 					"style" : "",
-					"text" : "tree_badasswater.mov"
+					"text" : "tree_jelly.mov"
 				}
 
 			}

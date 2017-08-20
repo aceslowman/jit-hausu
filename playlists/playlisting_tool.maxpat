@@ -46,7 +46,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 750.400024, 10.000011, 64.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 854.400024, 169.5, 70.0, 27.0 ],
+					"presentation_rect" : [ 838.400024, 148.5, 70.0, 27.0 ],
 					"style" : "",
 					"text" : "Sound"
 				}
@@ -73,7 +73,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 720.0, 10.000011, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 820.0, 167.5, 31.0, 31.0 ],
+					"presentation_rect" : [ 804.0, 146.5, 31.0, 31.0 ],
 					"style" : ""
 				}
 
@@ -741,7 +741,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1468.041748, 406.947327, 121.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 680.0, 167.5, 121.0, 31.0 ],
+					"presentation_rect" : [ 664.0, 146.5, 121.0, 31.0 ],
 					"style" : ""
 				}
 
@@ -759,7 +759,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1224.0, 330.101807, 616.0, 51.230103 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 680.0, 761.706177, 565.0, 38.0 ],
+					"presentation_rect" : [ 664.0, 740.706177, 565.0, 38.0 ],
 					"size" : 100.0,
 					"style" : "velvet"
 				}
@@ -1383,7 +1383,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1533.0, 130.141602, 305.0, 192.716812 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 963.756287, 582.0, 281.243713, 177.706192 ],
+					"presentation_rect" : [ 947.756287, 561.0, 281.243713, 177.706192 ],
 					"shared" : 1
 				}
 
@@ -1399,7 +1399,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1224.0, 130.141602, 305.0, 192.716812 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 680.0, 582.0, 281.243713, 177.706192 ],
+					"presentation_rect" : [ 664.0, 561.0, 281.243713, 177.706192 ],
 					"shared" : 1
 				}
 
@@ -1414,7 +1414,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 570.0, 22.000011, 57.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 534.0, 167.5, 57.0, 31.0 ],
+					"presentation_rect" : [ 518.0, 146.5, 57.0, 31.0 ],
 					"style" : "",
 					"text" : "clear"
 				}
@@ -1456,7 +1456,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 489.399994, 22.000011, 64.0, 27.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 450.399994, 169.5, 64.0, 27.0 ],
+					"presentation_rect" : [ 434.399994, 148.5, 64.0, 27.0 ],
 					"style" : "",
 					"text" : "export"
 				}
@@ -1471,7 +1471,7 @@
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 439.399994, 11.0, 48.0, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 400.399994, 159.0, 48.0, 48.0 ],
+					"presentation_rect" : [ 384.399994, 138.0, 48.0, 48.0 ],
 					"style" : ""
 				}
 
@@ -2306,7 +2306,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 639.0, 75.0, 565.0, 357.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 680.0, 223.0, 565.0, 357.0 ],
+					"presentation_rect" : [ 664.0, 202.0, 565.0, 357.0 ],
 					"shared" : 1
 				}
 
@@ -2315,7 +2315,79 @@
 				"box" : 				{
 					"clipheight" : 80.0,
 					"data" : 					{
-						"clips" : [  ]
+						"clips" : [ 							{
+								"filename" : "/Users/austin/Dropbox/jit-hausu_library/tree_woman.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u448000455" ],
+									"dim" : [ 1, 1 ],
+									"loopstart" : [ 0 ],
+									"usesrcrect" : [ 0 ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"rate" : [ 1.0 ],
+									"texture_name" : [ "u041000453" ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"position" : [ 0.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"looppoints" : [ 0, 0 ],
+									"time_secs" : [ 0.0 ],
+									"vol" : [ 1.0 ],
+									"interp" : [ 0 ],
+									"engine" : [ "avf" ],
+									"loopreport" : [ 0 ],
+									"unique" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"loopend" : [ 0 ],
+									"drawto" : [ "" ],
+									"usedstrect" : [ 0 ],
+									"automatic" : [ 0 ],
+									"moviefile" : [ "" ],
+									"colormode" : [ "argb" ]
+								}
+
+							}
+, 							{
+								"filename" : "/Users/austin/Dropbox/jit-hausu_library/tree_waterrush.mov",
+								"filekind" : "moviefile",
+								"loop" : 0,
+								"content_state" : 								{
+									"outputmode" : [ 1 ],
+									"out_name" : [ "u448000455" ],
+									"dim" : [ 1, 1 ],
+									"loopstart" : [ 0 ],
+									"usesrcrect" : [ 0 ],
+									"time" : [ 0 ],
+									"adapt" : [ 1 ],
+									"rate" : [ 1.0 ],
+									"texture_name" : [ "u041000453" ],
+									"dstrect" : [ 0, 0, 1, 1 ],
+									"framereport" : [ 0 ],
+									"autostart" : [ 1 ],
+									"position" : [ 0.0 ],
+									"srcrect" : [ 0, 0, 1, 1 ],
+									"looppoints" : [ 0, 0 ],
+									"time_secs" : [ 0.0 ],
+									"vol" : [ 1.0 ],
+									"interp" : [ 0 ],
+									"engine" : [ "avf" ],
+									"loopreport" : [ 0 ],
+									"unique" : [ 0 ],
+									"output_texture" : [ 0 ],
+									"loopend" : [ 0 ],
+									"drawto" : [ "" ],
+									"usedstrect" : [ 0 ],
+									"automatic" : [ 0 ],
+									"moviefile" : [ "" ],
+									"colormode" : [ "argb" ]
+								}
+
+							}
+ ]
 					}
 ,
 					"expansion" : "static",
@@ -2327,7 +2399,7 @@
 					"output_texture" : 1,
 					"patching_rect" : [ 3.0, 75.0, 624.0, 572.599976 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 60.0, 223.0, 615.0, 576.706177 ],
+					"presentation_rect" : [ 44.0, 202.0, 615.0, 576.706177 ],
 					"style" : "velvet"
 				}
 
@@ -2342,7 +2414,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 3.0, 11.0, 328.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 52.0, 159.0, 328.0, 47.0 ],
+					"presentation_rect" : [ 36.0, 138.0, 328.0, 47.0 ],
 					"style" : "",
 					"text" : "jit.hausu playlister",
 					"textjustification" : 1
@@ -2621,10 +2693,17 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "zacc-mio-moments",
-				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/playlists",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
+				"name" : "tree_woman.mov",
+				"bootpath" : "~/Dropbox/jit-hausu_library",
+				"patcherrelativepath" : "../../../../../Dropbox/jit-hausu_library",
+				"type" : "MooV",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tree_waterrush.mov",
+				"bootpath" : "~/Dropbox/jit-hausu_library",
+				"patcherrelativepath" : "../../../../../Dropbox/jit-hausu_library",
+				"type" : "MooV",
 				"implicit" : 1
 			}
 , 			{

@@ -5,6 +5,7 @@
 
 	<param name="feedback" type="float" default="0.9" />
 	<param name="scale" type="float" default="0.9" />
+	<param name="blendmode" type="int" default="0" />
 	<param name="b_vanish" type="int" default="1." />
 	<param name="direction" type="vec2" default="0.001 0.001" />
 	<param name="vanishing_point" type="vec2" default="0.5 0.5" />
@@ -14,6 +15,7 @@
 		<bind param="b_vanish" program="fp" />
 		<bind param="vanishing_point" program="fp" />
 		<bind param="scale" program="fp" />
+		<bind param="blendmode" program="fp" />
 		<bind param="feedback" program="fp" />
 		<bind param="direction" program="fp" />
 		<bind param="tex0" program="fp" />
@@ -35,27 +37,35 @@
 			uniform vec2 vanishing_point;
 			uniform int b_vanish;
 			uniform float scale;
+			
+			uniform int blendmode;
 
 			void main()
 			{
 				vec2 uv = texcoord1/texdim1;
-				vec2 vanishing_vector = distance(vanishing_point,uv);
 
-				if(b_vanish){
+				if(b_vanish == 1){
 					uv -= vanishing_point;
 					uv += vanishing_point/scale;
-					uv *= scale;		
+					uv *= scale;
 				}else{
 					uv += direction;
 				}
 
 				vec4 current = texture2DRect(tex0,texcoord0);
-				vec4 fedback = texture2DRect(tex1, uv*texdim1) * feedback;
-
-				vec4 color = current + fedback;
+				vec4 fb = texture2DRect(tex1, uv*texdim1) * feedback;
+				
+				vec4 color;
+				
+				if(blendmode == 0){    // normal
+					color = current + fb;
+				}else if(blendmode == 1){ //exclude
+					color = current+fb-2.0*current*fb;
+				}else if(blendmode == 2){ //difference
+					color = abs(current - fb);
+				}
 
 				gl_FragColor = vec4(color.r,color.g,color.b,1.0);
-				//gl_FragColor = vec4(1.0,0.0,0.0,1.0);
 			}
 ]]>
 		</program>

@@ -5,10 +5,12 @@
 	<param name="tex0" type="int" default="0" />
 	<param name="tex1" type="int" default="1" />
 	<param name="strength" type="float" default="19." />
+	<param name="b_normal_map" type="int" default="1." />
 	<language name="glsl" version="2.1">
 		<bind param="tex0" program="fp" />
 		<bind param="tex1" program="fp" />
 		<bind param="strength" program="fp" />
+		<bind param="b_normal_map" program="fp" />
 		<program name="vp" type="vertex" source="sh.passthrudim.vp.glsl" />
 		<program name="fp" type="fragment">
 <![CDATA[
@@ -21,6 +23,7 @@
 	varying vec2 texcoord1;
 
 	uniform float strength;
+	uniform int b_normal_map;
 
 	void main(){
 		vec2 uv0 = texcoord0 / texdim0; //uv coordinates of the video
@@ -28,9 +31,15 @@
 
 		vec3 displacement = texture2DRect(tex1, uv1 * texdim0).xyz; //find the current grayscale value at the uv1 location
 
-		//focus on the plus here. is there something else I can do to scale it in a more interesting way?
-		uv0.x = (uv0.x - displacement.x / strength);
-		uv0.y = (uv0.y - displacement.y / strength);
+		if(b_normal_map == 0){
+			//focus on the plus here. is there something else I can do to scale it in a more interesting way?
+			uv0.x = (uv0.x - displacement.x / strength);
+			uv0.y = (uv0.y - displacement.y / strength);
+		}else{
+			//
+			uv0.x = (uv0.x + displacement.x / strength);
+			uv0.y = (uv0.y + displacement.y / strength);			
+		}
 
 		vec4 color = texture2DRect(tex0, uv0*texdim0);
 

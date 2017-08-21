@@ -1,0 +1,57 @@
+<jittershader name="fish-pin">
+	<description>
+	Fisheye and Pincushion distortion (Barrel and Pin)
+	</description>
+	
+	<param name="amount" type="float" default="0.5" />
+	<language name="glsl" version="2.1">
+		<bind param="amount" program="fp" />
+		<program name="vp" type="vertex" source="sh.passthrudim.vp.glsl" />
+		<program name="fp" type="fragment">
+<![CDATA[
+
+
+
+// Original shader by SanchYESS
+// https://www.shadertoy.com/view/4s2GRR
+
+// Ported to Processing by Raphaël de Courville <twitter: @sableRaph>
+// Ported to MaxMSP by Austin Slominski <twitter: @aceslowman>
+
+		varying vec2 texcoord0;
+		varying vec2 texdim0;
+		uniform sampler2DRect tex0;
+
+		uniform float amount;
+
+		void main() {
+			vec2 p = texcoord0 / texdim0;
+			
+			float prop = texdim0.x / texdim0.y; //proportion
+			vec2 m = vec2(0.5,0.5); //center 
+			
+			vec2 d = p - m; //vector from center to current
+			float r = sqrt(dot(d,d)); //distance of pixel to center
+					
+		
+			float power = ( 2.0 * 3.141592 / (2.0 * sqrt(dot(m, m))) ) * amount;
+		
+			float bind;                                           //radius of 1:1 effect
+			if (power > 0.0) bind = sqrt(dot(m, m));              //stick to corners
+			else {if (prop < 1.0) bind = m.x; else bind = m.y;}   //stick to borders
+		
+			//Weird formulas
+			vec2 uv;
+			if (power > 0.0) //fisheye
+				uv = m + normalize(d) * tan(r * power) * bind / tan( bind * power);
+			else if (power < 0.0) //antifisheye
+				uv = m + normalize(d) * atan(r * -power * 10.0) * bind / atan(-power * bind * 10.0);
+			else uv = p; //no effect for power = 1.0
+		
+			vec3 col = texture2DRect(tex0, vec2(uv.x,uv.y)*texdim0).xyz;
+			gl_FragColor = vec4(col, 1.0);			
+		}
+]]>
+		</program>
+	</language>
+</jittershader>

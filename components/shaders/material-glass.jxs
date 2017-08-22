@@ -1,0 +1,71 @@
+<jittershader name="basic-vert">
+	<param name="LightPosition" type="vec3" default="1. 1. 1." />
+	<param name="DiffuseMaterial" type="vec3" default="1. 0. 0." />
+	<param name="AmbientMaterial" type="vec3" default="1. 0.337255 0.337255" />
+	<param name="SpecularMaterial" type="vec3" default="0.788235 0.501961 0.501961" />
+	<param name="Shininess" type="float" default="0.6" />
+	<language name="glsl" version="1.2">
+		<bind param="DiffuseMaterial" program="vp" />
+		<bind param="LightPosition" program="fp" />
+		<bind param="AmbientMaterial" program="fp" />	
+		<bind param="SpecularMaterial" program="fp" />
+		<bind param="Shininess" program="fp" />
+		<program name="vp" type="vertex">
+<![CDATA[
+
+// Indices of refraction
+const float Air = 1.0;
+const float Glass = 1.51714;
+
+// Air to glass ratio of the indices of refraction (Eta)
+const float Eta = Air / Glass;
+ 
+// see http://en.wikipedia.org/wiki/Refractive_index Reflectivity
+const float R0 = ((Air - Glass) * (Air - Glass)) / ((Air + Glass) * (Air + Glass));
+
+varying vec3 v_reflection;
+varying vec3 v_refraction;
+varying float v_fresnel;
+
+void main(void)
+{
+	// We calculate in world space.
+	
+	vec4 vertex = gl_ModelMatrix*a_vertex;
+	
+	vec3 incident = normalize(vec3(vertex-gl_Camera));
+
+	// Assume incoming normal is normalized.
+	vec3 normal = gl_NormalMatrix*gl_Normal;
+	
+	v_refraction = refract(incident, normal, Eta);
+	v_reflection = reflect(incident, normal);
+			
+	// see http://en.wikipedia.org/wiki/Schlick%27s_approximation
+	v_fresnel = R0 + (1.0 - R0) * pow((1.0 - dot(-incident, normal)), 5.0);
+		
+	//gl_Position = gl_ViewProjectionMatrix*vertex;
+	gl_Position = ftransform();
+}
+]]>		
+		</program>
+		<program name="fp" type="fragment">
+<![CDATA[
+
+uniform samplerCube u_cubemap;
+
+varying vec3 v_refraction;
+varying vec3 v_reflection;
+varying float v_fresnel;
+
+void main(void)
+{
+	vec4 refractionColor = texture(u_cubemap, normalize(v_refraction));
+	vec4 reflectionColor = texture(u_cubemap, normalize(v_reflection));
+		
+	gl_FragColor = mix(refractionColor, reflectionColor, v_fresnel);
+}
+]]>	
+		</program>
+	</language>
+</jittershader>

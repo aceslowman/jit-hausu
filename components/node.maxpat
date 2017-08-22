@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 56.0, 767.0, 706.0 ],
+		"rect" : [ 568.0, 100.0, 767.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -128,7 +128,7 @@
 					"patching_rect" : [ 120.0, 480.0, 58.0, 22.0 ],
 					"restore" : 					{
 						"adapt" : [ 1 ],
-						"context" : [ 1 ],
+						"context" : [ 2 ],
 						"enable" : [ 1 ],
 						"layer" : [ 0 ],
 						"output_context" : [ 0 ]
@@ -136,7 +136,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u423001108"
+					"varname" : "u499005201"
 				}
 
 			}
@@ -282,7 +282,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 378.0, 542.5, 105.0, 50.0 ],
+					"patching_rect" : [ 378.0, 542.5, 105.0, 49.0 ],
 					"style" : "",
 					"text" : "append mainout, append vid-ctx, append 3d-ctx"
 				}
@@ -672,9 +672,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 30.0, 96.0, 25.0 ],
+					"patching_rect" : [ 30.0, 30.0, 96.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 96.0, 25.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 96.0, 24.0 ],
 					"style" : "",
 					"text" : "NODE"
 				}
@@ -688,7 +688,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 315.0, 375.0, 304.0, 36.0 ],
+					"patching_rect" : [ 315.0, 375.0, 304.0, 35.0 ],
 					"style" : "",
 					"text" : "jit.gl.videoplane mainout @transform_reset 2 @enable 1 @layer 0 @depth_enable 0 @blend_enable 1"
 				}
@@ -702,7 +702,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "jit_gl_texture" ],
 					"patching_rect" : [ 315.0, 255.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -729,7 +729,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_gl_texture", "", "" ],
-					"patching_rect" : [ 30.0, 300.0, 264.0, 36.0 ],
+					"patching_rect" : [ 30.0, 300.0, 264.0, 35.0 ],
 					"style" : "",
 					"text" : "jit.gl.node mainout @name vid-ctx @enable 1 @capture 1 @adapt 1 @erase_color 0. 0. 0. 0."
 				}

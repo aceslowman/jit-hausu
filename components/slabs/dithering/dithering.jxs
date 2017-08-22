@@ -1,0 +1,49 @@
+<jittershader name="select_and_sort">
+	<description>
+	dithering effect
+	</description>
+	<param name="threshold" type="float" default="0.5" />
+	<param name="power" type="float" default="3.0" />	
+	<language name="glsl" version="2.1">	
+		<bind param="threshold" program="fp" />
+		<bind param="power" program="fp" />
+		<program name="vp" type="vertex" source="sh.passthrudim.vp.glsl" />
+		<program name="fp" type="fragment">
+<![CDATA[
+
+varying vec2 texcoord0;
+varying vec2 texdim0;
+uniform sampler2DRect tex0;
+
+varying vec2 texcoord1;
+varying vec2 texdim1;
+uniform sampler2DRect tex1;
+
+uniform float threshold;
+uniform float power;
+
+void main(void) {
+		
+	vec2 uv = texcoord0 / texdim0;
+	vec2 uv2 = texcoord1 / texdim1;
+	
+	vec3 sourcePixel = texture2DRect(tex0, uv*texdim0).rgb;
+	float grayscale = length(sourcePixel*vec3(0.2126,0.7152,0.0722));
+	
+	vec3 ditherPixel = texture2DRect(tex1, vec2(mod(texcoord0/vec2(8.0,8.0),1.0)*texdim1)).xyz;
+	float ditherGrayscale = (ditherPixel.x + ditherPixel.y + ditherPixel.z) / power;
+	ditherGrayscale -= 0.5;
+	
+	float ditheredResult = grayscale + ditherGrayscale;
+	
+	float bit = ditheredResult >= threshold ? 1.0 : 0.0;
+	
+	float alpha = ditheredResult >= threshold ? 1.0 : 0.0;
+	
+	gl_FragColor = vec4(bit,bit,bit,alpha);
+}
+
+]]>			
+		</program>
+	</language>
+</jittershader>

@@ -48,8 +48,8 @@
 				uv = m + normalize(d) * atan(r * -power * 10.0) * bind / atan(-power * bind * 10.0);
 			else uv = p; //no effect for power = 1.0
 		
-			vec3 col = texture2DRect(tex0, vec2(uv.x,uv.y)*texdim0).xyz;
-			gl_FragColor = vec4(col, 1.0);			
+			vec4 col = texture2DRect(tex0, vec2(uv.x,uv.y)*texdim0);
+			gl_FragColor = col;			
 		}
 ]]>
 		</program>

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 56.0, 822.0, 706.0 ],
+		"rect" : [ 339.0, 202.0, 921.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -115,13 +115,13 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 465.0, 285.0, 58.0, 22.0 ],
 					"restore" : 					{
-						"size-x" : [ 0.048 ],
+						"size-x" : [ 1.0 ],
 						"size-y" : [ 0.0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u756001936"
+					"varname" : "u342000631"
 				}
 
 			}
@@ -189,9 +189,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 14.749756, 15.0, 193.0, 24.0 ],
+					"patching_rect" : [ 14.749756, 15.0, 193.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -3.0, -1.0, 165.0, 24.0 ],
+					"presentation_rect" : [ -3.0, -1.0, 165.0, 25.0 ],
 					"style" : "",
 					"text" : "NORMAL MAPPER"
 				}
@@ -264,9 +264,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 14.749756, 232.0, 389.0, 22.0 ],
+					"patching_rect" : [ 14.749756, 232.0, 379.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.slab mainout @file normal-mapper.jxs @rectangle 0 @type float32"
+					"text" : "jit.gl.slab 3d-ctx @file normal-mapper.jxs @rectangle 0 @type float32"
 				}
 
 			}

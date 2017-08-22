@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 988.0, 85.0, 890.0, 400.0 ],
+		"rect" : [ 34.0, 56.0, 822.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -115,13 +115,13 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 465.0, 285.0, 58.0, 22.0 ],
 					"restore" : 					{
-						"size-x" : [ 0.03096 ],
+						"size-x" : [ 0.048 ],
 						"size-y" : [ 0.0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u440000609"
+					"varname" : "u756001936"
 				}
 
 			}
@@ -189,9 +189,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 14.749756, 15.0, 193.0, 25.0 ],
+					"patching_rect" : [ 14.749756, 15.0, 193.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -3.0, -1.0, 165.0, 25.0 ],
+					"presentation_rect" : [ -3.0, -1.0, 165.0, 24.0 ],
 					"style" : "",
 					"text" : "NORMAL MAPPER"
 				}

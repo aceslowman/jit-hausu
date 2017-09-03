@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 995.0, 85.0, 890.0, 920.0 ],
+		"rect" : [ 34.0, 56.0, 1212.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 105.0, 332.0, 50.0, 22.0 ],
-					"style" : ""
+					"style" : "",
+					"text" : "44"
 				}
 
 			}
@@ -55,7 +56,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 349.0, 3.0, 113.0, 34.0 ],
+					"patching_rect" : [ 349.0, 3.0, 113.0, 33.0 ],
 					"style" : "",
 					"text" : "in progress for pads"
 				}
@@ -462,7 +463,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 591.0, 493.0, 168.0, 172.0 ],
+					"patching_rect" : [ 591.0, 493.0, 168.0, 167.0 ],
 					"style" : "",
 					"text" : "INPUT:\n\n(1) filename list (string)\n(2) videoload_goto (int)\n(3) videoload_prev (bang)\n(4) videoload_next (bang)\n\n\nOUTPUT:\n\n(1) Current Video (filename)\n(2) Next Video (filename)"
 				}
@@ -497,22 +498,182 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 4,
+						"count" : 44,
 						"data" : [ 							{
 								"key" : 1,
-								"value" : [ "sunflower.mp4" ]
+								"value" : [ "tree_badasswater.mov" ]
 							}
 , 							{
 								"key" : 2,
-								"value" : [ "bball.mov" ]
+								"value" : [ "req_harry-marion.mov" ]
 							}
 , 							{
 								"key" : 3,
-								"value" : [ "chickens.mp4" ]
+								"value" : [ "req_paper-airplanes.mov" ]
 							}
 , 							{
 								"key" : 4,
-								"value" : [ "dust.mp4" ]
+								"value" : [ "tree_nebula3.mov" ]
+							}
+, 							{
+								"key" : 5,
+								"value" : [ "tree_blob2.mov" ]
+							}
+, 							{
+								"key" : 6,
+								"value" : [ "tree_confused.mov" ]
+							}
+, 							{
+								"key" : 7,
+								"value" : [ "tree_blob3.mov" ]
+							}
+, 							{
+								"key" : 8,
+								"value" : [ "req_flesh-and-faces.mov" ]
+							}
+, 							{
+								"key" : 9,
+								"value" : [ "rd_carnival.mov" ]
+							}
+, 							{
+								"key" : 10,
+								"value" : [ "rocky_underwater.mov" ]
+							}
+, 							{
+								"key" : 11,
+								"value" : [ "tree_volcano.mov" ]
+							}
+, 							{
+								"key" : 12,
+								"value" : [ "tree_woman.mov" ]
+							}
+, 							{
+								"key" : 13,
+								"value" : [ "tree_watermassive.mov" ]
+							}
+, 							{
+								"key" : 14,
+								"value" : [ "tree_brad.mov" ]
+							}
+, 							{
+								"key" : 15,
+								"value" : [ "tree_geyser.mov" ]
+							}
+, 							{
+								"key" : 16,
+								"value" : [ "tree_cow.mov" ]
+							}
+, 							{
+								"key" : 17,
+								"value" : [ "hausu_trees.mov" ]
+							}
+, 							{
+								"key" : 18,
+								"value" : [ "rocky_smokespin.mov" ]
+							}
+, 							{
+								"key" : 19,
+								"value" : [ "tree_glass.mov" ]
+							}
+, 							{
+								"key" : 20,
+								"value" : [ "tree_jelly.mov" ]
+							}
+, 							{
+								"key" : 21,
+								"value" : [ "req_we-got-a-winner.mov" ]
+							}
+, 							{
+								"key" : 22,
+								"value" : [ "hausu_cat.mov" ]
+							}
+, 							{
+								"key" : 23,
+								"value" : [ "tree_nebula4.mov" ]
+							}
+, 							{
+								"key" : 24,
+								"value" : [ "drive_water.mov" ]
+							}
+, 							{
+								"key" : 25,
+								"value" : [ "hausu_womanflowing.mov" ]
+							}
+, 							{
+								"key" : 26,
+								"value" : [ "tree_sunflow2.mov" ]
+							}
+, 							{
+								"key" : 27,
+								"value" : [ "tree_pennhand.mov" ]
+							}
+, 							{
+								"key" : 28,
+								"value" : [ "tree_kelp.mov" ]
+							}
+, 							{
+								"key" : 29,
+								"value" : [ "mar_landscape4.mov" ]
+							}
+, 							{
+								"key" : 30,
+								"value" : [ "drive_cashzoom.mov" ]
+							}
+, 							{
+								"key" : 31,
+								"value" : [ "drive_cityspin.mov" ]
+							}
+, 							{
+								"key" : 32,
+								"value" : [ "tree_nebula5.mov" ]
+							}
+, 							{
+								"key" : 33,
+								"value" : [ "tree_glass-ceiling.mov" ]
+							}
+, 							{
+								"key" : 34,
+								"value" : [ "hausu_mirrorbreak.mov" ]
+							}
+, 							{
+								"key" : 35,
+								"value" : [ "tree_sky.mov" ]
+							}
+, 							{
+								"key" : 36,
+								"value" : [ "hausu_aunt.mov" ]
+							}
+, 							{
+								"key" : 37,
+								"value" : [ "tree_blob5.mov" ]
+							}
+, 							{
+								"key" : 38,
+								"value" : [ "hausu_catflash.mov" ]
+							}
+, 							{
+								"key" : 39,
+								"value" : [ "tree_sunflow3.mov" ]
+							}
+, 							{
+								"key" : 40,
+								"value" : [ "hausu_womanflowingfinal.mov" ]
+							}
+, 							{
+								"key" : 41,
+								"value" : [ "tree_volcano4.mov" ]
+							}
+, 							{
+								"key" : 42,
+								"value" : [ "req_screaming-in-water.mov" ]
+							}
+, 							{
+								"key" : 43,
+								"value" : [ "tree_tree2.mov" ]
+							}
+, 							{
+								"key" : 44,
+								"value" : [ "tree_nebula3.mov" ]
 							}
  ]
 					}
@@ -606,7 +767,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 213.0, 433.0, 180.5, 22.0 ],
 					"style" : "",
-					"text" : "sunflower.mp4"
+					"text" : "req_harry-marion.mov"
 				}
 
 			}
@@ -632,7 +793,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 54.0, 433.0, 150.0, 22.0 ],
 					"style" : "",
-					"text" : "dust.mp4"
+					"text" : "tree_badasswater.mov"
 				}
 
 			}
@@ -665,22 +826,182 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 4,
+						"count" : 44,
 						"data" : [ 							{
 								"key" : 1,
-								"value" : [ "sunflower.mp4" ]
+								"value" : [ "tree_badasswater.mov" ]
 							}
 , 							{
 								"key" : 2,
-								"value" : [ "bball.mov" ]
+								"value" : [ "req_harry-marion.mov" ]
 							}
 , 							{
 								"key" : 3,
-								"value" : [ "chickens.mp4" ]
+								"value" : [ "req_paper-airplanes.mov" ]
 							}
 , 							{
 								"key" : 4,
-								"value" : [ "dust.mp4" ]
+								"value" : [ "tree_nebula3.mov" ]
+							}
+, 							{
+								"key" : 5,
+								"value" : [ "tree_blob2.mov" ]
+							}
+, 							{
+								"key" : 6,
+								"value" : [ "tree_confused.mov" ]
+							}
+, 							{
+								"key" : 7,
+								"value" : [ "tree_blob3.mov" ]
+							}
+, 							{
+								"key" : 8,
+								"value" : [ "req_flesh-and-faces.mov" ]
+							}
+, 							{
+								"key" : 9,
+								"value" : [ "rd_carnival.mov" ]
+							}
+, 							{
+								"key" : 10,
+								"value" : [ "rocky_underwater.mov" ]
+							}
+, 							{
+								"key" : 11,
+								"value" : [ "tree_volcano.mov" ]
+							}
+, 							{
+								"key" : 12,
+								"value" : [ "tree_woman.mov" ]
+							}
+, 							{
+								"key" : 13,
+								"value" : [ "tree_watermassive.mov" ]
+							}
+, 							{
+								"key" : 14,
+								"value" : [ "tree_brad.mov" ]
+							}
+, 							{
+								"key" : 15,
+								"value" : [ "tree_geyser.mov" ]
+							}
+, 							{
+								"key" : 16,
+								"value" : [ "tree_cow.mov" ]
+							}
+, 							{
+								"key" : 17,
+								"value" : [ "hausu_trees.mov" ]
+							}
+, 							{
+								"key" : 18,
+								"value" : [ "rocky_smokespin.mov" ]
+							}
+, 							{
+								"key" : 19,
+								"value" : [ "tree_glass.mov" ]
+							}
+, 							{
+								"key" : 20,
+								"value" : [ "tree_jelly.mov" ]
+							}
+, 							{
+								"key" : 21,
+								"value" : [ "req_we-got-a-winner.mov" ]
+							}
+, 							{
+								"key" : 22,
+								"value" : [ "hausu_cat.mov" ]
+							}
+, 							{
+								"key" : 23,
+								"value" : [ "tree_nebula4.mov" ]
+							}
+, 							{
+								"key" : 24,
+								"value" : [ "drive_water.mov" ]
+							}
+, 							{
+								"key" : 25,
+								"value" : [ "hausu_womanflowing.mov" ]
+							}
+, 							{
+								"key" : 26,
+								"value" : [ "tree_sunflow2.mov" ]
+							}
+, 							{
+								"key" : 27,
+								"value" : [ "tree_pennhand.mov" ]
+							}
+, 							{
+								"key" : 28,
+								"value" : [ "tree_kelp.mov" ]
+							}
+, 							{
+								"key" : 29,
+								"value" : [ "mar_landscape4.mov" ]
+							}
+, 							{
+								"key" : 30,
+								"value" : [ "drive_cashzoom.mov" ]
+							}
+, 							{
+								"key" : 31,
+								"value" : [ "drive_cityspin.mov" ]
+							}
+, 							{
+								"key" : 32,
+								"value" : [ "tree_nebula5.mov" ]
+							}
+, 							{
+								"key" : 33,
+								"value" : [ "tree_glass-ceiling.mov" ]
+							}
+, 							{
+								"key" : 34,
+								"value" : [ "hausu_mirrorbreak.mov" ]
+							}
+, 							{
+								"key" : 35,
+								"value" : [ "tree_sky.mov" ]
+							}
+, 							{
+								"key" : 36,
+								"value" : [ "hausu_aunt.mov" ]
+							}
+, 							{
+								"key" : 37,
+								"value" : [ "tree_blob5.mov" ]
+							}
+, 							{
+								"key" : 38,
+								"value" : [ "hausu_catflash.mov" ]
+							}
+, 							{
+								"key" : 39,
+								"value" : [ "tree_sunflow3.mov" ]
+							}
+, 							{
+								"key" : 40,
+								"value" : [ "hausu_womanflowingfinal.mov" ]
+							}
+, 							{
+								"key" : 41,
+								"value" : [ "tree_volcano4.mov" ]
+							}
+, 							{
+								"key" : 42,
+								"value" : [ "req_screaming-in-water.mov" ]
+							}
+, 							{
+								"key" : 43,
+								"value" : [ "tree_tree2.mov" ]
+							}
+, 							{
+								"key" : 44,
+								"value" : [ "tree_nebula3.mov" ]
 							}
  ]
 					}
@@ -690,13 +1011,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 54.0, 158.0, 124.0, 22.0 ],
+					"patching_rect" : [ 54.0, 158.0, 69.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1
 					}
 ,
 					"style" : "",
-					"text" : "coll playlist default.txt"
+					"text" : "coll playlist"
 				}
 
 			}
@@ -704,7 +1025,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"midpoints" : [ 133.5, 192.0, 429.0, 192.0, 429.0, 72.0, 183.5, 72.0 ],
+					"midpoints" : [ 96.833333, 192.0, 429.0, 192.0, 429.0, 72.0, 183.5, 72.0 ],
 					"source" : [ "obj-1", 2 ]
 				}
 
@@ -712,7 +1033,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
-					"midpoints" : [ 98.5, 183.0, 177.166672, 183.0 ],
+					"midpoints" : [ 80.166667, 183.0, 177.166672, 183.0 ],
 					"source" : [ "obj-1", 1 ]
 				}
 

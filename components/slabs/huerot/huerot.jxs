@@ -20,6 +20,8 @@
 		
 		void main() {	
 			vec3 yColor = rgb2yiq * texture2DRect(tex0, texcoord0).rgb; 
+			float alpha = texture2DRect(tex0, texcoord0).a;
+			
 			
 			float originalHue = atan(yColor.b, yColor.g);
 			float finalHue = originalHue + hue;
@@ -27,7 +29,7 @@
 			float chroma = sqrt(yColor.b*yColor.b+yColor.g*yColor.g);
 			
 			vec3 yFinalColor = vec3(yColor.r, chroma * cos(finalHue), chroma * sin(finalHue));
-			gl_FragColor = vec4(yiq2rgb*yFinalColor, 1.0);
+			gl_FragColor = vec4(yiq2rgb*yFinalColor, alpha);
 		}
 ]]>			
 		</program>

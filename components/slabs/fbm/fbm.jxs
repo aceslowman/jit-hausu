@@ -156,8 +156,13 @@ void main()
 	if(bSmooth == 1){
 		noise = smoothstep(map.x, map.y, noise);
 	}
-
-	gl_FragColor = vec4(vec3(noise),1.);
+	
+	float alpha = 1.;
+	
+	if(noise < 0.1){
+		alpha = 0.;
+	}
+	gl_FragColor = vec4(vec3(noise),alpha);
 }
 
 ]]>

@@ -1,4 +1,5 @@
 assets/video/*
+assets/models/*
 .DS_Store
 playlists/*
 !playlists/playlisting_tool

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 568.0, 100.0, 767.0, 706.0 ],
+		"rect" : [ 585.0, 202.0, 543.0, 292.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 525.0, 255.0, 77.0, 22.0 ],
+					"style" : "",
+					"text" : "dim 360 640"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "newobj",
@@ -127,16 +140,16 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 120.0, 480.0, 58.0, 22.0 ],
 					"restore" : 					{
-						"adapt" : [ 1 ],
-						"context" : [ 2 ],
-						"enable" : [ 1 ],
+						"adapt" : [ 0 ],
+						"context" : [ 3 ],
+						"enable" : [ 0 ],
 						"layer" : [ 0 ],
 						"output_context" : [ 0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u499005201"
+					"varname" : "u425001029"
 				}
 
 			}
@@ -172,7 +185,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-47",
-					"items" : [ "mainout", ",", "vid-ctx", ",", "3d-ctx" ],
+					"items" : [ "mainout", ",", "vid-ctx", ",", "3d-ctx", ",", "precomp" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -234,10 +247,9 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 228.0, 481.0, 117.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
 					"presentation_rect" : [ 128.5, 269.0, 107.0, 22.0 ],
 					"style" : "",
-					"text" : "my-special-context"
+					"text" : "precomp"
 				}
 
 			}
@@ -354,7 +366,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-35",
-					"items" : [ "mainout", ",", "vid-ctx", ",", "3d-ctx" ],
+					"items" : [ "mainout", ",", "vid-ctx", ",", "3d-ctx", ",", "precomp" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -489,7 +501,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-84",
-					"items" : [ "mainout", ",", "vid-ctx", ",", "3d-ctx" ],
+					"items" : [ "mainout", ",", "vid-ctx", ",", "3d-ctx", ",", "precomp" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -702,7 +714,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_gl_texture" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 315.0, 255.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -845,6 +857,13 @@
 					"destination" : [ "obj-21", 0 ],
 					"midpoints" : [ 324.5, 348.0, 324.5, 348.0 ],
 					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-27", 0 ]
 				}
 
 			}

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 995.0, 85.0, 890.0, 920.0 ],
+		"rect" : [ 1803.0, -410.0, 890.0, 920.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,22 @@
 		"style" : "",
 		"subpatcher_template" : "jit.hausu slab template",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontface" : 2,
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 738.749756, 765.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 135.0, 307.0, 45.0, 20.0 ],
+					"style" : "",
+					"text" : "dim",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-43",
 					"maxclass" : "toggle",
@@ -210,6 +226,8 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 482.249756, 259.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 135.0, 329.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -298,19 +316,19 @@
 					"restore" : 					{
 						"bSmooth" : [ 1 ],
 						"counter-on" : [ 1 ],
-						"map-x" : [ -0.003327 ],
-						"map-y" : [ 3.9 ],
-						"octaves" : [ 4 ],
-						"scale-x" : [ 6.71 ],
-						"scale-x[1]" : [ 0.0 ],
-						"scale-y" : [ 0.8 ],
-						"scale-y[1]" : [ 0.48 ],
-						"speed" : [ 17.52 ]
+						"map-x" : [ 0.0 ],
+						"map-y" : [ 0.0 ],
+						"octaves" : [ 1 ],
+						"scale-x" : [ 8.0 ],
+						"scale-x[1]" : [ 0.3 ],
+						"scale-y" : [ 137.0 ],
+						"scale-y[1]" : [ 0.0 ],
+						"speed" : [ 109.0 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u709000607"
+					"varname" : "u148003220"
 				}
 
 			}
@@ -448,9 +466,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 348.749756, 150.0, 144.0, 43.0 ],
+					"patching_rect" : [ 348.749756, 150.0, 144.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 165.0, 25.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 165.0, 24.0 ],
 					"style" : "",
 					"text" : "FBM GENERATOR"
 				}
@@ -768,7 +786,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 555.0, 420.0, 417.0, 22.0 ],
+					"patching_rect" : [ 555.0, 419.22876, 417.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.gl.slab mainout @file fbm.jxs @type float32 @rectangle 0 @name fbm-tex"
 				}

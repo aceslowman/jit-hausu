@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 56.0, 822.0, 706.0 ],
+		"rect" : [ 754.0, 56.0, 492.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,11 +41,11 @@
 					"id" : "obj-15",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 1106.0, 359.0, 95.0, 22.0 ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1797.0, 598.0, 153.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.slab vid-ctx"
+					"text" : "jit.gl.syphonserver mainout"
 				}
 
 			}
@@ -64,22 +64,51 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 1106.0, 0.0, 240.0, 345.0 ],
-					"varname" : "node[1]",
+					"patching_rect" : [ 1763.0, 46.0, 241.0, 332.0 ],
+					"varname" : "node[2]",
 					"viewvisibility" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "newobj",
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-13",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "brightness-curve.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 260.0, 481.0, 107.0, 22.0 ],
-					"style" : "",
-					"text" : "jit.gl.handle 3d-ctx"
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1490.0, 395.0, 247.0, 225.0 ],
+					"varname" : "brightness-curve",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-12",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "node.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "jit_gl_texture" ],
+					"patching_rect" : [ 1490.0, 46.0, 241.0, 332.0 ],
+					"varname" : "node[1]",
+					"viewvisibility" : 1
 				}
 
 			}
@@ -93,54 +122,97 @@
 					"id" : "obj-11",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "model-loader.maxpat",
-					"numinlets" : 1,
+					"name" : "sharpen.maxpat",
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 260.0, 507.0, 245.0, 419.0 ],
-					"varname" : "model-loader",
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1180.0, 463.0, 266.0, 58.0 ],
+					"varname" : "sharpen",
 					"viewvisibility" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
 					"id" : "obj-10",
-					"maxclass" : "newobj",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "hausu_blur.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 918.0, 110.0, 60.0, 22.0 ],
-					"style" : "",
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 918.0, 148.0, 165.0, 22.0 ],
-					"style" : "",
-					"text" : "importmovie dither-noise.png"
+					"patching_rect" : [ 1180.0, 526.0, 266.0, 58.0 ],
+					"varname" : "hausu_blur",
+					"viewvisibility" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
 					"id" : "obj-5",
-					"linecount" : 2,
-					"maxclass" : "newobj",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "feedback.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 3,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "", "jit_gl_texture", "bang" ],
+					"patching_rect" : [ 917.0, 438.0, 240.0, 163.0 ],
+					"varname" : "feedback",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-9",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "time.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 1296.0, 726.0, 128.0, 128.0 ],
+					"varname" : "time",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-8",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "barrel-chroma.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 918.0, 184.0, 108.0, 35.0 ],
-					"style" : "",
-					"text" : "jit.matrix 3 float32 8 8"
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1763.0, 409.0, 361.0, 61.0 ],
+					"varname" : "barrel-chroma",
+					"viewvisibility" : 1
 				}
 
 			}
@@ -154,26 +226,14 @@
 					"id" : "obj-7",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "node.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
+					"name" : "playback.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "jit_gl_texture" ],
-					"patching_rect" : [ 1009.0, 457.0, 240.0, 345.0 ],
-					"varname" : "node",
+					"outlettype" : [ "jit_gl_texture", "jit_matrix" ],
+					"patching_rect" : [ 1216.0, 46.0, 244.0, 349.0 ],
+					"varname" : "playback",
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 986.0, 110.0, 24.0, 24.0 ],
-					"style" : ""
 				}
 
 			}
@@ -184,17 +244,51 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"id" : "obj-3",
+					"id" : "obj-6",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "playback.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 2,
+					"name" : "node.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "jit_gl_texture", "jit_matrix" ],
-					"patching_rect" : [ 632.0, 0.0, 241.0, 345.0 ],
-					"varname" : "playback",
+					"outlettype" : [ "jit_gl_texture" ],
+					"patching_rect" : [ 917.0, 69.0, 241.0, 332.0 ],
+					"varname" : "node",
 					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-4",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "dithering.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1763.0, 486.0, 365.0, 61.0 ],
+					"varname" : "dithering",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 643.0, 74.0, 117.0, 22.0 ],
+					"style" : "",
+					"text" : "jit.gl.handle mainout"
 				}
 
 			}
@@ -208,13 +302,13 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "dithering.maxpat",
-					"numinlets" : 2,
+					"name" : "model-loader.maxpat",
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 626.0, 465.0, 339.0, 85.0 ],
-					"varname" : "dithering",
+					"outlettype" : [ "jit_matrix" ],
+					"patching_rect" : [ 643.0, 98.0, 245.0, 503.0 ],
+					"varname" : "model-loader",
 					"viewvisibility" : 1
 				}
 
@@ -234,7 +328,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 14.0, 21.0, 630.0, 450.0 ],
+					"patching_rect" : [ 4.0, 4.0, 634.0, 455.0 ],
 					"varname" : "rendering",
 					"viewvisibility" : 1
 				}
@@ -243,63 +337,67 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"midpoints" : [ 927.5, 135.0, 927.5, 135.0 ],
-					"order" : 1,
+					"destination" : [ "obj-5", 1 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 927.5, 135.0, 903.0, 135.0, 903.0, 96.0, 995.5, 96.0 ],
-					"order" : 0,
-					"source" : [ "obj-10", 0 ]
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"midpoints" : [ 927.5, 171.0, 927.5, 171.0 ],
+					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-13", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
+					"destination" : [ "obj-13", 0 ],
 					"source" : [ "obj-14", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"source" : [ "obj-15", 0 ]
+					"midpoints" : [ 1772.5, 549.0, 1749.0, 549.0, 1749.0, 42.0, 1772.5, 42.0 ],
+					"order" : 1,
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"midpoints" : [ 635.5, 561.0, 990.0, 561.0, 990.0, 339.0, 1018.5, 339.0 ],
-					"source" : [ "obj-2", 0 ]
+					"destination" : [ "obj-15", 0 ],
+					"order" : 0,
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 1 ],
-					"midpoints" : [ 927.5, 450.0, 955.5, 450.0 ],
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-5", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"midpoints" : [ 926.5, 616.0, 903.0, 616.0, 903.0, 66.0, 926.5, 66.0 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -307,16 +405,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"midpoints" : [ 995.5, 135.0, 915.0, 135.0, 915.0, 177.0, 927.5, 177.0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"midpoints" : [ 1018.5, 817.0, 975.0, 817.0, 975.0, 450.0, 635.5, 450.0 ],
-					"source" : [ "obj-7", 0 ]
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
@@ -329,9 +425,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "model-loader.maxpat",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components",
+				"patcherrelativepath" : "../components",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "dithering.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/slabs/dithering",
 				"patcherrelativepath" : "../components/slabs/dithering",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "node.maxpat",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components",
+				"patcherrelativepath" : "../components",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -364,18 +474,50 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "node.maxpat",
+				"name" : "barrel-chroma.maxpat",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/slabs/barrel-chroma",
+				"patcherrelativepath" : "../components/slabs/barrel-chroma",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "time.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components",
 				"patcherrelativepath" : "../components",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "model-loader.maxpat",
-				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components",
-				"patcherrelativepath" : "../components",
+				"name" : "feedback.maxpat",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/slabs/feedback",
+				"patcherrelativepath" : "../components/slabs/feedback",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "hausu_blur.maxpat",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/slabs/blur",
+				"patcherrelativepath" : "../components/slabs/blur",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sharpen.maxpat",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/slabs/sharpen",
+				"patcherrelativepath" : "../components/slabs/sharpen",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "brightness-curve.maxpat",
+				"bootpath" : "~/Documents/Max 7/Library/jit-hausu/components/brightness-curve",
+				"patcherrelativepath" : "../components/brightness-curve",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "jit.gl.syphonserver.mxo",
+				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0

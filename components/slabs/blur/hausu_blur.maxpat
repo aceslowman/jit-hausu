@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 586.0, 153.0, 770.0, 438.0 ],
+		"rect" : [ 1043.0, 337.0, 415.0, 438.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,20 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "Width",
+					"id" : "obj-11",
+					"index" : 2,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 195.0, 150.0, 30.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontface" : 2,
 					"id" : "obj-6",
@@ -98,16 +112,16 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 405.0, 60.0, 58.0, 22.0 ],
 					"restore" : 					{
-						"context" : [ 0 ],
-						"huerot" : [ 0.51 ],
+						"context" : [ 3 ],
+						"huerot" : [ 0.015625 ],
 						"huerot-midi" : [ 10 ],
-						"onoff" : [ 1 ],
+						"onoff" : [ 0 ],
 						"onoff-midi" : [ 26 ]
 					}
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u248000663"
+					"varname" : "u491000911"
 				}
 
 			}
@@ -153,7 +167,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-22",
-					"items" : [ "mainout", ",", "vid-ctx", ",", "3d-ctx" ],
+					"items" : [ "mainout", ",", "vid-ctx", ",", "3d-ctx", ",", "fb-ctx" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -207,9 +221,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 275.5, 309.416931, 145.0, 24.0 ],
+					"patching_rect" : [ 275.5, 309.416931, 145.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 80.0, 24.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 80.0, 25.0 ],
 					"style" : "",
 					"text" : "BLUR"
 				}
@@ -223,7 +237,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 690.0, 295.416931, 40.0, 35.0 ],
+					"patching_rect" : [ 690.0, 295.416931, 40.0, 36.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -454,6 +468,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
